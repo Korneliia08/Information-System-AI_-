@@ -99,12 +99,30 @@
     justify-content: center;
     width: 100%;
     transition: 300ms;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: opacity 300ms ease-in-out, background 300ms ease-in-out; /* Dodanie animacji dla background */
+      background: linear-gradient(to bottom, #1987f6, #0073E8, #005bb9); /* Domyślny gradient */
+      opacity: 0; /* Domyślna opacość */
+    }
+
+    &.secondTheme::before {
+      opacity: 1; /* Przy przełączeniu, gradient się pojawi */
+      background: linear-gradient(to bottom, #00aaff, #0088dd, #0066bb); /* Nowy gradient */
+    }
 
     &.secondTheme {
-      background: linear-gradient(to bottom, #1987f6, #0073E8, #005bb9);
+      background: transparent; /* W przypadku, gdy gradient jest używany w ::before */
     }
 
     .navWrapper {
+      position: relative;
+      z-index: 999;
       display: flex;
       justify-content: space-between;
       width: 100%;
