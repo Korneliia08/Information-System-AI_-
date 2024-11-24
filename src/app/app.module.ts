@@ -27,6 +27,9 @@ import {TranslatePipe, TrPipe} from './pipes/translate.pipe';
 import {TranslateService} from './pipes/translate.service';
 import {HttpClientModule} from '@angular/common/http';
 import {faBrandFacebook, faBrandInstagram, faBrandTwitter} from '@ng-icons/font-awesome/brands';
+import {ChooseLanguageComponent} from './ui/choose-language/choose-language.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import {ChooseLanguageModalComponent} from './ui/choose-language/choose-language-modal/choose-language-modal.component';
 
 @NgModule({
   bootstrap: [AppComponent],
@@ -39,8 +42,8 @@ import {faBrandFacebook, faBrandInstagram, faBrandTwitter} from '@ng-icons/font-
     OurPartnersComponent, TrPipe,
     AiDocumentationComponent,
     SmoothScrollComponent,
-    FooterComponent,
-    AccessibilityComponent,
+    FooterComponent, ChooseLanguageModalComponent,
+    AccessibilityComponent, ChooseLanguageComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,7 +55,7 @@ import {faBrandFacebook, faBrandInstagram, faBrandTwitter} from '@ng-icons/font-
     MatPaginator, NgxMarqueeModule,
     MatCheckbox,
     MatButton,
-    FormsModule,
+    FormsModule, MatDialogModule,
     NgIconsModule.withIcons({faEye, faBrandInstagram, faBrandTwitter, faBrandFacebook})
   ],
   providers: [

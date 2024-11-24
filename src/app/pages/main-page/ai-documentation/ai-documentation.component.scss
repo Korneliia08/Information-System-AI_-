@@ -7,18 +7,22 @@
   padding-top: 100px;
   min-height: 100vh;
   //background: url('../assets/images/socials-bg.jpg');
-    background: url('../../../../../public/assets/images/pexels-background.jpg');
+  background: url('../../../../../public/assets/images/pexels-background.jpg');
   background-size: cover;
   padding-bottom: 10vw;
   max-width: 100%;
-  .wrapper{
+
+  .wrapper {
     width: 100%;
     max-width: 1200px;
   }
+
   h2 {
-text-align: center;
-    font-size: 2.8125rem;
-    font-family: "Plus Jakarta Sans", sans-serif;
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: white;
     letter-spacing: 1px;
   }
@@ -142,7 +146,7 @@ text-align: center;
 
         &.color1 {
           &:after {
-             background-image: url("../../../../../public/assets/images/triangle.png");
+            background-image: url("../../../../../public/assets/images/triangle.png");
           }
 
           .smallPart1, .smallPart2, .smallPart3 {
@@ -153,7 +157,7 @@ text-align: center;
 
         &.color2 {
           &:after {
-              background-image: url("../../../../../public/assets/images/circle.png");
+            background-image: url("../../../../../public/assets/images/circle.png");
           }
 
           .smallPart1, .smallPart2, .smallPart3 {
@@ -168,7 +172,7 @@ text-align: center;
           //}
 
           &:before {
-                 background-image: url("../../../../../public/assets/images/pinkTriangle.png");
+            background-image: url("../../../../../public/assets/images/pinkTriangle.png");
           }
 
           .smallPart1, .smallPart2, .smallPart3 {
@@ -267,11 +271,11 @@ text-align: center;
   }
 }
 
-.linesContainer{
+.linesContainer {
   overflow: hidden;
   width: 100%;
   max-width: 100%;
-  color:white;
+  color: white;
 
   //height: 600px;
   z-index: 1;
@@ -284,24 +288,25 @@ text-align: center;
   justify-items: center;
   justify-content: center;
 
-  .marquee1{
+  .marquee1 {
     height: 80px;
-  // //position: relative;
-   // width: 100%;
-     letter-spacing: 3px;
-     color: white;
+    // //position: relative;
+    // width: 100%;
+    letter-spacing: 3px;
+    color: white;
     font-size: 80px;
-   // backdrop-filter: blur(200px);
- //   text-transform: uppercase;
- //   border-top: 1px solid rgba(255, 255, 255, .5);
+    // backdrop-filter: blur(200px);
+    //   text-transform: uppercase;
+    //   border-top: 1px solid rgba(255, 255, 255, .5);
 
     //border-bottom: 1px solid rgba(255, 255, 255, .5);
     //padding: 20px 0;
     //font-weight: 800;
     //font-family: "Plus Jakarta Sans", sans-serif;
   }
-  .marquee2{
-   // position: relative;
+
+  .marquee2 {
+    // position: relative;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 800;
@@ -310,6 +315,7 @@ text-align: center;
     font-size: 50px;
     background-color: black;
     padding: 10px 0;
+
     .text {
       padding-bottom: 5px;
       color: white;
