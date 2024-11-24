@@ -1,5 +1,5 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
-import $ from 'jquery'; // Import jQuery
+import $ from 'jquery';
 import VanillaTilt from 'vanilla-tilt';
 @Component({
   selector: 'app-root',
@@ -18,6 +18,8 @@ export class AppComponent implements OnInit,AfterViewInit{
       glare: true, // Efekt poświaty
       'max-glare': 0.5, // Maksymalna poświata
     });
+
+
   }
   ngOnInit(){
     // // @ts-ignore

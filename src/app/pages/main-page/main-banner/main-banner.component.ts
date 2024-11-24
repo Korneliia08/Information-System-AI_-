@@ -20,7 +20,7 @@ export class MainBannerComponent implements OnInit {
     const scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
     // Log scroll position (for debugging purposes)
-    console.log('Scroll position:', scrollPosition);
+    //console.log('Scroll position:', scrollPosition);
 
     // Change background color when scroll position is greater than 100px
     if (scrollPosition > 100) {
