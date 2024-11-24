@@ -7,39 +7,59 @@
 >
   <button
     class="cross"
-    aria-label="Close accessibility panel"
+    [attr.aria-label]="'accessibility.close.ariaLabel' | tr"
     (click)="open=false">X</button>
   <div class="accessibility-block">
-    <h2 id="accessibility-title">Accessibility Options</h2>
+    <h2 id="accessibility-title">{{ 'accessibility.title' | tr }}</h2>
     <button
       (click)="increaseFontSize()"
-      aria-label="Increase font size">Increase Font Size</button>
+      [attr.aria-label]="'accessibility.increaseFontSize.ariaLabel' | tr">
+      {{ 'accessibility.increaseFontSize.value' | tr }}
+    </button>
     <button
       (click)="decreaseFontSize()"
-      aria-label="Decrease font size">Decrease Font Size</button>
+      [attr.aria-label]="'accessibility.decreaseFontSize.ariaLabel' | tr">
+      {{ 'accessibility.decreaseFontSize.value' | tr }}
+    </button>
     <button
       (click)="toggleUnderline()"
-      aria-label="Toggle underline for links">Underline Links</button>
+      [attr.aria-label]="'accessibility.toggleUnderline.ariaLabel' | tr">
+      {{ 'accessibility.toggleUnderline.value' | tr }}
+    </button>
     <button
       (click)="toggleGrayscale()"
-      aria-label="Enable or disable grayscale">Grayscale</button>
+      [attr.aria-label]="'accessibility.toggleGrayscale.ariaLabel' | tr">
+      {{ 'accessibility.toggleGrayscale.value' | tr }}
+    </button>
     <button
       (click)="toggleInvertColors()"
-      aria-label="Invert colors">Invert Colors</button>
+      [attr.aria-label]="'accessibility.toggleInvertColors.ariaLabel' | tr">
+      {{ 'accessibility.toggleInvertColors.value' | tr }}
+    </button>
     <button
       (click)="toggleLowSaturation()"
-      aria-label="Toggle low saturation mode">Low Saturation</button>
+      [attr.aria-label]="'accessibility.toggleLowSaturation.ariaLabel' | tr">
+      {{ 'accessibility.toggleLowSaturation.value' | tr }}
+    </button>
     <button
       (click)="toggleHighSaturation()"
-      aria-label="Toggle high saturation mode">High Saturation</button>
+      [attr.aria-label]="'accessibility.toggleHighSaturation.ariaLabel' | tr">
+      {{ 'accessibility.toggleHighSaturation.value' | tr }}
+    </button>
     <button
       (click)="increaseLineHeight()"
-      aria-label="Increase line height for text">Increase Line Height</button>
+      [attr.aria-label]="'accessibility.increaseLineHeight.ariaLabel' | tr">
+      {{ 'accessibility.increaseLineHeight.value' | tr }}
+    </button>
     <button
       (click)="decreaseLineHeight()"
-      aria-label="Decrease line height for text">Decrease Line Height</button>
+      [attr.aria-label]="'accessibility.decreaseLineHeight.ariaLabel' | tr">
+      {{ 'accessibility.decreaseLineHeight.value' | tr }}
+    </button>
     <button
       (click)="resetOptions()"
-      aria-label="Reset all accessibility settings">Reset Options</button>
+      [attr.aria-label]="'accessibility.resetOptions.ariaLabel' | tr">
+      {{ 'accessibility.resetOptions.value' | tr }}
+    </button>
   </div>
 </div>

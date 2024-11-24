@@ -76,7 +76,7 @@
       "text1": "Investments in AI in 2024 are opening new horizons for technological progress.",
       "text2": "aigeobot&#64;gmail.com&nbsp;&nbsp;&#10022;&nbsp;&nbsp;aigeobot&#64;gmail.com&nbsp;&nbsp;&#10022;&nbsp;&nbsp;aigeobot&#64;gmail.com&nbsp;&nbsp;&#10022;&nbsp;&nbsp;aigeobot&#64;gmail.com"
     },
-    "footer":{
+    "footer": {
       "nav": {
         "aboutUs": {
           "title": "ABOUT US",
@@ -175,5 +175,61 @@
         }
       }
     }
+  },
+  "accessibility":{
+    "title": "Accessibility Options",
+    "accessibilityOptions": {
+      "value": "Accessibility Options",
+      "ariaLabel": "Accessibility panel"
+    },
+    "closeAccessibilityPanel": {
+      "value": "Close accessibility panel",
+      "ariaLabel": "Close accessibility panel"
+    },
+    "close": {
+      "value": "X",
+      "ariaLabel": "Close button"
+    },
+    "increaseFontSize": {
+      "value": "Increase Font Size",
+      "ariaLabel": "Increase font size"
+    },
+    "decreaseFontSize": {
+      "value": "Decrease Font Size",
+      "ariaLabel": "Decrease font size"
+    },
+    "toggleUnderline": {
+      "value": "Underline Links",
+      "ariaLabel": "Toggle underline for links"
+    },
+    "toggleGrayscale": {
+      "value": "Grayscale",
+      "ariaLabel": "Enable or disable grayscale"
+    },
+    "toggleInvertColors": {
+      "value": "Invert Colors",
+      "ariaLabel": "Invert colors"
+    },
+    "toggleLowSaturation": {
+      "value": "Low Saturation",
+      "ariaLabel": "Toggle low saturation mode"
+    },
+    "toggleHighSaturation": {
+      "value": "High Saturation",
+      "ariaLabel": "Toggle high saturation mode"
+    },
+    "increaseLineHeight": {
+      "value": "Increase Line Height",
+      "ariaLabel": "Increase line height for text"
+    },
+    "decreaseLineHeight": {
+      "value": "Decrease Line Height",
+      "ariaLabel": "Decrease line height for text"
+    },
+    "resetOptions": {
+      "value": "Reset Options",
+      "ariaLabel": "Reset all accessibility settings"
+    }
   }
+
 }
