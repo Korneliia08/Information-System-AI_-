@@ -232,4 +232,69 @@
     }
   }
 
+  "history": {
+    "newChat": {
+      "label": "New Chat",
+      "ariaLabel": "Start a new chat"
+    },
+    "searchChat": {
+      "placeholder": "Search chat",
+      "ariaLabel": "Search chat input"
+    },
+    "conversations": {
+      "ariaLabel": "Conversation history"
+    }
+  },
+  "bottomActions": {
+    "clearConversation": {
+      "label": "Clear conversation",
+      "ariaLabel": "Delete all messages from the current conversation"
+    },
+    "changeTheme": {
+      "label": "Change theme",
+      "ariaLabel": "Switch between light and dark theme"
+    },
+    "back": {
+      "label": "Back",
+      "ariaLabel": "Return to the previous page"
+    }
+  },
+  "chatContainer": {
+    "input": {
+      "placeholder": "Type your question...",
+      "ariaLabel": "Question input field"
+    },
+    "exportConversation": {
+      "label": "Export Conversation",
+      "ariaLabel": "Download the current conversation"
+    },
+    "sendMessage": {
+      "label": "Send",
+      "ariaLabel": "Send your question"
+    }
+  },
+  "rightBar": {
+    "dataSourceSelection": {
+      "ariaLabel": "Select or deselect data sources"
+    }
+  },
+  "thirdPanel": {
+    "dataSource": {
+      "title": "Data source",
+      "ariaLabel": "Select a data source"
+    },
+    "questionHistory": {
+      "title": "Questions history",
+      "ariaLabel": "List of previously asked questions",
+      "paginator": {
+        "ariaLabel": "Pagination for questions history"
+      }
+    },
+    "aiVersion": {
+      "title": "AI version",
+      "ariaLabel": "Select AI version"
+    }
+  }
+
+
 }
