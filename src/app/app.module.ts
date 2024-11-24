@@ -50,7 +50,7 @@ import {NgxParticlesModule} from '@tsparticles/angular';
     BrowserModule,
     AppRoutingModule,
     MatIcon,
-    MatIconButton,NgxParticlesModule,
+    MatIconButton,
     MatRadioGroup, HttpClientModule,
     MatRadioButton,
     MatPaginator, NgxMarqueeModule,
