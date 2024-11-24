@@ -13,7 +13,15 @@ footer {
     justify-content: space-around;
 
     .blockForLogoAndLanguage {
+      padding-top: 25px;
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
 
+      .logoImg {
+        width: 110px;
+        margin-bottom: 25px;
+      }
     }
 
     .containerForBlocksOfLinks {
@@ -55,6 +63,7 @@ footer {
     .blockForSocialMedias {
       display: flex;
       column-gap: 10px;
+      padding-top: 25px;
 
       .blockForIcon {
         background-color: rgba(5, 23, 152, 0.32);
