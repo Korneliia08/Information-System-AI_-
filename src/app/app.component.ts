@@ -22,7 +22,7 @@ export class AppComponent implements OnInit,AfterViewInit{
           max: 15,
           speed: 400,
           glare: true,
-          'max-glare': 0.5,
+          'max-glare': 0.2,
         });
         elements.forEach((element) => {
           element.setAttribute('data-tilt-initialized', 'true');

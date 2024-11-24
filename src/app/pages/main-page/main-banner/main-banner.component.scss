@@ -3,7 +3,11 @@
   height: 100vh;
   overflow: hidden;
   width: 100%;
+background-image: url("../../../../../public/assets/Designer.jpeg");
+  background-position: right;
 
+  background-repeat: no-repeat;
+  background-size:cover;
   .videoBanner {
     position: absolute;
     top: -5vh;

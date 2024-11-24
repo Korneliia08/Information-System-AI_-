@@ -1,14 +1,15 @@
 <div id="particles-js"></div>
 <section class="containerForWrapperBanner">
-  <video autoplay loop muted class="videoBanner" aria-label="Video banner background" role="presentation">
-    <source [src]="'assets/images/banner2.mp4'" type="video/mp4" />
-  </video>
+<!--  <video autoplay loop muted class="videoBanner" aria-label="Video banner background" role="presentation">-->
+<!--    <source [src]="'assets/images/banner2.mp4'" type="video/mp4" />-->
+<!--  </video>-->
 
   <div class="bannerContent">
     <header class="divForLogoAndNav" [ngClass]="{secondTheme}">
       <div class="navWrapper">
         <div class="blockForLogo">
           <a href="#" aria-label="Go to homepage">
+
             <img alt="Operating System Logo" src="assets/icons/logo.svg" />
             <span>Operating System</span>
           </a>
@@ -59,7 +60,7 @@
     </header>
 
     <div class="bannerTitle">
-      <h2>AI Geo Bot </h2>
+      <h2>AI Geo Bot  </h2>
       <h1 [innerHTML]="'mainPage.banner.title'|tr"></h1>
       <button id="idButtonOpenChat" (click)="openAibotChatModal()"
               [attr.aria-label]="'mainPage.banner.bannerButton_aria'|tr">{{'mainPage.banner.bannerButton'|tr}}</button>

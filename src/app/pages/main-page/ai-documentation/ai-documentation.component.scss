@@ -4,7 +4,7 @@
   background: #181238;
   flex-direction: column;
   align-items: center;
-  padding-top:30px;
+  padding-top:100px;
   min-height: 100vh;
   //background: url('../assets/images/socials-bg.jpg');
   background: url('../../../../../public/assets/images/pexels-background.jpg');
@@ -95,7 +95,15 @@
 
       background: rgba(32, 24, 24, 0);
 
-
+      .father{
+        border-radius: 20px;
+        border-left: 1.5px inset #56ffeb;
+        border-top: 1.5px inset rgba(240, 10, 254, 1);
+        border-bottom: 1.5px inset rgba(240, 10, 254, 1);
+        border-right: 1.5px inset #56ffeb;
+        background: rgba(0, 0, 0, 0.11);
+        padding: 30px;
+      }
       img {
         width: auto;
         height: 400px;
@@ -113,8 +121,8 @@
       .ownCard {
         background-color: rgba(32, 35, 101, 0.59);
         position: relative;
-        width: 295px;
-        height: 390px;
+        width: 14vw;
+        aspect-ratio: 1/1.3;
         border-radius: 20px;
         border-left: 1.5px inset #56ffeb;
         border-top: 1.5px inset rgba(240, 10, 254, 1);
