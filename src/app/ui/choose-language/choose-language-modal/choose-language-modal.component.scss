@@ -1,0 +1,11 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  .row{
+    display: flex;
+    gap:30px;
+    button{
+      white-space: nowrap;
+  }
+  }
+}

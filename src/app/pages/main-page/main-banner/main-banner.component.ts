@@ -29,4 +29,6 @@ export class MainBannerComponent implements OnInit {
       this.secondTheme = false;
     }
   }
+
+  protected readonly navigator = navigator;
 }

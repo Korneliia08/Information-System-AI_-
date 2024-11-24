@@ -26,6 +26,9 @@ import {NgxMarqueeModule} from 'ngx-marquee';
 import {TranslatePipe, TrPipe} from './pipes/translate.pipe';
 import {TranslateService} from './pipes/translate.service';
 import {HttpClientModule} from '@angular/common/http';
+import { ChooseLanguageComponent } from './ui/choose-language/choose-language.component';
+import { ChooseLanguageModalComponent } from './ui/choose-language/choose-language-modal/choose-language-modal.component';
+import {MatDialogActions, MatDialogClose, MatDialogContent, MatDialogModule, MatDialogTitle} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -39,19 +42,21 @@ import {HttpClientModule} from '@angular/common/http';
     SmoothScrollComponent,
     FooterComponent,
     AccessibilityComponent,
+    ChooseLanguageComponent,
+    ChooseLanguageModalComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatIcon,
     MatIconButton,
-    MatRadioGroup,HttpClientModule,
+    MatRadioGroup, HttpClientModule,
     MatRadioButton,
     MatPaginator, NgxMarqueeModule,
     MatCheckbox,
     MatButton,
     FormsModule,
-    NgIconsModule.withIcons({faEye})
+    NgIconsModule.withIcons({faEye}),  MatDialogModule,
   ],
   providers: [
     provideAnimationsAsync(),

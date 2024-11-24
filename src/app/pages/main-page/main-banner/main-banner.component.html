@@ -15,14 +15,31 @@
 
         <nav id="mobileMenu" aria-label="Main navigation">
           <div class="leftPartOfNav">
-            <a class="disabled" href="#" aria-disabled="true">Features</a>
-            <a class="disabled" href="#" aria-disabled="true">Pricing</a>
-            <a class="disabled" href="#" aria-disabled="true">Resources</a>
-            <a class="disabled" href="#" aria-disabled="true">Customers</a>
-            <a class="disabled" href="#" aria-disabled="true">Gallery</a>
-            <a class="disabled" href="#" aria-disabled="true">Agencies</a>
-            <a class="disabled" href="#" aria-disabled="true">Contact support</a>
-            <a class="signUpBtn disabled" href="#" aria-disabled="true">Sign Up</a>
+            <a class="disabled" href="/features" [attr.aria-label]="'mainPage.header.nav.features.ariaLabel'|tr"
+               aria-disabled="true">{{ 'mainPage.header.nav.features.text'|tr }}</a>
+
+            <a class="disabled" href="/pricing" [attr.aria-label]="'mainPage.header.nav.pricing.ariaLabel'|tr"
+               aria-disabled="true">{{ 'mainPage.header.nav.pricing.text'|tr }}</a>
+
+            <a class="disabled" href="/resources" [attr.aria-label]="'mainPage.header.nav.resources.ariaLabel'|tr"
+               aria-disabled="true">{{ 'mainPage.header.nav.resources.text'|tr }}</a>
+
+            <a class="disabled" href="/customers" [attr.aria-label]="'mainPage.header.nav.customers.ariaLabel'|tr"
+               aria-disabled="true">{{ 'mainPage.header.nav.customers.text'|tr }}</a>
+
+            <a class="disabled" href="/gallery" [attr.aria-label]="'mainPage.header.nav.gallery.ariaLabel'|tr"
+               aria-disabled="true">{{ 'mainPage.header.nav.gallery.text'|tr }}</a>
+
+            <a class="disabled" href="/agencies" [attr.aria-label]="'mainPage.header.nav.agencies.ariaLabel'|tr"
+               aria-disabled="true">{{ 'mainPage.header.nav.agencies.text'|tr }}</a>
+
+            <a class="disabled" href="/contact-support" [attr.aria-label]="'mainPage.header.nav.contactSupport.ariaLabel'|tr"
+               aria-disabled="true">{{ 'mainPage.header.nav.contactSupport.text'|tr }}</a>
+
+            <a class="signUpBtn disabled" href="/sign-up" [attr.aria-label]="'mainPage.header.nav.signUp.ariaLabel'|tr"
+               aria-disabled="true">{{ 'mainPage.header.nav.signUp.text'|tr }}</a>
+
+
             <button
               id="accessibility-icon"
               aria-label="Open accessibility options"
@@ -41,7 +58,7 @@
     </header>
 
     <div class="bannerTitle">
-      <h2>AI Geo Bot</h2>
+      <h2>AI Geo Bot <app-choose-language/></h2>
       <h1 [innerHTML]="'mainPage.banner.title'|tr"></h1>
       <button id="idButtonOpenChat" aria-label="Open AI chat">AI chat</button>
     </div>

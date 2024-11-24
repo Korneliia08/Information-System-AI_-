@@ -1,8 +1,53 @@
 {
-  "mainPage": {
-    "banner":{
-    "title":"Get more familiar<br/>with our\nAI Geo Bot"
+  "footer": {
+    "chooseLanguage": {
+      "name": "English",
+      "title": "Choose language:"
     }
+  },
+  "mainPage": {
+    "banner": {
+      "title": "Get more familiar<br/>with our\nAI Geo Bot"
+    },
+      "header": {
+        "nav": {
+          "features": {
+            "text": "Features",
+            "ariaLabel": "Link to Features page"
+          },
+          "pricing": {
+            "text": "Pricing",
+            "ariaLabel": "Link to Pricing page"
+          },
+          "resources": {
+            "text": "Resources",
+            "ariaLabel": "Link to Resources page"
+          },
+          "customers": {
+            "text": "Customers",
+            "ariaLabel": "Link to Customers page"
+          },
+          "gallery": {
+            "text": "Gallery",
+            "ariaLabel": "Link to Gallery page"
+          },
+          "agencies": {
+            "text": "Agencies",
+            "ariaLabel": "Link to Agencies page"
+          },
+          "contactSupport": {
+            "text": "Contact Support",
+            "ariaLabel": "Link to Contact Support page"
+          },
+          "signUp": {
+            "text": "Sign Up",
+            "ariaLabel": "Link to Sign Up page"
+          },
+          "eayIcon": {
+            "ariaLabel": "Open accessibility options"
+          }
+        }
 
+    }
   }
 }
