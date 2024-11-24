@@ -7,7 +7,8 @@
   padding-top: 100px;
   min-height: 100vh;
   //background: url('../assets/images/socials-bg.jpg');
-  background: url('../../../../../public/assets/images/pexels-background.jpg');
+  //background: url('../../../../../public/assets/images/pexels-background.jpg');
+  background-image: url("../../../../../public/assets/images/2.svg");
   background-size: cover;
   padding-bottom: 10vw;
   max-width: 100%;
@@ -175,6 +176,7 @@
             background-image: url("../../../../../public/assets/images/pinkTriangle.png");
           }
 
+
           .smallPart1, .smallPart2, .smallPart3 {
 
             background: rgba(0, 179, 255, 0.56);
@@ -242,16 +244,19 @@
 
 
         h3 {
-          font-size: 1.25rem;
           padding: 20px;
           text-align: center;
-          font-family: "Plus Jakarta Sans", sans-serif;
+          font-size: 1.25rem;
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
+          font-style: normal;
         }
 
         p {
-          font-family: "Plus Jakarta Sans", sans-serif;
+          font-family: "Poppins", sans-serif;
+          font-weight: 300;
           text-align: center;
-          font-size: 1.25rem;
+          font-size: 1rem;
           color: rgba(255, 255, 255, .4);
 
         }
@@ -289,30 +294,22 @@
   justify-content: center;
 
   .marquee1 {
+    margin-top: 25px;
     height: 80px;
-    // //position: relative;
-    // width: 100%;
     letter-spacing: 3px;
     color: white;
-    font-size: 80px;
-    // backdrop-filter: blur(200px);
-    //   text-transform: uppercase;
-    //   border-top: 1px solid rgba(255, 255, 255, .5);
-
-    //border-bottom: 1px solid rgba(255, 255, 255, .5);
-    //padding: 20px 0;
-    //font-weight: 800;
-    //font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 70px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
   }
 
   .marquee2 {
-    // position: relative;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 800;
-    font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     width: 100%;
-    font-size: 50px;
+    font-size: 35px;
     background-color: black;
     padding: 10px 0;
 
