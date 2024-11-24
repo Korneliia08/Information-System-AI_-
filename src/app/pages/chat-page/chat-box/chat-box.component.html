@@ -1,0 +1,48 @@
+<div [ngClass]="{isDisplayLogo:isDisplayLogo}" class="conversation">
+  <ng-container *ngIf="isDisplayLogo">
+    <img [ngClass]="{isDisplayLogoHide:isDisplayLogoHide}" [src]="'logo2.png'" alt="" class="logo"/>
+  </ng-container>
+  <ng-container *ngFor="let message of conversation; let i = index">
+    <div class="user-message">
+    </div>
+    <div *ngIf="message.answer && message.answer.content.length > 0" [ngStyle]="{ 'background-color': hexToRgba(color, 0.1)}" class="bot-message">
+      <div class="message-footer">
+        <button (click)="toggleDetails(i)" class="details-button" mat-icon-button>
+          <mat-icon *ngIf="detailsVisible[i]">expand_less</mat-icon>
+          <mat-icon *ngIf="!detailsVisible[i]">expand_more</mat-icon>
+        </button>
+      </div>
+      <div *ngIf="detailsVisible[i]" class="details-section">
+        <h4>Documents Used</h4>
+        <ul>
+          <li *ngFor="let doc of message.documents">
+            <h5>{{ doc.name }}</h5>
+            <button (click)="openFileDetails(doc.content)" mat-icon-button>
+              <mat-icon>search</mat-icon>
+            </button>
+            <button (click)="onDownload(doc)" mat-icon-button>
+              <mat-icon>download</mat-icon>
+            </button>
+          </li>
+        </ul>
+        <pre>Docs query: {{ message.cognitive_search_question }}</pre>
+        <h4>Usage</h4>
+        <p>Completion Tokens: {{ message.token_details.completion_tokens }}</p>
+        <p>Prompt Tokens: {{ message.token_details.prompt_tokens }}</p>
+        <p>Total Tokens: {{ message.token_details.total_tokens }}</p>
+        <h4>Details</h4>
+        <pre>{{ message.open_ai_metadata | json }}</pre>
+        <h4>Prompts</h4>
+        <h6>Prompt</h6>
+        <p>{{ message.prompt }}</p>
+        <h6>Follow up prompt</h6>
+        <p>{{ message.follow_up_prompt }}</p>
+      </div>
+    </div>
+  </ng-container>
+  <div *ngIf="isLoading" class="loading-indicator bot-message">
+    <span class="dot">.</span>
+    <span class="dot">.</span>
+    <span class="dot">.</span>
+  </div>
+</div>
