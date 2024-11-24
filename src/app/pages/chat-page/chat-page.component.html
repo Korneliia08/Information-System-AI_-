@@ -2,7 +2,6 @@
   <div class="top">
     <div class="new-chat">
       <button
-        i18n="history.newChat.label"
         [attr.aria-label]="'history.newChat.ariaLabel' | tr "
         (click)="loadConversation('')"
         class="row">
@@ -15,9 +14,9 @@
     </div>
     <div class="searchChat">
       <input
-        i18n-placeholder="history.searchChat.placeholder"
+
         [attr.aria-label]="'history.searchChat.ariaLabel' | tr"
-        placeholder="{{ 'history.searchChat.placeholder' | tr }}">
+        [placeholder]="'history.searchChat.placeholder' | tr">
     </div>
     <div
       (click)="loadConversation(conv.id)"
@@ -63,11 +62,11 @@
   <app-chat-box [color]="'#6b6b6b'" [conversation]="conversation" [isLoading]="isLoading"></app-chat-box>
   <div class="input-container">
     <input
-      i18n-placeholder="chatContainer.input.placeholder"
+
       [attr.aria-label]="'chatContainer.input.ariaLabel' | tr"
       (keyup.enter)="sendMessage()"
       [(ngModel)]="question"
-      placeholder="{{ 'chatContainer.input.placeholder' | tr }}">
+      [placeholder]="'chatContainer.input.placeholder' | tr ">
     <button
       (click)="exportConversation()"
       [disabled]="isUpdating || isLoading"

@@ -4,7 +4,6 @@ import {MatDialog} from '@angular/material/dialog';
 @Component({
   selector: 'app-chat-box',
   standalone: false,
-
   templateUrl: './chat-box.component.html',
   styleUrl: './chat-box.component.scss'
 })

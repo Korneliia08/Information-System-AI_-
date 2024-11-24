@@ -1,0 +1,297 @@
+{
+  "footer": {
+    "chooseLanguage": {
+      "name": "angielski",
+      "title": "Wybierz język:"
+    }
+  },
+  "mainPage": {
+    "banner": {
+      "AIdocumentation": {
+        "card": {
+          "card1": {
+            "content": "Sztuczna inteligencja (AI) zmienia sposób, w jaki żyjemy, pracujemy i współdziałamy. ",
+            "title": "Sztuczna inteligencja w życiu codziennym"
+          },
+          "card2": {
+            "content": "Sztuczna inteligencja rewolucjonizuje opiekę zdrowotną, pomagając w diagnostyce, przewidywaniu wyników leczenia pacjentów, a nawet zalecając leczenie. ",
+            "title": "AI w służbie zdrowia"
+          },
+          "card3": {
+            "content": "Potencjał sztucznej inteligencji jest nieograniczony. ",
+            "title": "Przyszłość sztucznej inteligencji"
+          }
+        },
+        "title": "Dokumentacja AI"
+      },
+      "appStatus": "Stan aplikacji",
+      "bannerButton": "Czat AI",
+      "bannerButton_aria": "Otwórz czat AI",
+      "title": "Zaznajom się bardziej<br/>z naszymi\n"
+    },
+    "cooperation": {
+      "cooperation": "Współpraca",
+      "subTitle": "Nasi partnerzy"
+    },
+    "header": {
+      "nav": {
+        "agencies": {
+          "ariaLabel": "Link do strony agencji",
+          "text": "Agencje"
+        },
+        "contactSupport": {
+          "ariaLabel": "Link do strony Kontakt z pomocą techniczną",
+          "text": "Skontaktuj się z pomocą techniczną"
+        },
+        "customers": {
+          "ariaLabel": "Link do strony Klienci",
+          "text": "Klienci"
+        },
+        "eayIcon": {
+          "ariaLabel": "Otwórz opcje ułatwień dostępu"
+        },
+        "features": {
+          "ariaLabel": "Link do strony Funkcje",
+          "text": "Cechy"
+        },
+        "gallery": {
+          "ariaLabel": "Link do strony Galerii",
+          "text": "Galeria"
+        },
+        "pricing": {
+          "ariaLabel": "Link do strony z cenami",
+          "text": "Wycena"
+        },
+        "resources": {
+          "ariaLabel": "Link do strony Zasoby",
+          "text": "Zasoby"
+        },
+        "signUp": {
+          "ariaLabel": "Link do strony rejestracji",
+          "text": "Zapisać się"
+        }
+      }
+    },
+    "marquee": {
+      "text1": "Inwestycje w sztuczną inteligencję w 2024 roku otwierają nowe horyzonty dla postępu technologicznego.",
+      "text2": "aigeobot@gmail.com  ✦  aigeobot@gmail.com  ✦  aigeobot@gmail.com  ✦  aigeobot@gmail.com"
+    },
+    "footer": {
+      "nav": {
+        "aboutUs": {
+          "title": "O NAS",
+          "links": {
+            "aboutProject": {
+              "text": "O naszym projekcie",
+              "ariaLabel": "Dowiedz się więcej o naszym projekcie"
+            },
+            "ourTeam": {
+              "text": "Nasz zespół",
+              "ariaLabel": "Dowiedz się więcej o naszym zespole"
+            },
+            "ourMission": {
+              "text": "Nasza misja",
+              "ariaLabel": "Dowiedz się więcej o naszej misji"
+            },
+            "ourPartners": {
+              "text": "Nasi partnerzy",
+              "ariaLabel": "Dowiedz się więcej o naszych partnerach"
+            }
+          }
+        },
+        "solutions": {
+          "title": "ROZWIĄZANIA",
+          "links": {
+            "aiForBusiness": {
+              "text": "Sztuczna inteligencja dla biznesu",
+              "ariaLabel": "Odkryj rozwiązania AI dla biznesu"
+            },
+            "aiInHealthcare": {
+              "text": "AI w służbie zdrowia",
+              "ariaLabel": "Poznaj sztuczną inteligencję w rozwiązaniach dla opieki zdrowotnej"
+            },
+            "aiInEducation": {
+              "text": "AI w edukacji",
+              "ariaLabel": "Dowiedz się o sztucznej inteligencji w edukacji"
+            },
+            "aiEthics": {
+              "text": "Etyka AI",
+              "ariaLabel": "Zrozum względy etyczne związane ze sztuczną inteligencją"
+            }
+          }
+        },
+        "usefulInformation": {
+          "title": "PRZYDATNE INFORMACJE",
+          "links": {
+            "faq": {
+              "text": "Często zadawane pytania",
+              "ariaLabel": "Przeczytaj często zadawane pytania"
+            },
+            "blog": {
+              "text": "Bloga",
+              "ariaLabel": "Odwiedź nasz blog, aby uzyskać szczegółowe informacje"
+            },
+            "resources": {
+              "text": "Zasoby",
+              "ariaLabel": "Uzyskaj dostęp do przydatnych zasobów"
+            },
+            "news": {
+              "text": "Aktualności",
+              "ariaLabel": "Przeczytaj najnowsze wiadomości"
+            }
+          }
+        },
+        "contactUs": {
+          "title": "SKONTAKTUJ SIĘ Z NAMI",
+          "links": {
+            "contactInfo": {
+              "text": "Informacje kontaktowe",
+              "ariaLabel": "Zobacz nasze dane kontaktowe"
+            },
+            "techSupport": {
+              "text": "Wsparcie techniczne",
+              "ariaLabel": "Uzyskaj wsparcie techniczne"
+            },
+            "feedback": {
+              "text": "Zostaw opinię",
+              "ariaLabel": "Podziel się z nami swoją opinią"
+            },
+            "joinTeam": {
+              "text": "Dołącz do naszego zespołu",
+              "ariaLabel": "Odkryj z nami możliwości kariery"
+            }
+          }
+        },
+        "socialMedia": {
+          "instagram": {
+            "ariaLabel": "Odwiedź nasz profil na Instagramie"
+          },
+          "twitter": {
+            "ariaLabel": "Śledź nas na Twitterze"
+          },
+          "facebook": {
+            "ariaLabel": "Polub nas na Facebooku"
+          }
+        }
+      }
+    }
+  },
+  "accessibility": {
+    "title": "Opcje dostępności",
+    "accessibilityOptions": {
+      "value": "Opcje dostępności",
+      "ariaLabel": "Panel dostępności"
+    },
+    "closeAccessibilityPanel": {
+      "value": "Zamknij panel ułatwień dostępu",
+      "ariaLabel": "Zamknij panel ułatwień dostępu"
+    },
+    "close": {
+      "value": "X",
+      "ariaLabel": "Przycisk Zamknij"
+    },
+    "increaseFontSize": {
+      "value": "Zwiększ rozmiar czcionki",
+      "ariaLabel": "Zwiększ rozmiar czcionki"
+    },
+    "decreaseFontSize": {
+      "value": "Zmniejsz rozmiar czcionki",
+      "ariaLabel": "Zmniejsz rozmiar czcionki"
+    },
+    "toggleUnderline": {
+      "value": "Podkreśl linki",
+      "ariaLabel": "Przełącz podkreślenie linków"
+    },
+    "toggleGrayscale": {
+      "value": "Skala szarości",
+      "ariaLabel": "Włącz lub wyłącz skalę szarości"
+    },
+    "toggleInvertColors": {
+      "value": "Odwróć kolory",
+      "ariaLabel": "Odwróć kolory"
+    },
+    "toggleLowSaturation": {
+      "value": "Niskie nasycenie",
+      "ariaLabel": "Przełącz tryb niskiego nasycenia"
+    },
+    "toggleHighSaturation": {
+      "value": "Wysokie nasycenie",
+      "ariaLabel": "Przełącz tryb wysokiego nasycenia"
+    },
+    "increaseLineHeight": {
+      "value": "Zwiększ wysokość linii",
+      "ariaLabel": "Zwiększ wysokość linii tekstu"
+    },
+    "decreaseLineHeight": {
+      "value": "Zmniejsz wysokość linii",
+      "ariaLabel": "Zmniejsz wysokość linii tekstu"
+    },
+    "resetOptions": {
+      "value": "Zresetuj opcje",
+      "ariaLabel": "Zresetuj wszystkie ustawienia dostępności"
+    }
+  },
+  "history": {
+    "newChat": {
+      "label": "Nowy czat",
+      "ariaLabel": "Rozpocznij nowy czat"
+    },
+    "searchChat": {
+      "placeholder": "Wyszukaj czat",
+      "ariaLabel": "Wyszukaj dane wejściowe na czacie"
+    },
+    "conversations": {
+      "ariaLabel": "Historia rozmów"
+    }
+  },
+  "bottomActions": {
+    "clearConversation": {
+      "label": "Wyczyść rozmowę",
+      "ariaLabel": "Usuń wszystkie wiadomości z bieżącej rozmowy"
+    },
+    "changeTheme": {
+      "label": "Zmień motyw",
+      "ariaLabel": "Przełączaj między jasnym i ciemnym motywem"
+    },
+    "back": {
+      "label": "Z powrotem",
+      "ariaLabel": "Wróć do poprzedniej strony"
+    }
+  },
+  "chatContainer": {
+    "input": {
+      "placeholder": "Wpisz swoje pytanie...",
+      "ariaLabel": "Pole wprowadzania pytania"
+    },
+    "exportConversation": {
+      "label": "Eksportuj rozmowę",
+      "ariaLabel": "Pobierz bieżącą rozmowę"
+    },
+    "sendMessage": {
+      "label": "Wysłać",
+      "ariaLabel": "Wyślij swoje pytanie"
+    }
+  },
+  "rightBar": {
+    "dataSourceSelection": {
+      "ariaLabel": "Zaznacz lub odznacz źródła danych"
+    }
+  },
+  "thirdPanel": {
+    "dataSource": {
+      "title": "Źródło danych",
+      "ariaLabel": "Wybierz źródło danych"
+    },
+    "questionHistory": {
+      "title": "Historia pytań",
+      "ariaLabel": "Lista wcześniej zadanych pytań",
+      "paginator": {
+        "ariaLabel": "Paginacja historii pytań"
+      }
+    },
+    "aiVersion": {
+      "title": "Wersja AI",
+      "ariaLabel": "Wybierz wersję AI"
+    }
+  }
+}

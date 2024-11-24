@@ -5,58 +5,61 @@
   aria-labelledby="accessibility-title"
   [attr.aria-hidden]="!open"
 >
+
   <button
     class="cross"
+    [tabIndex]="!open?-1:'0'"
     [attr.aria-label]="'accessibility.close.ariaLabel' | tr"
     (click)="open=false">X</button>
-  <div class="accessibility-block">
+  <div class="accessibility-block" >
     <h2 id="accessibility-title">{{ 'accessibility.title' | tr }}</h2>
     <button
+      [tabIndex]="!open?-1:'0'"
       (click)="increaseFontSize()"
       [attr.aria-label]="'accessibility.increaseFontSize.ariaLabel' | tr">
       {{ 'accessibility.increaseFontSize.value' | tr }}
     </button>
-    <button
+    <button  [tabIndex]="!open?-1:'0'"
       (click)="decreaseFontSize()"
       [attr.aria-label]="'accessibility.decreaseFontSize.ariaLabel' | tr">
       {{ 'accessibility.decreaseFontSize.value' | tr }}
     </button>
-    <button
+    <button  [tabIndex]="!open?-1:'0'"
       (click)="toggleUnderline()"
       [attr.aria-label]="'accessibility.toggleUnderline.ariaLabel' | tr">
       {{ 'accessibility.toggleUnderline.value' | tr }}
     </button>
-    <button
+    <button  [tabIndex]="!open?-1:'0'"
       (click)="toggleGrayscale()"
       [attr.aria-label]="'accessibility.toggleGrayscale.ariaLabel' | tr">
       {{ 'accessibility.toggleGrayscale.value' | tr }}
     </button>
-    <button
+    <button  [tabIndex]="!open?-1:'0'"
       (click)="toggleInvertColors()"
       [attr.aria-label]="'accessibility.toggleInvertColors.ariaLabel' | tr">
       {{ 'accessibility.toggleInvertColors.value' | tr }}
     </button>
-    <button
+    <button  [tabIndex]="!open?-1:'0'"
       (click)="toggleLowSaturation()"
       [attr.aria-label]="'accessibility.toggleLowSaturation.ariaLabel' | tr">
       {{ 'accessibility.toggleLowSaturation.value' | tr }}
     </button>
-    <button
+    <button  [tabIndex]="!open?-1:'0'"
       (click)="toggleHighSaturation()"
       [attr.aria-label]="'accessibility.toggleHighSaturation.ariaLabel' | tr">
       {{ 'accessibility.toggleHighSaturation.value' | tr }}
     </button>
-    <button
+    <button  [tabIndex]="!open?-1:'0'"
       (click)="increaseLineHeight()"
       [attr.aria-label]="'accessibility.increaseLineHeight.ariaLabel' | tr">
       {{ 'accessibility.increaseLineHeight.value' | tr }}
     </button>
-    <button
+    <button  [tabIndex]="!open?-1:'0'"
       (click)="decreaseLineHeight()"
       [attr.aria-label]="'accessibility.decreaseLineHeight.ariaLabel' | tr">
       {{ 'accessibility.decreaseLineHeight.value' | tr }}
     </button>
-    <button
+    <button  [tabIndex]="!open?-1:'0'"
       (click)="resetOptions()"
       [attr.aria-label]="'accessibility.resetOptions.ariaLabel' | tr">
       {{ 'accessibility.resetOptions.value' | tr }}
