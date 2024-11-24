@@ -30,6 +30,7 @@ import {faBrandFacebook, faBrandInstagram, faBrandTwitter} from '@ng-icons/font-
 import {ChooseLanguageComponent} from './ui/choose-language/choose-language.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {ChooseLanguageModalComponent} from './ui/choose-language/choose-language-modal/choose-language-modal.component';
+import {NgxParticlesModule} from '@tsparticles/angular';
 
 @NgModule({
   bootstrap: [AppComponent],
@@ -49,7 +50,7 @@ import {ChooseLanguageModalComponent} from './ui/choose-language/choose-language
     BrowserModule,
     AppRoutingModule,
     MatIcon,
-    MatIconButton,
+    MatIconButton,NgxParticlesModule,
     MatRadioGroup, HttpClientModule,
     MatRadioButton,
     MatPaginator, NgxMarqueeModule,
