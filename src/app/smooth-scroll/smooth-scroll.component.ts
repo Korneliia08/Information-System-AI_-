@@ -9,6 +9,11 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 export class SmoothScrollComponent implements OnInit, OnDestroy {
   isScrolling = false; // Flaga do kontrolowania przewijania
 
+  private targetScroll = 0; // Cel przewijania
+  private startTime: number = 0; // Czas rozpoczęcia animacji
+  private scrollDuration = 500; // Czas trwania animacji (w milisekundach)
+  private startScroll = 0; // Początkowa pozycja scrolla
+
   // Funkcja zaokrąglająca scrollY do najbliższego pełnego 100vh
   private roundToFullHeight(scrollY: number): number {
     return Math.round(scrollY / window.innerHeight) * window.innerHeight;
@@ -25,7 +30,6 @@ export class SmoothScrollComponent implements OnInit, OnDestroy {
   }
 
   private onWheel(event: WheelEvent): void {
-
     // Jeśli przewijanie jest już w toku, zapobiegamy dalszemu przewijaniu
     if (this.isScrolling) {
       event.preventDefault(); // Zapobiegamy domyślnemu przewijaniu
@@ -55,23 +59,37 @@ export class SmoothScrollComponent implements OnInit, OnDestroy {
     currentScroll = this.roundToFullHeight(currentScroll);
 
     // Obliczamy cel przewijania w zależności od kierunku scrolla
-    const targetScroll = event.deltaY > 0
+    this.targetScroll = event.deltaY > 0
       ? currentScroll + window.innerHeight // Przewijanie w dół o 100vh
       : currentScroll - window.innerHeight; // Przewijanie w górę o 100vh
 
-    // Płynne przewijanie do celu
-    window.scrollTo({
-      top: targetScroll,
-      behavior: 'smooth',
-    });
+    // Inicjujemy animację przewijania
+    this.startScroll = currentScroll;
+    this.startTime = performance.now();
+    this.animateScroll();
+  }
 
-    // Ustawiamy overflow na hidden, żeby zablokować przewijanie
+  private animateScroll(): void {
+    const currentTime = performance.now();
+    const elapsedTime = currentTime - this.startTime;
+    const progress = Math.min(elapsedTime / this.scrollDuration, 1);
 
+    const currentScroll = this.easeInOutQuad(progress) * (this.targetScroll - this.startScroll) + this.startScroll;
 
-    // Ustalanie opóźnienia w ms (700ms)
-    setTimeout(() => {
-      this.isScrolling = false; // Po zakończeniu animacji odblokowujemy przewijanie
+    window.scrollTo(0, currentScroll);
 
-    },300);
+    if (progress < 1) {
+      // Kontynuujemy animację, dopóki nie osiągniemy celu
+      requestAnimationFrame(this.animateScroll.bind(this));
+    } else {
+      // Po zakończeniu animacji odblokowujemy przewijanie
+      this.isScrolling = false;
+      document.body.style.overflow = 'auto'; // Przywracamy możliwość przewijania
+    }
+  }
+
+  // Funkcja easing (łagodne przyspieszanie i spowalnianie)
+  private easeInOutQuad(t: number): number {
+    return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
   }
 }
