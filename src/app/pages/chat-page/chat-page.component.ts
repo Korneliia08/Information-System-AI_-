@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {questions} from './questions';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-chat-page',
@@ -16,7 +17,7 @@ export class ChatPageComponent {
   public currentPage = 0;
   selectedAiVersion: string = '4.5';
 
-  isDarkTheme: boolean = false;
+  isDarkTheme: boolean = true;
   userLocale = ['en', 'fr', 'es', 'pl', 'ro'].includes(navigator.language)
     ? navigator.language
     : 'en';
@@ -31,7 +32,7 @@ export class ChatPageComponent {
   conversation_id = '';
   isUpdating = false;
 
-  constructor() {}
+  constructor(private router:Router) {}
 
   public calcEmptyRow() {
     const row =
@@ -97,5 +98,9 @@ export class ChatPageComponent {
 
   rev(questionHistory: { question: string }[]) {
     return questionHistory.reverse();
+  }
+
+  back() {
+    this.router.navigate(['/'])
   }
 }

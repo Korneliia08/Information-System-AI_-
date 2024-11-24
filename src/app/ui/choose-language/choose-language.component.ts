@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 import {ChooseLanguageModalComponent} from './choose-language-modal/choose-language-modal.component';
 import {TranslateService} from '../../pipes/translate.service';
@@ -11,6 +11,7 @@ import {TranslateService} from '../../pipes/translate.service';
   styleUrl: './choose-language.component.scss'
 })
 export class ChooseLanguageComponent {
+  @Input() width : string ='';
   constructor(public dialog: MatDialog,public translation_:TranslateService) {}
   openDialog(): void {
     const dialogRef = this.dialog.open(ChooseLanguageModalComponent);
