@@ -1,15 +1,45 @@
-<div class="accessibility-container" [ngClass]="{ open: open }">
-  <button class="cross" aria-label="Close accessibility panel" (click)="open=false">X</button>
+<div
+  class="accessibility-container"
+  [ngClass]="{ open: open }"
+  role="dialog"
+  aria-labelledby="accessibility-title"
+  [attr.aria-hidden]="!open"
+>
+  <button
+    class="cross"
+    aria-label="Close accessibility panel"
+    (click)="open=false">X</button>
   <div class="accessibility-block">
-    <button (click)="increaseFontSize()">Increase Font Size</button>
-    <button (click)="decreaseFontSize()">Decrease Font Size</button>
-    <button (click)="toggleUnderline()">Underline Links</button>
-    <button (click)="toggleGrayscale()">Grayscale</button>
-    <button (click)="toggleInvertColors()">Invert Colors</button>
-    <button (click)="toggleLowSaturation()">Low Saturation</button>
-    <button (click)="toggleHighSaturation()">High Saturation</button>
-    <button (click)="increaseLineHeight()">Increase Line Height</button>
-    <button (click)="decreaseLineHeight()">Decrease Line Height</button>
-    <button (click)="resetOptions()">Reset Options</button>
+    <h2 id="accessibility-title">Accessibility Options</h2>
+    <button
+      (click)="increaseFontSize()"
+      aria-label="Increase font size">Increase Font Size</button>
+    <button
+      (click)="decreaseFontSize()"
+      aria-label="Decrease font size">Decrease Font Size</button>
+    <button
+      (click)="toggleUnderline()"
+      aria-label="Toggle underline for links">Underline Links</button>
+    <button
+      (click)="toggleGrayscale()"
+      aria-label="Enable or disable grayscale">Grayscale</button>
+    <button
+      (click)="toggleInvertColors()"
+      aria-label="Invert colors">Invert Colors</button>
+    <button
+      (click)="toggleLowSaturation()"
+      aria-label="Toggle low saturation mode">Low Saturation</button>
+    <button
+      (click)="toggleHighSaturation()"
+      aria-label="Toggle high saturation mode">High Saturation</button>
+    <button
+      (click)="increaseLineHeight()"
+      aria-label="Increase line height for text">Increase Line Height</button>
+    <button
+      (click)="decreaseLineHeight()"
+      aria-label="Decrease line height for text">Decrease Line Height</button>
+    <button
+      (click)="resetOptions()"
+      aria-label="Reset all accessibility settings">Reset Options</button>
   </div>
 </div>
