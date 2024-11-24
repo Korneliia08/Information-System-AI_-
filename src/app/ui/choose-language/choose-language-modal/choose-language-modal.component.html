@@ -1,0 +1,22 @@
+<h2 mat-dialog-title>{{'footer.chooseLanguage.title' | tr}}</h2>
+
+<mat-dialog-content role="dialog" aria-labelledby="Choose language modal" aria-hidden="false" class="container">
+  <div class="row">
+
+  <button mat-button (click)="selectLanguage('en')" aria-label="English">
+    <span class="fi fi-us" aria-hidden="true"></span> English
+  </button>
+
+  <button mat-button (click)="selectLanguage('ua')" aria-label="Ukrainian">
+    <span class="fi fi-ua" aria-hidden="true"></span> Українська
+  </button>
+
+  <button mat-button (click)="selectLanguage('fr')" aria-label="French">
+    <span class="fi fi-fr" aria-hidden="true"></span> Français
+  </button>
+
+  <button mat-button (click)="selectLanguage('pl')" aria-label="Polish">
+    <span class="fi fi-pl" aria-hidden="true"></span> Polski
+  </button>
+  </div>
+</mat-dialog-content>

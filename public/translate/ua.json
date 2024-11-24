@@ -1,0 +1,37 @@
+{
+  "footer": {
+    "chooseLanguage": {
+      "name": "Англійська",
+      "title": "Оберіть мову:"
+    }
+  },
+  "mainPage": {
+    "banner": {
+      "AIdocumentation": {
+        "card": {
+          "card1": {
+            "content": "",
+            "title": ""
+          },
+          "card2": {
+            "content": "",
+            "title": ""
+          },
+          "card3": {
+            "content": "",
+            "title": ""
+          }
+        },
+        "title": ""
+      },
+      "appStatus": "",
+      "bannerButton": "",
+      "bannerButton_aria": "",
+      "title": "Більше ознайомтесь<br/>з нашим\nAI Geo Bot"
+    },
+    "cooperation": {
+      "cooperation": "",
+      "subTitle": ""
+    }
+  }
+}

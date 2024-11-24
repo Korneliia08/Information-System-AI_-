@@ -12,6 +12,7 @@ export class TranslateService {
   private http = inject(HttpClient);
   private cookies_ = inject(CookieService);
   private random = new Date().getTime();
+  private currentLanguage = ''
 
   constructor() {}
 
@@ -22,12 +23,14 @@ export class TranslateService {
   }
 
   getLanguageFile(language: string = 'pl') {
+
     try {
       this.http
         .get(`/translate/${language}.json?random=${this.random}`)
         .subscribe({
           next: (data) => {
             this.languageFile.next(data);
+            this.currentLanguage = language
           },
           error: (err) => {},
         });
@@ -36,7 +39,7 @@ export class TranslateService {
     }
   }
 
-  /** Prosta funkcja służąca do tłumaczenia **/
+
   simpleTranslate(name: string, variables?: { [key: string]: any }) {
     let value = this.getValueByStringKey(this.languageFile.value, name);
     if (variables) {
@@ -44,8 +47,18 @@ export class TranslateService {
     }
     return value;
   }
+  getCurrentLanguage(){
+    return this.currentLanguage
+  }
+  getCurrentLanguageFlagSymbol(){
+    switch (this.currentLanguage) {
+      case'en': return 'us'
+      default: return this.currentLanguage
+    }
+  }
 
-  /** Funkcja która zamienia zmienne {variable} w tłumaczeniach na dane podane w zmiennej variables **/
+
+
   changeVariable(variables: { [key: string]: any }, value: string) {
     if (variables) {
       Object.keys(variables).forEach((key: any) => {
