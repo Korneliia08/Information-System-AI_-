@@ -1,79 +1,127 @@
 <div [ngClass]="{'dark-theme': isDarkTheme, 'light-theme': !isDarkTheme}" class="history">
   <div class="top">
-    <div class=" new-chat">
-      <button (click)="loadConversation('')" class="row">
-        New Chat
+    <div class="new-chat">
+      <button
+        i18n="history.newChat.label"
+        [attr.aria-label]="'history.newChat.ariaLabel' | tr"
+        (click)="loadConversation('')"
+        class="row">
+        {{ 'history.newChat.label' | tr }}
       </button>
-      <button class="row">
+      <button class="row" [attr.aria-label]="'history.newChat.folderAriaLabel' | tr">
         <mat-icon>folder</mat-icon>
         +
       </button>
     </div>
     <div class="searchChat">
-      <input placeholder="Search chat">
+      <input
+        i18n-placeholder="history.searchChat.placeholder"
+        [attr.aria-label]="'history.searchChat.ariaLabel' | tr"
+        placeholder="{{ 'history.searchChat.placeholder' | tr }}">
     </div>
-    <div (click)="loadConversation(conv.id)" *ngFor="let conv of conversations" [ngClass]="{'selected': conv.id === conversation_id}" class="row">
+    <div
+      (click)="loadConversation(conv.id)"
+      *ngFor="let conv of conversations"
+      [ngClass]="{'selected': conv.id === conversation_id}"
+      class="row"
+      [attr.aria-label]="'history.conversations.ariaLabel' | tr">
       <div class="title">{{ conv.title }}</div>
       <div class="date">{{ conv.date | date:'medium':userTimezone:userLocale }}</div>
     </div>
   </div>
 
   <div class="bottom">
-    <button class="noFrame clearConversation-js" mat-button>
+    <button
+      class="noFrame clearConversation-js"
+      mat-button
+      [attr.aria-label]="'bottomActions.clearConversation.ariaLabel' | tr">
       <mat-icon>delete</mat-icon>
-      Clear conversation
+      {{ 'bottomActions.clearConversation.label' | tr }}
     </button>
-    <button (click)="toggleTheme()" class="noFrame" id="aiChangeColor" mat-button>
+    <button
+      (click)="toggleTheme()"
+      class="noFrame"
+      id="aiChangeColor"
+      mat-button
+      [attr.aria-label]="'bottomActions.changeTheme.ariaLabel' | tr">
       <mat-icon>palette</mat-icon>
-      Change theme
+      {{ 'bottomActions.changeTheme.label' | tr }}
     </button>
 
-    <button (click)="back()" class="noFrame"   mat-button>
-    <mat-icon>arrow_back</mat-icon>
-    Back
-  </button>
-<!--    <app-choose-language [width]="'100%'"/>-->
+    <button
+      (click)="back()"
+      class="noFrame"
+      mat-button
+      [attr.aria-label]="'bottomActions.back.ariaLabel' | tr">
+      <mat-icon>arrow_back</mat-icon>
+      {{ 'bottomActions.back.label' | tr }}
+    </button>
   </div>
 </div>
 
 <div [ngClass]="{'dark-theme': isDarkTheme, 'light-theme': !isDarkTheme}" class="chat-container">
   <app-chat-box [color]="'#6b6b6b'" [conversation]="conversation" [isLoading]="isLoading"></app-chat-box>
   <div class="input-container">
-    <input (keyup.enter)="sendMessage()" [(ngModel)]="question"
-           placeholder="Type your question...">
-    <button (click)="exportConversation()" [disabled]="isUpdating || isLoading" class="exptBtn fileUploadButton" color="primary" mat-mini-fab>
+    <input
+      i18n-placeholder="chatContainer.input.placeholder"
+      [attr.aria-label]="'chatContainer.input.ariaLabel' | tr"
+      (keyup.enter)="sendMessage()"
+      [(ngModel)]="question"
+      placeholder="{{ 'chatContainer.input.placeholder' | tr }}">
+    <button
+      (click)="exportConversation()"
+      [disabled]="isUpdating || isLoading"
+      class="exptBtn fileUploadButton"
+      color="primary"
+      mat-mini-fab
+      [attr.aria-label]="'chatContainer.exportConversation.ariaLabel' | tr">
       <mat-icon>file_download</mat-icon>
     </button>
-    <button (click)="sendMessage()" [disabled]="isUpdating || isLoading" class="sendButton" color="primary" mat-flat-button>Send</button>
+    <button
+      (click)="sendMessage()"
+      [disabled]="isUpdating || isLoading"
+      class="sendButton"
+      color="primary"
+      mat-flat-button
+      [attr.aria-label]="'chatContainer.sendMessage.ariaLabel' | tr">
+      {{ 'chatContainer.sendMessage.label' | tr }}
+    </button>
   </div>
 </div>
+
 <div class="right-bar">
-  <div class="datasource-selection">
+  <div class="datasource-selection" [attr.aria-label]="'rightBar.dataSourceSelection.ariaLabel' | tr">
     <div *ngFor="let ds of dataSources" class="datasource-line">
-      <mat-checkbox (change)="isUpdating = true; onSelectionChange()" [(ngModel)]="ds.selected">{{ ds.name }}</mat-checkbox>
+      <mat-checkbox
+        (change)="isUpdating = true; onSelectionChange()"
+        [(ngModel)]="ds.selected">
+        {{ ds.name }}
+      </mat-checkbox>
     </div>
   </div>
 </div>
+
 <div [ngClass]="{'dark-theme': isDarkTheme, 'light-theme': !isDarkTheme}" class="thirdPanel">
   <div class="top">
-    <h4>Data source:</h4>
+    <h4>{{ 'thirdPanel.dataSource.title' | tr }}</h4>
   </div>
   <div class="dataSource">
-
-    <mat-checkbox checked="true" class="example-margin">General Data Source</mat-checkbox>
+    <mat-checkbox checked="true" class="example-margin">
+      General Data Source
+    </mat-checkbox>
     <mat-checkbox class="example-margin">123</mat-checkbox>
     <mat-checkbox class="example-margin">DS 1</mat-checkbox>
     <mat-checkbox class="example-margin">5234</mat-checkbox>
-
   </div>
   <div class="historyData">
-    <h4>Questions history:</h4>
+    <h4>{{ 'thirdPanel.questionHistory.title' | tr }}</h4>
     <i class="fa-solid fa-not-equal"></i>
-    <ul>
-      <li (click)="selectHistoryQuestion(question)"
-          *ngFor="let question of rev(questionHistory).slice(pageSize*(currentPage),pageSize*(currentPage+1))"
-          [title]="question.question"
-      >{{ question.question |maxLength:25:'...' }}
+    <ul [attr.aria-label]="'thirdPanel.questionHistory.ariaLabel' | tr">
+      <li
+        (click)="selectHistoryQuestion(question)"
+        *ngFor="let question of rev(questionHistory).slice(pageSize*(currentPage),pageSize*(currentPage+1))"
+        [title]="question.question">
+        {{ question.question | maxLength:25:'...' }}
       </li>
       <li *ngFor="let question of [].constructor(calcEmptyRow())" class="noDot">&nbsp;</li>
     </ul>
@@ -82,20 +130,18 @@
       [hidePageSize]="true"
       [length]="questionHistory.length"
       [pageSize]="pageSize"
-      aria-label="Select page"
+      [attr.aria-label]="'thirdPanel.questionHistory.paginator.ariaLabel' | tr"
       class="paggCenter"
       style="width: max-content">
     </mat-paginator>
-
   </div>
 
   <div class="chooseAiVersion">
-    <h4>AI version:</h4>
-    <mat-radio-group [(ngModel)]="selectedAiVersion" aria-label="Select an option">
+    <h4>{{ 'thirdPanel.aiVersion.title' | tr }}</h4>
+    <mat-radio-group [(ngModel)]="selectedAiVersion" [attr.aria-label]="'thirdPanel.aiVersion.ariaLabel' | tr">
       <mat-radio-button value="4.5">v4.5</mat-radio-button>
       <mat-radio-button value="5">v5</mat-radio-button>
       <mat-radio-button value="9">v9</mat-radio-button>
     </mat-radio-group>
-
   </div>
 </div>
