@@ -7,47 +7,70 @@
   },
   "mainPage": {
     "banner": {
+      "AIdocumentation": {
+        "card": {
+          "card1": {
+            "content": "Artificial Intelligence (AI) is transforming the way we live, work, and interact. From personal assistants like Siri and Alexa to AI-driven recommendations on Netflix, it's becoming a part of our everyday experience. AI algorithms analyze our behaviors, making personalized suggestions and automating tasks to improve convenience and efficiency.",
+            "title": "Artificial Intelligence in Daily Life"
+          },
+          "card2": {
+            "content": "AI is revolutionizing healthcare by assisting in diagnostics, predicting patient outcomes, and even recommending treatments. Machine learning models can analyze vast amounts of data to detect patterns that may be missed by human practitioners, improving accuracy and saving lives.",
+            "title": "AI in Healthcare"
+          },
+          "card3": {
+            "content": "The potential of AI is limitless. With advancements in deep learning, neural networks, and natural language processing, AI is expected to drive innovation across all sectors. However, it also raises questions about ethics, job displacement, and the need for responsible use of technology.",
+            "title": "The Future of AI"
+          }
+        },
+        "title": "AI documentation"
+      },
+      "appStatus": "App status",
+      "bannerButton": "AI chat",
+      "bannerButton_aria": "Open AI chat",
       "title": "Get more familiar<br/>with our\nAI Geo Bot"
     },
-      "header": {
-        "nav": {
-          "features": {
-            "text": "Features",
-            "ariaLabel": "Link to Features page"
-          },
-          "pricing": {
-            "text": "Pricing",
-            "ariaLabel": "Link to Pricing page"
-          },
-          "resources": {
-            "text": "Resources",
-            "ariaLabel": "Link to Resources page"
-          },
-          "customers": {
-            "text": "Customers",
-            "ariaLabel": "Link to Customers page"
-          },
-          "gallery": {
-            "text": "Gallery",
-            "ariaLabel": "Link to Gallery page"
-          },
-          "agencies": {
-            "text": "Agencies",
-            "ariaLabel": "Link to Agencies page"
-          },
-          "contactSupport": {
-            "text": "Contact Support",
-            "ariaLabel": "Link to Contact Support page"
-          },
-          "signUp": {
-            "text": "Sign Up",
-            "ariaLabel": "Link to Sign Up page"
-          },
-          "eayIcon": {
-            "ariaLabel": "Open accessibility options"
-          }
+    "cooperation": {
+      "cooperation": "Cooperation",
+      "subTitle": "Our Partners"
+    },
+    "header": {
+      "nav": {
+        "agencies": {
+          "ariaLabel": "Link to Agencies page",
+          "text": "Agencies"
+        },
+        "contactSupport": {
+          "ariaLabel": "Link to Contact Support page",
+          "text": "Contact Support"
+        },
+        "customers": {
+          "ariaLabel": "Link to Customers page",
+          "text": "Customers"
+        },
+        "eayIcon": {
+          "ariaLabel": "Open accessibility options"
+        },
+        "features": {
+          "ariaLabel": "Link to Features page",
+          "text": "Features"
+        },
+        "gallery": {
+          "ariaLabel": "Link to Gallery page",
+          "text": "Gallery"
+        },
+        "pricing": {
+          "ariaLabel": "Link to Pricing page",
+          "text": "Pricing"
+        },
+        "resources": {
+          "ariaLabel": "Link to Resources page",
+          "text": "Resources"
+        },
+        "signUp": {
+          "ariaLabel": "Link to Sign Up page",
+          "text": "Sign Up"
         }
-
+      }
     }
   }
 }

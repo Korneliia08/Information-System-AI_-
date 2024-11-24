@@ -60,7 +60,7 @@
     <div class="bannerTitle">
       <h2>AI Geo Bot <app-choose-language/></h2>
       <h1 [innerHTML]="'mainPage.banner.title'|tr"></h1>
-      <button id="idButtonOpenChat" aria-label="Open AI chat">AI chat</button>
+      <button id="idButtonOpenChat" [attr.aria-label]="'mainPage.banner.bannerButton_aria'|tr">{{'mainPage.banner.bannerButton'|tr}}</button>
     </div>
   </div>
 
@@ -69,7 +69,7 @@
   </div>
 
   <footer class="blockForStatus" aria-label="App status">
-    <span>App status</span>
+    <span>{{'mainPage.banner.appStatus'|tr }}</span>
     <div class="blockCircle" aria-hidden="true"></div>
   </footer>
 </div>
