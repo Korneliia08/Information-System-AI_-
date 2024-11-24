@@ -1,14 +1,24 @@
-import {Component, OnInit} from '@angular/core';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
 import $ from 'jquery'; // Import jQuery
+import VanillaTilt from 'vanilla-tilt';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   standalone: false,
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit,AfterViewInit{
   title = 'angular';
+  ngAfterViewInit() {
 
+    // @ts-ignore
+    VanillaTilt.init(document.querySelectorAll('[data-tilt]'), {
+      max: 25, // Maksymalny kąt
+      speed: 400, // Czas trwania animacji
+      glare: true, // Efekt poświaty
+      'max-glare': 0.5, // Maksymalna poświata
+    });
+  }
   ngOnInit(){
     // // @ts-ignore
     // $(".marquee").marquee({
