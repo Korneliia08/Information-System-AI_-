@@ -1,8 +1,104 @@
 {
+  "accessibility": {
+    "accessibilityOptions": {
+      "ariaLabel": "Accessibility panel",
+      "value": "Accessibility Options"
+    },
+    "close": {
+      "ariaLabel": "Close button",
+      "value": "X"
+    },
+    "closeAccessibilityPanel": {
+      "ariaLabel": "Close accessibility panel",
+      "value": "Close accessibility panel"
+    },
+    "decreaseFontSize": {
+      "ariaLabel": "Decrease font size",
+      "value": "Decrease Font Size"
+    },
+    "decreaseLineHeight": {
+      "ariaLabel": "Decrease line height for text",
+      "value": "Decrease Line Height"
+    },
+    "increaseFontSize": {
+      "ariaLabel": "Increase font size",
+      "value": "Increase Font Size"
+    },
+    "increaseLineHeight": {
+      "ariaLabel": "Increase line height for text",
+      "value": "Increase Line Height"
+    },
+    "resetOptions": {
+      "ariaLabel": "Reset all accessibility settings",
+      "value": "Reset Options"
+    },
+    "title": "Accessibility Options",
+    "toggleGrayscale": {
+      "ariaLabel": "Enable or disable grayscale",
+      "value": "Grayscale"
+    },
+    "toggleHighSaturation": {
+      "ariaLabel": "Toggle high saturation mode",
+      "value": "High Saturation"
+    },
+    "toggleInvertColors": {
+      "ariaLabel": "Invert colors",
+      "value": "Invert Colors"
+    },
+    "toggleLowSaturation": {
+      "ariaLabel": "Toggle low saturation mode",
+      "value": "Low Saturation"
+    },
+    "toggleUnderline": {
+      "ariaLabel": "Toggle underline for links",
+      "value": "Underline Links"
+    }
+  },
+  "bottomActions": {
+    "back": {
+      "ariaLabel": "Return to the previous page",
+      "label": "Back"
+    },
+    "changeTheme": {
+      "ariaLabel": "Switch between light and dark theme",
+      "label": "Change theme"
+    },
+    "clearConversation": {
+      "ariaLabel": "Delete all messages from the current conversation",
+      "label": "Clear conversation"
+    }
+  },
+  "chatContainer": {
+    "exportConversation": {
+      "ariaLabel": "Download the current conversation",
+      "label": "Export Conversation"
+    },
+    "input": {
+      "ariaLabel": "Question input field",
+      "placeholder": "Type your question..."
+    },
+    "sendMessage": {
+      "ariaLabel": "Send your question",
+      "label": "Send"
+    }
+  },
   "footer": {
     "chooseLanguage": {
       "name": "English",
       "title": "Choose language:"
+    }
+  },
+  "history": {
+    "conversations": {
+      "ariaLabel": "Conversation history"
+    },
+    "newChat": {
+      "ariaLabel": "Start a new chat",
+      "label": "New Chat"
+    },
+    "searchChat": {
+      "ariaLabel": "Search chat input",
+      "placeholder": "Search chat"
     }
   },
   "mainPage": {
@@ -32,6 +128,105 @@
     "cooperation": {
       "cooperation": "Cooperation",
       "subTitle": "Our Partners"
+    },
+    "footer": {
+      "nav": {
+        "aboutUs": {
+          "links": {
+            "aboutProject": {
+              "ariaLabel": "Learn more about our project",
+              "text": "About Our Project"
+            },
+            "ourMission": {
+              "ariaLabel": "Learn more about our mission",
+              "text": "Our Mission"
+            },
+            "ourPartners": {
+              "ariaLabel": "Learn more about our partners",
+              "text": "Our Partners"
+            },
+            "ourTeam": {
+              "ariaLabel": "Learn more about our team",
+              "text": "Our Team"
+            }
+          },
+          "title": "ABOUT US"
+        },
+        "contactUs": {
+          "links": {
+            "contactInfo": {
+              "ariaLabel": "View our contact information",
+              "text": "Contact Information"
+            },
+            "feedback": {
+              "ariaLabel": "Share your feedback with us",
+              "text": "Leave Feedback"
+            },
+            "joinTeam": {
+              "ariaLabel": "Explore career opportunities with us",
+              "text": "Join Our Team"
+            },
+            "techSupport": {
+              "ariaLabel": "Get technical support",
+              "text": "Technical Support"
+            }
+          },
+          "title": "CONTACT US"
+        },
+        "socialMedia": {
+          "facebook": {
+            "ariaLabel": "Like us on Facebook"
+          },
+          "instagram": {
+            "ariaLabel": "Visit our Instagram profile"
+          },
+          "twitter": {
+            "ariaLabel": "Follow us on Twitter"
+          }
+        },
+        "solutions": {
+          "links": {
+            "aiEthics": {
+              "ariaLabel": "Understand ethical considerations of AI",
+              "text": "AI Ethics"
+            },
+            "aiForBusiness": {
+              "ariaLabel": "Discover AI solutions for business",
+              "text": "AI for Business"
+            },
+            "aiInEducation": {
+              "ariaLabel": "Learn about AI in education",
+              "text": "AI in Education"
+            },
+            "aiInHealthcare": {
+              "ariaLabel": "Explore AI in healthcare solutions",
+              "text": "AI in Healthcare"
+            }
+          },
+          "title": "SOLUTIONS"
+        },
+        "usefulInformation": {
+          "links": {
+            "blog": {
+              "ariaLabel": "Visit our blog for insights",
+              "text": "Blog"
+            },
+            "faq": {
+              "ariaLabel": "Read frequently asked questions",
+              "text": "FAQ"
+            },
+            "news": {
+              "ariaLabel": "Read the latest news",
+              "text": "News"
+            },
+            "resources": {
+              "ariaLabel": "Access useful resources",
+              "text": "Resources"
+            }
+          },
+          "title": "USEFUL INFORMATION"
+        }
+      }
     },
     "header": {
       "nav": {
@@ -75,202 +270,6 @@
     "marquee": {
       "text1": "Investments in AI in 2024 are opening new horizons for technological progress.",
       "text2": "aigeobot&#64;gmail.com&nbsp;&nbsp;&#10022;&nbsp;&nbsp;aigeobot&#64;gmail.com&nbsp;&nbsp;&#10022;&nbsp;&nbsp;aigeobot&#64;gmail.com&nbsp;&nbsp;&#10022;&nbsp;&nbsp;aigeobot&#64;gmail.com"
-    },
-    "footer": {
-      "nav": {
-        "aboutUs": {
-          "title": "ABOUT US",
-          "links": {
-            "aboutProject": {
-              "text": "About Our Project",
-              "ariaLabel": "Learn more about our project"
-            },
-            "ourTeam": {
-              "text": "Our Team",
-              "ariaLabel": "Learn more about our team"
-            },
-            "ourMission": {
-              "text": "Our Mission",
-              "ariaLabel": "Learn more about our mission"
-            },
-            "ourPartners": {
-              "text": "Our Partners",
-              "ariaLabel": "Learn more about our partners"
-            }
-          }
-        },
-        "solutions": {
-          "title": "SOLUTIONS",
-          "links": {
-            "aiForBusiness": {
-              "text": "AI for Business",
-              "ariaLabel": "Discover AI solutions for business"
-            },
-            "aiInHealthcare": {
-              "text": "AI in Healthcare",
-              "ariaLabel": "Explore AI in healthcare solutions"
-            },
-            "aiInEducation": {
-              "text": "AI in Education",
-              "ariaLabel": "Learn about AI in education"
-            },
-            "aiEthics": {
-              "text": "AI Ethics",
-              "ariaLabel": "Understand ethical considerations of AI"
-            }
-          }
-        },
-        "usefulInformation": {
-          "title": "USEFUL INFORMATION",
-          "links": {
-            "faq": {
-              "text": "FAQ",
-              "ariaLabel": "Read frequently asked questions"
-            },
-            "blog": {
-              "text": "Blog",
-              "ariaLabel": "Visit our blog for insights"
-            },
-            "resources": {
-              "text": "Resources",
-              "ariaLabel": "Access useful resources"
-            },
-            "news": {
-              "text": "News",
-              "ariaLabel": "Read the latest news"
-            }
-          }
-        },
-        "contactUs": {
-          "title": "CONTACT US",
-          "links": {
-            "contactInfo": {
-              "text": "Contact Information",
-              "ariaLabel": "View our contact information"
-            },
-            "techSupport": {
-              "text": "Technical Support",
-              "ariaLabel": "Get technical support"
-            },
-            "feedback": {
-              "text": "Leave Feedback",
-              "ariaLabel": "Share your feedback with us"
-            },
-            "joinTeam": {
-              "text": "Join Our Team",
-              "ariaLabel": "Explore career opportunities with us"
-            }
-          }
-        },
-        "socialMedia": {
-          "instagram": {
-            "ariaLabel": "Visit our Instagram profile"
-          },
-          "twitter": {
-            "ariaLabel": "Follow us on Twitter"
-          },
-          "facebook": {
-            "ariaLabel": "Like us on Facebook"
-          }
-        }
-      }
-    }
-  },
-  "accessibility":{
-    "title": "Accessibility Options",
-    "accessibilityOptions": {
-      "value": "Accessibility Options",
-      "ariaLabel": "Accessibility panel"
-    },
-    "closeAccessibilityPanel": {
-      "value": "Close accessibility panel",
-      "ariaLabel": "Close accessibility panel"
-    },
-    "close": {
-      "value": "X",
-      "ariaLabel": "Close button"
-    },
-    "increaseFontSize": {
-      "value": "Increase Font Size",
-      "ariaLabel": "Increase font size"
-    },
-    "decreaseFontSize": {
-      "value": "Decrease Font Size",
-      "ariaLabel": "Decrease font size"
-    },
-    "toggleUnderline": {
-      "value": "Underline Links",
-      "ariaLabel": "Toggle underline for links"
-    },
-    "toggleGrayscale": {
-      "value": "Grayscale",
-      "ariaLabel": "Enable or disable grayscale"
-    },
-    "toggleInvertColors": {
-      "value": "Invert Colors",
-      "ariaLabel": "Invert colors"
-    },
-    "toggleLowSaturation": {
-      "value": "Low Saturation",
-      "ariaLabel": "Toggle low saturation mode"
-    },
-    "toggleHighSaturation": {
-      "value": "High Saturation",
-      "ariaLabel": "Toggle high saturation mode"
-    },
-    "increaseLineHeight": {
-      "value": "Increase Line Height",
-      "ariaLabel": "Increase line height for text"
-    },
-    "decreaseLineHeight": {
-      "value": "Decrease Line Height",
-      "ariaLabel": "Decrease line height for text"
-    },
-    "resetOptions": {
-      "value": "Reset Options",
-      "ariaLabel": "Reset all accessibility settings"
-    }
-  },
-
-  "history": {
-    "newChat": {
-      "label": "New Chat",
-      "ariaLabel": "Start a new chat"
-    },
-    "searchChat": {
-      "placeholder": "Search chat",
-      "ariaLabel": "Search chat input"
-    },
-    "conversations": {
-      "ariaLabel": "Conversation history"
-    }
-  },
-  "bottomActions": {
-    "clearConversation": {
-      "label": "Clear conversation",
-      "ariaLabel": "Delete all messages from the current conversation"
-    },
-    "changeTheme": {
-      "label": "Change theme",
-      "ariaLabel": "Switch between light and dark theme"
-    },
-    "back": {
-      "label": "Back",
-      "ariaLabel": "Return to the previous page"
-    }
-  },
-  "chatContainer": {
-    "input": {
-      "placeholder": "Type your question...",
-      "ariaLabel": "Question input field"
-    },
-    "exportConversation": {
-      "label": "Export Conversation",
-      "ariaLabel": "Download the current conversation"
-    },
-    "sendMessage": {
-      "label": "Send",
-      "ariaLabel": "Send your question"
     }
   },
   "rightBar": {
@@ -279,22 +278,20 @@
     }
   },
   "thirdPanel": {
+    "aiVersion": {
+      "ariaLabel": "Select AI version",
+      "title": "AI version"
+    },
     "dataSource": {
-      "title": "Data source",
-      "ariaLabel": "Select a data source"
+      "ariaLabel": "Select a data source",
+      "title": "Data source"
     },
     "questionHistory": {
-      "title": "Questions history",
       "ariaLabel": "List of previously asked questions",
       "paginator": {
         "ariaLabel": "Pagination for questions history"
-      }
-    },
-    "aiVersion": {
-      "title": "AI version",
-      "ariaLabel": "Select AI version"
+      },
+      "title": "Questions history"
     }
   }
-
-
 }

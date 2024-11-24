@@ -1,8 +1,104 @@
 {
+  "accessibility": {
+    "accessibilityOptions": {
+      "ariaLabel": "Panel dostępności",
+      "value": "Opcje dostępności"
+    },
+    "close": {
+      "ariaLabel": "Przycisk Zamknij",
+      "value": "X"
+    },
+    "closeAccessibilityPanel": {
+      "ariaLabel": "Zamknij panel ułatwień dostępu",
+      "value": "Zamknij panel ułatwień dostępu"
+    },
+    "decreaseFontSize": {
+      "ariaLabel": "Zmniejsz rozmiar czcionki",
+      "value": "Zmniejsz rozmiar czcionki"
+    },
+    "decreaseLineHeight": {
+      "ariaLabel": "Zmniejsz wysokość linii tekstu",
+      "value": "Zmniejsz wysokość linii"
+    },
+    "increaseFontSize": {
+      "ariaLabel": "Zwiększ rozmiar czcionki",
+      "value": "Zwiększ rozmiar czcionki"
+    },
+    "increaseLineHeight": {
+      "ariaLabel": "Zwiększ wysokość linii tekstu",
+      "value": "Zwiększ wysokość linii"
+    },
+    "resetOptions": {
+      "ariaLabel": "Zresetuj wszystkie ustawienia dostępności",
+      "value": "Zresetuj opcje"
+    },
+    "title": "Opcje dostępności",
+    "toggleGrayscale": {
+      "ariaLabel": "Włącz lub wyłącz skalę szarości",
+      "value": "Skala szarości"
+    },
+    "toggleHighSaturation": {
+      "ariaLabel": "Przełącz tryb wysokiego nasycenia",
+      "value": "Wysokie nasycenie"
+    },
+    "toggleInvertColors": {
+      "ariaLabel": "Odwróć kolory",
+      "value": "Odwróć kolory"
+    },
+    "toggleLowSaturation": {
+      "ariaLabel": "Przełącz tryb niskiego nasycenia",
+      "value": "Niskie nasycenie"
+    },
+    "toggleUnderline": {
+      "ariaLabel": "Przełącz podkreślenie linków",
+      "value": "Podkreśl linki"
+    }
+  },
+  "bottomActions": {
+    "back": {
+      "ariaLabel": "Wróć do poprzedniej strony",
+      "label": "Z powrotem"
+    },
+    "changeTheme": {
+      "ariaLabel": "Przełączaj między jasnym i ciemnym motywem",
+      "label": "Zmień motyw"
+    },
+    "clearConversation": {
+      "ariaLabel": "Usuń wszystkie wiadomości z bieżącej rozmowy",
+      "label": "Wyczyść rozmowę"
+    }
+  },
+  "chatContainer": {
+    "exportConversation": {
+      "ariaLabel": "Pobierz bieżącą rozmowę",
+      "label": "Eksportuj rozmowę"
+    },
+    "input": {
+      "ariaLabel": "Pole wprowadzania pytania",
+      "placeholder": "Wpisz swoje pytanie..."
+    },
+    "sendMessage": {
+      "ariaLabel": "Wyślij swoje pytanie",
+      "label": "Wysłać"
+    }
+  },
   "footer": {
     "chooseLanguage": {
       "name": "angielski",
       "title": "Wybierz język:"
+    }
+  },
+  "history": {
+    "conversations": {
+      "ariaLabel": "Historia rozmów"
+    },
+    "newChat": {
+      "ariaLabel": "Rozpocznij nowy czat",
+      "label": "Nowy czat"
+    },
+    "searchChat": {
+      "ariaLabel": "Wyszukaj dane wejściowe na czacie",
+      "placeholder": "Wyszukaj czat"
     }
   },
   "mainPage": {
@@ -32,6 +128,105 @@
     "cooperation": {
       "cooperation": "Współpraca",
       "subTitle": "Nasi partnerzy"
+    },
+    "footer": {
+      "nav": {
+        "aboutUs": {
+          "links": {
+            "aboutProject": {
+              "ariaLabel": "Dowiedz się więcej o naszym projekcie",
+              "text": "O naszym projekcie"
+            },
+            "ourMission": {
+              "ariaLabel": "Dowiedz się więcej o naszej misji",
+              "text": "Nasza misja"
+            },
+            "ourPartners": {
+              "ariaLabel": "Dowiedz się więcej o naszych partnerach",
+              "text": "Nasi partnerzy"
+            },
+            "ourTeam": {
+              "ariaLabel": "Dowiedz się więcej o naszym zespole",
+              "text": "Nasz zespół"
+            }
+          },
+          "title": "O NAS"
+        },
+        "contactUs": {
+          "links": {
+            "contactInfo": {
+              "ariaLabel": "Zobacz nasze dane kontaktowe",
+              "text": "Informacje kontaktowe"
+            },
+            "feedback": {
+              "ariaLabel": "Podziel się z nami swoją opinią",
+              "text": "Zostaw opinię"
+            },
+            "joinTeam": {
+              "ariaLabel": "Odkryj z nami możliwości kariery",
+              "text": "Dołącz do naszego zespołu"
+            },
+            "techSupport": {
+              "ariaLabel": "Uzyskaj wsparcie techniczne",
+              "text": "Wsparcie techniczne"
+            }
+          },
+          "title": "SKONTAKTUJ SIĘ Z NAMI"
+        },
+        "socialMedia": {
+          "facebook": {
+            "ariaLabel": "Polub nas na Facebooku"
+          },
+          "instagram": {
+            "ariaLabel": "Odwiedź nasz profil na Instagramie"
+          },
+          "twitter": {
+            "ariaLabel": "Śledź nas na Twitterze"
+          }
+        },
+        "solutions": {
+          "links": {
+            "aiEthics": {
+              "ariaLabel": "Zrozum względy etyczne związane ze sztuczną inteligencją",
+              "text": "Etyka AI"
+            },
+            "aiForBusiness": {
+              "ariaLabel": "Odkryj rozwiązania AI dla biznesu",
+              "text": "Sztuczna inteligencja dla biznesu"
+            },
+            "aiInEducation": {
+              "ariaLabel": "Dowiedz się o sztucznej inteligencji w edukacji",
+              "text": "AI w edukacji"
+            },
+            "aiInHealthcare": {
+              "ariaLabel": "Poznaj sztuczną inteligencję w rozwiązaniach dla opieki zdrowotnej",
+              "text": "AI w służbie zdrowia"
+            }
+          },
+          "title": "ROZWIĄZANIA"
+        },
+        "usefulInformation": {
+          "links": {
+            "blog": {
+              "ariaLabel": "Odwiedź nasz blog, aby uzyskać szczegółowe informacje",
+              "text": "Bloga"
+            },
+            "faq": {
+              "ariaLabel": "Przeczytaj często zadawane pytania",
+              "text": "Często zadawane pytania"
+            },
+            "news": {
+              "ariaLabel": "Przeczytaj najnowsze wiadomości",
+              "text": "Aktualności"
+            },
+            "resources": {
+              "ariaLabel": "Uzyskaj dostęp do przydatnych zasobów",
+              "text": "Zasoby"
+            }
+          },
+          "title": "PRZYDATNE INFORMACJE"
+        }
+      }
     },
     "header": {
       "nav": {
@@ -75,201 +270,6 @@
     "marquee": {
       "text1": "Inwestycje w sztuczną inteligencję w 2024 roku otwierają nowe horyzonty dla postępu technologicznego.",
       "text2": "aigeobot@gmail.com  ✦  aigeobot@gmail.com  ✦  aigeobot@gmail.com  ✦  aigeobot@gmail.com"
-    },
-    "footer": {
-      "nav": {
-        "aboutUs": {
-          "title": "O NAS",
-          "links": {
-            "aboutProject": {
-              "text": "O naszym projekcie",
-              "ariaLabel": "Dowiedz się więcej o naszym projekcie"
-            },
-            "ourTeam": {
-              "text": "Nasz zespół",
-              "ariaLabel": "Dowiedz się więcej o naszym zespole"
-            },
-            "ourMission": {
-              "text": "Nasza misja",
-              "ariaLabel": "Dowiedz się więcej o naszej misji"
-            },
-            "ourPartners": {
-              "text": "Nasi partnerzy",
-              "ariaLabel": "Dowiedz się więcej o naszych partnerach"
-            }
-          }
-        },
-        "solutions": {
-          "title": "ROZWIĄZANIA",
-          "links": {
-            "aiForBusiness": {
-              "text": "Sztuczna inteligencja dla biznesu",
-              "ariaLabel": "Odkryj rozwiązania AI dla biznesu"
-            },
-            "aiInHealthcare": {
-              "text": "AI w służbie zdrowia",
-              "ariaLabel": "Poznaj sztuczną inteligencję w rozwiązaniach dla opieki zdrowotnej"
-            },
-            "aiInEducation": {
-              "text": "AI w edukacji",
-              "ariaLabel": "Dowiedz się o sztucznej inteligencji w edukacji"
-            },
-            "aiEthics": {
-              "text": "Etyka AI",
-              "ariaLabel": "Zrozum względy etyczne związane ze sztuczną inteligencją"
-            }
-          }
-        },
-        "usefulInformation": {
-          "title": "PRZYDATNE INFORMACJE",
-          "links": {
-            "faq": {
-              "text": "Często zadawane pytania",
-              "ariaLabel": "Przeczytaj często zadawane pytania"
-            },
-            "blog": {
-              "text": "Bloga",
-              "ariaLabel": "Odwiedź nasz blog, aby uzyskać szczegółowe informacje"
-            },
-            "resources": {
-              "text": "Zasoby",
-              "ariaLabel": "Uzyskaj dostęp do przydatnych zasobów"
-            },
-            "news": {
-              "text": "Aktualności",
-              "ariaLabel": "Przeczytaj najnowsze wiadomości"
-            }
-          }
-        },
-        "contactUs": {
-          "title": "SKONTAKTUJ SIĘ Z NAMI",
-          "links": {
-            "contactInfo": {
-              "text": "Informacje kontaktowe",
-              "ariaLabel": "Zobacz nasze dane kontaktowe"
-            },
-            "techSupport": {
-              "text": "Wsparcie techniczne",
-              "ariaLabel": "Uzyskaj wsparcie techniczne"
-            },
-            "feedback": {
-              "text": "Zostaw opinię",
-              "ariaLabel": "Podziel się z nami swoją opinią"
-            },
-            "joinTeam": {
-              "text": "Dołącz do naszego zespołu",
-              "ariaLabel": "Odkryj z nami możliwości kariery"
-            }
-          }
-        },
-        "socialMedia": {
-          "instagram": {
-            "ariaLabel": "Odwiedź nasz profil na Instagramie"
-          },
-          "twitter": {
-            "ariaLabel": "Śledź nas na Twitterze"
-          },
-          "facebook": {
-            "ariaLabel": "Polub nas na Facebooku"
-          }
-        }
-      }
-    }
-  },
-  "accessibility": {
-    "title": "Opcje dostępności",
-    "accessibilityOptions": {
-      "value": "Opcje dostępności",
-      "ariaLabel": "Panel dostępności"
-    },
-    "closeAccessibilityPanel": {
-      "value": "Zamknij panel ułatwień dostępu",
-      "ariaLabel": "Zamknij panel ułatwień dostępu"
-    },
-    "close": {
-      "value": "X",
-      "ariaLabel": "Przycisk Zamknij"
-    },
-    "increaseFontSize": {
-      "value": "Zwiększ rozmiar czcionki",
-      "ariaLabel": "Zwiększ rozmiar czcionki"
-    },
-    "decreaseFontSize": {
-      "value": "Zmniejsz rozmiar czcionki",
-      "ariaLabel": "Zmniejsz rozmiar czcionki"
-    },
-    "toggleUnderline": {
-      "value": "Podkreśl linki",
-      "ariaLabel": "Przełącz podkreślenie linków"
-    },
-    "toggleGrayscale": {
-      "value": "Skala szarości",
-      "ariaLabel": "Włącz lub wyłącz skalę szarości"
-    },
-    "toggleInvertColors": {
-      "value": "Odwróć kolory",
-      "ariaLabel": "Odwróć kolory"
-    },
-    "toggleLowSaturation": {
-      "value": "Niskie nasycenie",
-      "ariaLabel": "Przełącz tryb niskiego nasycenia"
-    },
-    "toggleHighSaturation": {
-      "value": "Wysokie nasycenie",
-      "ariaLabel": "Przełącz tryb wysokiego nasycenia"
-    },
-    "increaseLineHeight": {
-      "value": "Zwiększ wysokość linii",
-      "ariaLabel": "Zwiększ wysokość linii tekstu"
-    },
-    "decreaseLineHeight": {
-      "value": "Zmniejsz wysokość linii",
-      "ariaLabel": "Zmniejsz wysokość linii tekstu"
-    },
-    "resetOptions": {
-      "value": "Zresetuj opcje",
-      "ariaLabel": "Zresetuj wszystkie ustawienia dostępności"
-    }
-  },
-  "history": {
-    "newChat": {
-      "label": "Nowy czat",
-      "ariaLabel": "Rozpocznij nowy czat"
-    },
-    "searchChat": {
-      "placeholder": "Wyszukaj czat",
-      "ariaLabel": "Wyszukaj dane wejściowe na czacie"
-    },
-    "conversations": {
-      "ariaLabel": "Historia rozmów"
-    }
-  },
-  "bottomActions": {
-    "clearConversation": {
-      "label": "Wyczyść rozmowę",
-      "ariaLabel": "Usuń wszystkie wiadomości z bieżącej rozmowy"
-    },
-    "changeTheme": {
-      "label": "Zmień motyw",
-      "ariaLabel": "Przełączaj między jasnym i ciemnym motywem"
-    },
-    "back": {
-      "label": "Z powrotem",
-      "ariaLabel": "Wróć do poprzedniej strony"
-    }
-  },
-  "chatContainer": {
-    "input": {
-      "placeholder": "Wpisz swoje pytanie...",
-      "ariaLabel": "Pole wprowadzania pytania"
-    },
-    "exportConversation": {
-      "label": "Eksportuj rozmowę",
-      "ariaLabel": "Pobierz bieżącą rozmowę"
-    },
-    "sendMessage": {
-      "label": "Wysłać",
-      "ariaLabel": "Wyślij swoje pytanie"
     }
   },
   "rightBar": {
@@ -278,20 +278,20 @@
     }
   },
   "thirdPanel": {
+    "aiVersion": {
+      "ariaLabel": "Wybierz wersję AI",
+      "title": "Wersja AI"
+    },
     "dataSource": {
-      "title": "Źródło danych",
-      "ariaLabel": "Wybierz źródło danych"
+      "ariaLabel": "Wybierz źródło danych",
+      "title": "Źródło danych"
     },
     "questionHistory": {
-      "title": "Historia pytań",
       "ariaLabel": "Lista wcześniej zadanych pytań",
       "paginator": {
         "ariaLabel": "Paginacja historii pytań"
-      }
-    },
-    "aiVersion": {
-      "title": "Wersja AI",
-      "ariaLabel": "Wybierz wersję AI"
+      },
+      "title": "Historia pytań"
     }
   }
 }

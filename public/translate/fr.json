@@ -1,8 +1,104 @@
 {
+  "accessibility": {
+    "accessibilityOptions": {
+      "ariaLabel": "Panneau d'accessibilité",
+      "value": "Options d'accessibilité"
+    },
+    "close": {
+      "ariaLabel": "Bouton Fermer",
+      "value": "X"
+    },
+    "closeAccessibilityPanel": {
+      "ariaLabel": "Fermer le panneau d'accessibilité",
+      "value": "Fermer le panneau d'accessibilité"
+    },
+    "decreaseFontSize": {
+      "ariaLabel": "Diminuer la taille de la police",
+      "value": "Diminuer la taille de la police"
+    },
+    "decreaseLineHeight": {
+      "ariaLabel": "Diminuer la hauteur de ligne du texte",
+      "value": "Diminuer la hauteur de la ligne"
+    },
+    "increaseFontSize": {
+      "ariaLabel": "Augmenter la taille de la police",
+      "value": "Augmenter la taille de la police"
+    },
+    "increaseLineHeight": {
+      "ariaLabel": "Augmenter la hauteur de ligne du texte",
+      "value": "Augmenter la hauteur de la ligne"
+    },
+    "resetOptions": {
+      "ariaLabel": "Réinitialiser tous les paramètres d'accessibilité",
+      "value": "Options de réinitialisation"
+    },
+    "title": "Options d'accessibilité",
+    "toggleGrayscale": {
+      "ariaLabel": "Activer ou désactiver les niveaux de gris",
+      "value": "Niveaux de gris"
+    },
+    "toggleHighSaturation": {
+      "ariaLabel": "Basculer en mode saturation élevée",
+      "value": "Haute saturation"
+    },
+    "toggleInvertColors": {
+      "ariaLabel": "Inverser les couleurs",
+      "value": "Inverser les couleurs"
+    },
+    "toggleLowSaturation": {
+      "ariaLabel": "Basculer en mode faible saturation",
+      "value": "Faible saturation"
+    },
+    "toggleUnderline": {
+      "ariaLabel": "Activer le soulignement pour les liens",
+      "value": "Souligner les liens"
+    }
+  },
+  "bottomActions": {
+    "back": {
+      "ariaLabel": "Revenir à la page précédente",
+      "label": "Dos"
+    },
+    "changeTheme": {
+      "ariaLabel": "Basculer entre le thème clair et sombre",
+      "label": "Changer de thème"
+    },
+    "clearConversation": {
+      "ariaLabel": "Supprimer tous les messages de la conversation en cours",
+      "label": "Conversation claire"
+    }
+  },
+  "chatContainer": {
+    "exportConversation": {
+      "ariaLabel": "Téléchargez la conversation en cours",
+      "label": "Exporter la conversation"
+    },
+    "input": {
+      "ariaLabel": "Champ de saisie des questions",
+      "placeholder": "Tapez votre question..."
+    },
+    "sendMessage": {
+      "ariaLabel": "Envoyez votre question",
+      "label": "Envoyer"
+    }
+  },
   "footer": {
     "chooseLanguage": {
       "name": "Anglais",
       "title": "Choisissez la langue :"
+    }
+  },
+  "history": {
+    "conversations": {
+      "ariaLabel": "Historique des conversations"
+    },
+    "newChat": {
+      "ariaLabel": "Démarrer une nouvelle discussion",
+      "label": "Nouvelle discussion"
+    },
+    "searchChat": {
+      "ariaLabel": "Rechercher une entrée dans le chat",
+      "placeholder": "Rechercher une conversation"
     }
   },
   "mainPage": {
@@ -32,6 +128,105 @@
     "cooperation": {
       "cooperation": "Coopération",
       "subTitle": "Nos partenaires"
+    },
+    "footer": {
+      "nav": {
+        "aboutUs": {
+          "links": {
+            "aboutProject": {
+              "ariaLabel": "En savoir plus sur notre projet",
+              "text": "À propos de notre projet"
+            },
+            "ourMission": {
+              "ariaLabel": "En savoir plus sur notre mission",
+              "text": "Notre Mission"
+            },
+            "ourPartners": {
+              "ariaLabel": "En savoir plus sur nos partenaires",
+              "text": "Nos partenaires"
+            },
+            "ourTeam": {
+              "ariaLabel": "En savoir plus sur notre équipe",
+              "text": "Notre équipe"
+            }
+          },
+          "title": "À PROPOS DE NOUS"
+        },
+        "contactUs": {
+          "links": {
+            "contactInfo": {
+              "ariaLabel": "Consultez nos coordonnées",
+              "text": "Coordonnées"
+            },
+            "feedback": {
+              "ariaLabel": "Partagez vos commentaires avec nous",
+              "text": "Laisser les commentaires"
+            },
+            "joinTeam": {
+              "ariaLabel": "Explorez les opportunités de carrière avec nous",
+              "text": "Rejoignez notre équipe"
+            },
+            "techSupport": {
+              "ariaLabel": "Obtenir une assistance technique",
+              "text": "Assistance technique"
+            }
+          },
+          "title": "CONTACTEZ-NOUS"
+        },
+        "socialMedia": {
+          "facebook": {
+            "ariaLabel": "Aimez-nous sur Facebook"
+          },
+          "instagram": {
+            "ariaLabel": "Visitez notre profil Instagram"
+          },
+          "twitter": {
+            "ariaLabel": "Suivez-nous sur Twitter"
+          }
+        },
+        "solutions": {
+          "links": {
+            "aiEthics": {
+              "ariaLabel": "Comprendre les considérations éthiques de l’IA",
+              "text": "Éthique de l'IA"
+            },
+            "aiForBusiness": {
+              "ariaLabel": "Découvrez les solutions d'IA pour les entreprises",
+              "text": "IA pour les entreprises"
+            },
+            "aiInEducation": {
+              "ariaLabel": "En savoir plus sur l'IA dans l'éducation",
+              "text": "L'IA dans l'éducation"
+            },
+            "aiInHealthcare": {
+              "ariaLabel": "Explorez l'IA dans les solutions de santé",
+              "text": "L'IA dans la santé"
+            }
+          },
+          "title": "SOLUTIONS"
+        },
+        "usefulInformation": {
+          "links": {
+            "blog": {
+              "ariaLabel": "Visitez notre blog pour obtenir des informations",
+              "text": "Blogue"
+            },
+            "faq": {
+              "ariaLabel": "Lire les questions fréquemment posées",
+              "text": "FAQ"
+            },
+            "news": {
+              "ariaLabel": "Lire les dernières nouvelles",
+              "text": "Nouvelles"
+            },
+            "resources": {
+              "ariaLabel": "Accédez à des ressources utiles",
+              "text": "Ressources"
+            }
+          },
+          "title": "INFORMATIONS UTILES"
+        }
+      }
     },
     "header": {
       "nav": {
@@ -75,201 +270,6 @@
     "marquee": {
       "text1": "Les investissements dans l’IA en 2024 ouvrent de nouveaux horizons pour le progrès technologique.",
       "text2": "aigeobot@gmail.com  ✦  aigeobot@gmail.com  ✦  aigeobot@gmail.com  ✦  aigeobot@gmail.com"
-    },
-    "footer": {
-      "nav": {
-        "aboutUs": {
-          "title": "À PROPOS DE NOUS",
-          "links": {
-            "aboutProject": {
-              "text": "À propos de notre projet",
-              "ariaLabel": "En savoir plus sur notre projet"
-            },
-            "ourTeam": {
-              "text": "Notre équipe",
-              "ariaLabel": "En savoir plus sur notre équipe"
-            },
-            "ourMission": {
-              "text": "Notre Mission",
-              "ariaLabel": "En savoir plus sur notre mission"
-            },
-            "ourPartners": {
-              "text": "Nos partenaires",
-              "ariaLabel": "En savoir plus sur nos partenaires"
-            }
-          }
-        },
-        "solutions": {
-          "title": "SOLUTIONS",
-          "links": {
-            "aiForBusiness": {
-              "text": "IA pour les entreprises",
-              "ariaLabel": "Découvrez les solutions d'IA pour les entreprises"
-            },
-            "aiInHealthcare": {
-              "text": "L'IA dans la santé",
-              "ariaLabel": "Explorez l'IA dans les solutions de santé"
-            },
-            "aiInEducation": {
-              "text": "L'IA dans l'éducation",
-              "ariaLabel": "En savoir plus sur l'IA dans l'éducation"
-            },
-            "aiEthics": {
-              "text": "Éthique de l'IA",
-              "ariaLabel": "Comprendre les considérations éthiques de l’IA"
-            }
-          }
-        },
-        "usefulInformation": {
-          "title": "INFORMATIONS UTILES",
-          "links": {
-            "faq": {
-              "text": "FAQ",
-              "ariaLabel": "Lire les questions fréquemment posées"
-            },
-            "blog": {
-              "text": "Blogue",
-              "ariaLabel": "Visitez notre blog pour obtenir des informations"
-            },
-            "resources": {
-              "text": "Ressources",
-              "ariaLabel": "Accédez à des ressources utiles"
-            },
-            "news": {
-              "text": "Nouvelles",
-              "ariaLabel": "Lire les dernières nouvelles"
-            }
-          }
-        },
-        "contactUs": {
-          "title": "CONTACTEZ-NOUS",
-          "links": {
-            "contactInfo": {
-              "text": "Coordonnées",
-              "ariaLabel": "Consultez nos coordonnées"
-            },
-            "techSupport": {
-              "text": "Assistance technique",
-              "ariaLabel": "Obtenir une assistance technique"
-            },
-            "feedback": {
-              "text": "Laisser les commentaires",
-              "ariaLabel": "Partagez vos commentaires avec nous"
-            },
-            "joinTeam": {
-              "text": "Rejoignez notre équipe",
-              "ariaLabel": "Explorez les opportunités de carrière avec nous"
-            }
-          }
-        },
-        "socialMedia": {
-          "instagram": {
-            "ariaLabel": "Visitez notre profil Instagram"
-          },
-          "twitter": {
-            "ariaLabel": "Suivez-nous sur Twitter"
-          },
-          "facebook": {
-            "ariaLabel": "Aimez-nous sur Facebook"
-          }
-        }
-      }
-    }
-  },
-  "accessibility": {
-    "title": "Options d'accessibilité",
-    "accessibilityOptions": {
-      "value": "Options d'accessibilité",
-      "ariaLabel": "Panneau d'accessibilité"
-    },
-    "closeAccessibilityPanel": {
-      "value": "Fermer le panneau d'accessibilité",
-      "ariaLabel": "Fermer le panneau d'accessibilité"
-    },
-    "close": {
-      "value": "X",
-      "ariaLabel": "Bouton Fermer"
-    },
-    "increaseFontSize": {
-      "value": "Augmenter la taille de la police",
-      "ariaLabel": "Augmenter la taille de la police"
-    },
-    "decreaseFontSize": {
-      "value": "Diminuer la taille de la police",
-      "ariaLabel": "Diminuer la taille de la police"
-    },
-    "toggleUnderline": {
-      "value": "Souligner les liens",
-      "ariaLabel": "Activer le soulignement pour les liens"
-    },
-    "toggleGrayscale": {
-      "value": "Niveaux de gris",
-      "ariaLabel": "Activer ou désactiver les niveaux de gris"
-    },
-    "toggleInvertColors": {
-      "value": "Inverser les couleurs",
-      "ariaLabel": "Inverser les couleurs"
-    },
-    "toggleLowSaturation": {
-      "value": "Faible saturation",
-      "ariaLabel": "Basculer en mode faible saturation"
-    },
-    "toggleHighSaturation": {
-      "value": "Haute saturation",
-      "ariaLabel": "Basculer en mode saturation élevée"
-    },
-    "increaseLineHeight": {
-      "value": "Augmenter la hauteur de la ligne",
-      "ariaLabel": "Augmenter la hauteur de ligne du texte"
-    },
-    "decreaseLineHeight": {
-      "value": "Diminuer la hauteur de la ligne",
-      "ariaLabel": "Diminuer la hauteur de ligne du texte"
-    },
-    "resetOptions": {
-      "value": "Options de réinitialisation",
-      "ariaLabel": "Réinitialiser tous les paramètres d'accessibilité"
-    }
-  },
-  "history": {
-    "newChat": {
-      "label": "Nouvelle discussion",
-      "ariaLabel": "Démarrer une nouvelle discussion"
-    },
-    "searchChat": {
-      "placeholder": "Rechercher une conversation",
-      "ariaLabel": "Rechercher une entrée dans le chat"
-    },
-    "conversations": {
-      "ariaLabel": "Historique des conversations"
-    }
-  },
-  "bottomActions": {
-    "clearConversation": {
-      "label": "Conversation claire",
-      "ariaLabel": "Supprimer tous les messages de la conversation en cours"
-    },
-    "changeTheme": {
-      "label": "Changer de thème",
-      "ariaLabel": "Basculer entre le thème clair et sombre"
-    },
-    "back": {
-      "label": "Dos",
-      "ariaLabel": "Revenir à la page précédente"
-    }
-  },
-  "chatContainer": {
-    "input": {
-      "placeholder": "Tapez votre question...",
-      "ariaLabel": "Champ de saisie des questions"
-    },
-    "exportConversation": {
-      "label": "Exporter la conversation",
-      "ariaLabel": "Téléchargez la conversation en cours"
-    },
-    "sendMessage": {
-      "label": "Envoyer",
-      "ariaLabel": "Envoyez votre question"
     }
   },
   "rightBar": {
@@ -278,20 +278,20 @@
     }
   },
   "thirdPanel": {
+    "aiVersion": {
+      "ariaLabel": "Sélectionnez la version IA",
+      "title": "Version IA"
+    },
     "dataSource": {
-      "title": "Source de données",
-      "ariaLabel": "Sélectionnez une source de données"
+      "ariaLabel": "Sélectionnez une source de données",
+      "title": "Source de données"
     },
     "questionHistory": {
-      "title": "Historique des questions",
       "ariaLabel": "Liste des questions posées précédemment",
       "paginator": {
         "ariaLabel": "Pagination pour l'historique des questions"
-      }
-    },
-    "aiVersion": {
-      "title": "Version IA",
-      "ariaLabel": "Sélectionnez la version IA"
+      },
+      "title": "Historique des questions"
     }
   }
 }
