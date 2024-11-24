@@ -1,4 +1,7 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+import {ChatPageComponent} from '../../chat-page/chat-page.component';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-main-banner',
@@ -10,7 +13,7 @@ export class MainBannerComponent implements OnInit {
 
   secondTheme=false; // Default background color
 
-  constructor() { }
+  constructor(private router_:Router) {}
 
   ngOnInit(): void {}
 
@@ -31,4 +34,8 @@ export class MainBannerComponent implements OnInit {
   }
 
   protected readonly navigator = navigator;
+
+  openAibotChatModal() {
+
+   this.router_.navigate(['/chatBot'])  }
 }

@@ -15,3 +15,10 @@ body {
 .js-marquee-wrapper{
   width: 9999999999px !important;
 }
+.fullscreen-modal .mat-dialog-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}

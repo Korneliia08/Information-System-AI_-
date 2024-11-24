@@ -60,7 +60,8 @@
     <div class="bannerTitle">
       <h2>AI Geo Bot <app-choose-language/></h2>
       <h1 [innerHTML]="'mainPage.banner.title'|tr"></h1>
-      <button id="idButtonOpenChat" [attr.aria-label]="'mainPage.banner.bannerButton_aria'|tr">{{'mainPage.banner.bannerButton'|tr}}</button>
+      <button id="idButtonOpenChat" (click)="openAibotChatModal()"
+              [attr.aria-label]="'mainPage.banner.bannerButton_aria'|tr">{{'mainPage.banner.bannerButton'|tr}}</button>
     </div>
   </div>
 
