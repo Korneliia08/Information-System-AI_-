@@ -3,56 +3,89 @@
   <div class="topPart">
     <div class="blockForLogoAndLanguage"></div>
     <div class="containerForBlocksOfLinks">
-      <app-choose-language/>
+      <app-choose-language></app-choose-language>
       <div class="blockForLinks">
-        <h5 class="titleOfBlock">ABOUT US</h5>
+        <h5 class="titleOfBlock">{{ 'mainPage.footer.nav.aboutUs.title' | tr }}</h5>
         <div class="links">
-          <a class="styleOfLink" href="#">About Our Project</a>
-          <a class="styleOfLink" href="#">Our Team</a>
-          <a class="styleOfLink" href="#">Our Mission</a>
-          <a class="styleOfLink" href="#">Our Partners</a>
+          <a class="styleOfLink" [attr.aria-label]="'mainPage.footer.nav.aboutUs.links.aboutProject.ariaLabel' | tr" href="#">
+            {{ 'mainPage.footer.nav.aboutUs.links.aboutProject.text' | tr }}
+          </a>
+          <a class="styleOfLink" [attr.aria-label]="'mainPage.footer.nav.aboutUs.links.ourTeam.ariaLabel' | tr" href="#">
+            {{ 'mainPage.footer.nav.aboutUs.links.ourTeam.text' | tr }}
+          </a>
+          <a class="styleOfLink" [attr.aria-label]="'mainPage.footer.nav.aboutUs.links.ourMission.ariaLabel' | tr" href="#">
+            {{ 'mainPage.footer.nav.aboutUs.links.ourMission.text' | tr }}
+          </a>
+          <a class="styleOfLink" [attr.aria-label]="'mainPage.footer.nav.aboutUs.links.ourPartners.ariaLabel' | tr" href="#">
+            {{ 'mainPage.footer.nav.aboutUs.links.ourPartners.text' | tr }}
+          </a>
         </div>
       </div>
       <div class="blockForLinks">
-        <h5 class="titleOfBlock">SOLUTIONS</h5>
+        <h5 class="titleOfBlock">{{ 'mainPage.footer.nav.solutions.title' | tr }}</h5>
         <div class="links">
-          <a class="styleOfLink" href="#">AI for Business</a>
-          <a class="styleOfLink" href="#">AI in Healthcare</a>
-          <a class="styleOfLink" href="#">AI in Education</a>
-          <a class="styleOfLink" href="#">AI Ethics</a>
+          <a class="styleOfLink" [attr.aria-label]="'mainPage.footer.nav.solutions.links.aiForBusiness.ariaLabel' | tr" href="#">
+            {{ 'mainPage.footer.nav.solutions.links.aiForBusiness.text' | tr }}
+          </a>
+          <a class="styleOfLink" [attr.aria-label]="'mainPage.footer.nav.solutions.links.aiInHealthcare.ariaLabel' | tr" href="#">
+            {{ 'mainPage.footer.nav.solutions.links.aiInHealthcare.text' | tr }}
+          </a>
+          <a class="styleOfLink" [attr.aria-label]="'mainPage.footer.nav.solutions.links.aiInEducation.ariaLabel' | tr" href="#">
+            {{ 'mainPage.footer.nav.solutions.links.aiInEducation.text' | tr }}
+          </a>
+          <a class="styleOfLink" [attr.aria-label]="'mainPage.footer.nav.solutions.links.aiEthics.ariaLabel' | tr" href="#">
+            {{ 'mainPage.footer.nav.solutions.links.aiEthics.text' | tr }}
+          </a>
         </div>
       </div>
       <div class="blockForLinks">
-        <h5 class="titleOfBlock">USEFUL INFORMATION</h5>
+        <h5 class="titleOfBlock">{{ 'mainPage.footer.nav.usefulInformation.title' | tr }}</h5>
         <div class="links">
-          <a class="styleOfLink" href="#">FAQ</a>
-          <a class="styleOfLink" href="#">Blog</a>
-          <a class="styleOfLink" href="#">Resources</a>
-          <a class="styleOfLink" href="#">News</a>
+          <a class="styleOfLink" [attr.aria-label]="'mainPage.footer.nav.usefulInformation.links.faq.ariaLabel' | tr" href="#">
+            {{ 'mainPage.footer.nav.usefulInformation.links.faq.text' | tr }}
+          </a>
+          <a class="styleOfLink" [attr.aria-label]="'mainPage.footer.nav.usefulInformation.links.blog.ariaLabel' | tr" href="#">
+            {{ 'mainPage.footer.nav.usefulInformation.links.blog.text' | tr }}
+          </a>
+          <a class="styleOfLink" [attr.aria-label]="'mainPage.footer.nav.usefulInformation.links.resources.ariaLabel' | tr" href="#">
+            {{ 'mainPage.footer.nav.usefulInformation.links.resources.text' | tr }}
+          </a>
+          <a class="styleOfLink" [attr.aria-label]="'mainPage.footer.nav.usefulInformation.links.news.ariaLabel' | tr" href="#">
+            {{ 'mainPage.footer.nav.usefulInformation.links.news.text' | tr }}
+          </a>
         </div>
       </div>
       <div class="blockForLinks">
-        <h5 class="titleOfBlock">CONTACT US</h5>
+        <h5 class="titleOfBlock">{{ 'mainPage.footer.nav.contactUs.title' | tr }}</h5>
         <div class="links">
-          <a class="styleOfLink" href="#">Contact Information</a>
-          <a class="styleOfLink" href="#">Technical Support</a>
-          <a class="styleOfLink" href="#">Leave Feedback</a>
-          <a class="styleOfLink" href="#">Join Our Team</a>
+          <a class="styleOfLink" [attr.aria-label]="'mainPage.footer.nav.contactUs.links.contactInfo.ariaLabel' | tr" href="#">
+            {{ 'mainPage.footer.nav.contactUs.links.contactInfo.text' | tr }}
+          </a>
+          <a class="styleOfLink" [attr.aria-label]="'mainPage.footer.nav.contactUs.links.techSupport.ariaLabel' | tr" href="#">
+            {{ 'mainPage.footer.nav.contactUs.links.techSupport.text' | tr }}
+          </a>
+          <a class="styleOfLink" [attr.aria-label]="'mainPage.footer.nav.contactUs.links.feedback.ariaLabel' | tr" href="#">
+            {{ 'mainPage.footer.nav.contactUs.links.feedback.text' | tr }}
+          </a>
+          <a class="styleOfLink" [attr.aria-label]="'mainPage.footer.nav.contactUs.links.joinTeam.ariaLabel' | tr" href="#">
+            {{ 'mainPage.footer.nav.contactUs.links.joinTeam.text' | tr }}
+          </a>
         </div>
       </div>
     </div>
     <div class="blockForSocialMedias">
       <div class="blockForIcon">
-        <ng-icon class="iconStyle" name="faBrandInstagram"/>
+        <ng-icon class="iconStyle" name="faBrandInstagram" [attr.aria-label]="'mainPage.footer.nav.socialMedia.instagram.ariaLabel' | tr"></ng-icon>
       </div>
       <div class="blockForIcon">
-        <ng-icon class="iconStyle" name="faBrandTwitter"/>
+        <ng-icon class="iconStyle" name="faBrandTwitter" [attr.aria-label]="'mainPage.footer.nav.socialMedia.twitter.ariaLabel' | tr"></ng-icon>
       </div>
       <div class="blockForIcon">
-        <ng-icon class="iconStyle" name="faBrandFacebook"/>
+        <ng-icon class="iconStyle" name="faBrandFacebook" [attr.aria-label]="'mainPage.footer.nav.socialMedia.facebook.ariaLabel' | tr"></ng-icon>
       </div>
     </div>
   </div>
+
   <div class="bottomPart">
     <span class="spanInBottomPart">© 2024 AI Vision</span>
   </div>

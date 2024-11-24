@@ -71,6 +71,109 @@
           "text": "Sign Up"
         }
       }
+    },
+    "marquee": {
+      "text1": "Investments in AI in 2024 are opening new horizons for technological progress.",
+      "text2": "aigeobot&#64;gmail.com&nbsp;&nbsp;&#10022;&nbsp;&nbsp;aigeobot&#64;gmail.com&nbsp;&nbsp;&#10022;&nbsp;&nbsp;aigeobot&#64;gmail.com&nbsp;&nbsp;&#10022;&nbsp;&nbsp;aigeobot&#64;gmail.com"
+    },
+    "footer":{
+      "nav": {
+        "aboutUs": {
+          "title": "ABOUT US",
+          "links": {
+            "aboutProject": {
+              "text": "About Our Project",
+              "ariaLabel": "Learn more about our project"
+            },
+            "ourTeam": {
+              "text": "Our Team",
+              "ariaLabel": "Learn more about our team"
+            },
+            "ourMission": {
+              "text": "Our Mission",
+              "ariaLabel": "Learn more about our mission"
+            },
+            "ourPartners": {
+              "text": "Our Partners",
+              "ariaLabel": "Learn more about our partners"
+            }
+          }
+        },
+        "solutions": {
+          "title": "SOLUTIONS",
+          "links": {
+            "aiForBusiness": {
+              "text": "AI for Business",
+              "ariaLabel": "Discover AI solutions for business"
+            },
+            "aiInHealthcare": {
+              "text": "AI in Healthcare",
+              "ariaLabel": "Explore AI in healthcare solutions"
+            },
+            "aiInEducation": {
+              "text": "AI in Education",
+              "ariaLabel": "Learn about AI in education"
+            },
+            "aiEthics": {
+              "text": "AI Ethics",
+              "ariaLabel": "Understand ethical considerations of AI"
+            }
+          }
+        },
+        "usefulInformation": {
+          "title": "USEFUL INFORMATION",
+          "links": {
+            "faq": {
+              "text": "FAQ",
+              "ariaLabel": "Read frequently asked questions"
+            },
+            "blog": {
+              "text": "Blog",
+              "ariaLabel": "Visit our blog for insights"
+            },
+            "resources": {
+              "text": "Resources",
+              "ariaLabel": "Access useful resources"
+            },
+            "news": {
+              "text": "News",
+              "ariaLabel": "Read the latest news"
+            }
+          }
+        },
+        "contactUs": {
+          "title": "CONTACT US",
+          "links": {
+            "contactInfo": {
+              "text": "Contact Information",
+              "ariaLabel": "View our contact information"
+            },
+            "techSupport": {
+              "text": "Technical Support",
+              "ariaLabel": "Get technical support"
+            },
+            "feedback": {
+              "text": "Leave Feedback",
+              "ariaLabel": "Share your feedback with us"
+            },
+            "joinTeam": {
+              "text": "Join Our Team",
+              "ariaLabel": "Explore career opportunities with us"
+            }
+          }
+        },
+        "socialMedia": {
+          "instagram": {
+            "ariaLabel": "Visit our Instagram profile"
+          },
+          "twitter": {
+            "ariaLabel": "Follow us on Twitter"
+          },
+          "facebook": {
+            "ariaLabel": "Like us on Facebook"
+          }
+        }
+      }
     }
   }
 }

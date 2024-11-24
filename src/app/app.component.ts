@@ -2,6 +2,7 @@ import {AfterViewInit, Component, OnInit} from '@angular/core';
 import $ from 'jquery';
 import VanillaTilt from 'vanilla-tilt';
 import {TranslateService} from './pipes/translate.service';
+//import { fairyDustCursor } from "./test";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -14,13 +15,24 @@ export class AppComponent implements OnInit,AfterViewInit{
   }
   ngAfterViewInit() {
 
-    // @ts-ignore
-    VanillaTilt.init(document.querySelectorAll('[data-tilt]'), {
-      max: 25, // Maksymalny kąt
-      speed: 400, // Czas trwania animacji
-      glare: true, // Efekt poświaty
-      'max-glare': 0.5, // Maksymalna poświata
-    });
+   // new fairyDustCursor();
+    setInterval(() => {
+      const elements = document.querySelectorAll('[data-tilt]:not([data-tilt-initialized])');
+      if (elements.length > 0) {
+        // @ts-ignore
+        VanillaTilt.init(elements, {
+          max: 15,
+          speed: 400,
+          glare: true,
+          'max-glare': 0.5,
+        });
+        elements.forEach((element) => {
+          element.setAttribute('data-tilt-initialized', 'true');
+        });
+        // @ts-ignore
+
+      }
+    }, 1000);
 
 
   }
