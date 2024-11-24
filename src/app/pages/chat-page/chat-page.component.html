@@ -3,12 +3,12 @@
     <div class="new-chat">
       <button
         i18n="history.newChat.label"
-        [attr.aria-label]="'history.newChat.ariaLabel' | tr"
+        [attr.aria-label]="'history.newChat.ariaLabel' | tr "
         (click)="loadConversation('')"
         class="row">
         {{ 'history.newChat.label' | tr }}
       </button>
-      <button class="row" [attr.aria-label]="'history.newChat.folderAriaLabel' | tr">
+      <button class="row"  [attr.aria-label]=" 'history.newChat.folderAriaLabel' | tr ">
         <mat-icon>folder</mat-icon>
         +
       </button>
@@ -24,7 +24,7 @@
       *ngFor="let conv of conversations"
       [ngClass]="{'selected': conv.id === conversation_id}"
       class="row"
-      [attr.aria-label]="'history.conversations.ariaLabel' | tr">
+      [attr.aria-label]=" 'history.conversations.ariaLabel' | tr ">
       <div class="title">{{ conv.title }}</div>
       <div class="date">{{ conv.date | date:'medium':userTimezone:userLocale }}</div>
     </div>
@@ -43,7 +43,7 @@
       class="noFrame"
       id="aiChangeColor"
       mat-button
-      [attr.aria-label]="'bottomActions.changeTheme.ariaLabel' | tr">
+      [attr.aria-label]=" 'bottomActions.changeTheme.ariaLabel' | tr ">
       <mat-icon>palette</mat-icon>
       {{ 'bottomActions.changeTheme.label' | tr }}
     </button>
@@ -52,7 +52,7 @@
       (click)="back()"
       class="noFrame"
       mat-button
-      [attr.aria-label]="'bottomActions.back.ariaLabel' | tr">
+      [attr.aria-label]="'bottomActions.back.ariaLabel' | tr ">
       <mat-icon>arrow_back</mat-icon>
       {{ 'bottomActions.back.label' | tr }}
     </button>
@@ -74,7 +74,7 @@
       class="exptBtn fileUploadButton"
       color="primary"
       mat-mini-fab
-      [attr.aria-label]="'chatContainer.exportConversation.ariaLabel' | tr">
+      [attr.aria-label]=" 'chatContainer.exportConversation.ariaLabel' | tr ">
       <mat-icon>file_download</mat-icon>
     </button>
     <button
@@ -83,14 +83,14 @@
       class="sendButton"
       color="primary"
       mat-flat-button
-      [attr.aria-label]="'chatContainer.sendMessage.ariaLabel' | tr">
+      [attr.aria-label]=" 'chatContainer.sendMessage.ariaLabel' | tr ">
       {{ 'chatContainer.sendMessage.label' | tr }}
     </button>
   </div>
 </div>
 
 <div class="right-bar">
-  <div class="datasource-selection" [attr.aria-label]="'rightBar.dataSourceSelection.ariaLabel' | tr">
+  <div class="datasource-selection"   [attr.aria-label]=" 'rightBar.dataSourceSelection.ariaLabel' | tr ">
     <div *ngFor="let ds of dataSources" class="datasource-line">
       <mat-checkbox
         (change)="isUpdating = true; onSelectionChange()"
@@ -116,7 +116,7 @@
   <div class="historyData">
     <h4>{{ 'thirdPanel.questionHistory.title' | tr }}</h4>
     <i class="fa-solid fa-not-equal"></i>
-    <ul [attr.aria-label]="'thirdPanel.questionHistory.ariaLabel' | tr">
+    <ul   [attr.aria-label]=" 'thirdPanel.questionHistory.ariaLabel' | tr ">
       <li
         (click)="selectHistoryQuestion(question)"
         *ngFor="let question of rev(questionHistory).slice(pageSize*(currentPage),pageSize*(currentPage+1))"
@@ -130,7 +130,7 @@
       [hidePageSize]="true"
       [length]="questionHistory.length"
       [pageSize]="pageSize"
-      [attr.aria-label]="'thirdPanel.questionHistory.paginator.ariaLabel' | tr"
+      [attr.aria-label]=" 'thirdPanel.questionHistory.paginator.ariaLabel' | tr"
       class="paggCenter"
       style="width: max-content">
     </mat-paginator>
@@ -138,7 +138,7 @@
 
   <div class="chooseAiVersion">
     <h4>{{ 'thirdPanel.aiVersion.title' | tr }}</h4>
-    <mat-radio-group [(ngModel)]="selectedAiVersion" [attr.aria-label]="'thirdPanel.aiVersion.ariaLabel' | tr">
+    <mat-radio-group [(ngModel)]="selectedAiVersion"   [attr.aria-label]=" 'thirdPanel.aiVersion.ariaLabel' | tr">
       <mat-radio-button value="4.5">v4.5</mat-radio-button>
       <mat-radio-button value="5">v5</mat-radio-button>
       <mat-radio-button value="9">v9</mat-radio-button>
