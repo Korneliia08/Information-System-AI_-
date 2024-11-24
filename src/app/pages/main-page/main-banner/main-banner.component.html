@@ -1,65 +1,52 @@
 <div class="containerForWrapperBanner">
-  <video autoplay class="videoBanner" loop muted>
+  <video autoplay loop muted class="videoBanner" aria-label="Video banner background">
     <source [src]="'assets/images/banner2.mp4'" type="video/mp4" />
-
   </video>
+
   <div class="bannerContent">
-    <div class="divForLogoAndNav">
+    <header class="divForLogoAndNav" [ngClass]="{secondTheme}">
       <div class="navWrapper">
         <div class="blockForLogo">
-          <a href="#" >
-            <img alt="logo" src="assets/icons/logo.svg" />
+          <a href="#" aria-label="Go to homepage">
+            <img alt="Operating System Logo" src="assets/icons/logo.svg" />
             <span>Operating System</span>
           </a>
         </div>
-        <nav id="mobileMenu">
+
+        <nav id="mobileMenu" aria-label="Main navigation">
           <div class="leftPartOfNav">
-            <a class="disabled" href="#">Features</a>
-            <a class="disabled" href="#">Pricing</a>
-            <a class="disabled" href="#">Resources</a>
-            <a class="disabled" href="#">Customers</a>
-            <a class="disabled" href="#">Gallery</a>
-            <a class="disabled" href="#">Agencies</a>
-            <a class="disabled" href="#">Contact support</a>
-            <a class="disabled" href="#">Log In</a>
-            <a class="signUpBtn disabled" href="#">Sign Up</a>
-            <a id="accessibility-icon"><ng-icon name="faEye"></ng-icon></a>
+            <a class="disabled" href="#" aria-disabled="true">Features</a>
+            <a class="disabled" href="#" aria-disabled="true">Pricing</a>
+            <a class="disabled" href="#" aria-disabled="true">Resources</a>
+            <a class="disabled" href="#" aria-disabled="true">Customers</a>
+            <a class="disabled" href="#" aria-disabled="true">Gallery</a>
+            <a class="disabled" href="#" aria-disabled="true">Agencies</a>
+            <a class="disabled" href="#" aria-disabled="true">Contact support</a>
+            <a class="signUpBtn disabled" href="#" aria-disabled="true">Sign Up</a>
+            <a id="accessibility-icon" aria-label="Accessibility options"><ng-icon name="faEye"></ng-icon></a>
           </div>
         </nav>
       </div>
-      <button
-        class="hamburger hamburger--collapse"
-        id="navHamburger"
-        type="button"
-      >
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
+      <button class="hamburger hamburger--collapse" id="navHamburger" type="button" aria-label="Toggle navigation menu">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
       </button>
-    </div>
-    <div
-      class="bannerTitle"
-      data-aos="fade-up"
-      data-aos-anchor-placement="top-left"
-      data-aos-duration="1000"
-      data-aos-easing="ease-in-out"
-      data-aos-mirror="true"
-      data-aos-once="true"
-    >
+    </header>
+
+    <div class="bannerTitle">
       <h2>AI Geo Bot</h2>
-      <h1>
-        Get more familiar<br />
-        with our<br />
-        AI Geo Bot
-      </h1>
-      <button id="idButtonOpenChat">AI chat</button>
+      <h1>Get more familiar<br />with our<br />AI Geo Bot</h1>
+      <button id="idButtonOpenChat" aria-label="Open AI chat">AI chat</button>
     </div>
   </div>
+
   <div class="backgroundWrapper backForNav">
     <div class="contentWrapperWide"></div>
   </div>
-  <div class="blockForStatus">
+
+  <footer class="blockForStatus" aria-label="App status">
     <span>App status</span>
-    <div class="blockCircle"></div>
-  </div>
+    <div class="blockCircle" aria-hidden="true"></div>
+  </footer>
 </div>

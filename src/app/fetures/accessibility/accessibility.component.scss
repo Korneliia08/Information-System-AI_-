@@ -1,0 +1,13 @@
+.accessibility-container {
+  display: none;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  background: red;
+  width: 100px;
+  height: 100px;
+  z-index: 9999;
+  &.open {
+    display: flex;
+  }
+}

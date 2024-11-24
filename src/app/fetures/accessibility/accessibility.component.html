@@ -1,14 +1,15 @@
-<div class="accessibility-container">
+<div class="accessibility-container" [ngClass]="{ open: open }">
+  <button class="cross" aria-label="Close accessibility panel" (click)="open=false">X</button>
   <div class="accessibility-block">
-    <button id="increase-font">Increase Font Size</button>
-    <button id="decrease-font">Decrease Font Size</button>
-    <button id="toggle-underline">Underline Links</button>
-    <button id="toggle-grayscale">Grayscale</button>
-    <button id="toggle-invert">Invert Colors</button>
-    <button id="toggle-low-saturation">Low Saturation</button>
-    <button id="toggle-high-saturation">High Saturation</button>
-    <button id="increase-line-height">Increase Line Height</button>
-    <button id="decrease-line-height">Decrease Line Height</button>
-    <button id="reset-options">Reset Options</button>
+    <button (click)="increaseFontSize()">Increase Font Size</button>
+    <button (click)="decreaseFontSize()">Decrease Font Size</button>
+    <button (click)="toggleUnderline()">Underline Links</button>
+    <button (click)="toggleGrayscale()">Grayscale</button>
+    <button (click)="toggleInvertColors()">Invert Colors</button>
+    <button (click)="toggleLowSaturation()">Low Saturation</button>
+    <button (click)="toggleHighSaturation()">High Saturation</button>
+    <button (click)="increaseLineHeight()">Increase Line Height</button>
+    <button (click)="decreaseLineHeight()">Decrease Line Height</button>
+    <button (click)="resetOptions()">Reset Options</button>
   </div>
 </div>

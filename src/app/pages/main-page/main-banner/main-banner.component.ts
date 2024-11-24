@@ -1,14 +1,32 @@
-import { Component } from '@angular/core';
-import {faEye} from '@ng-icons/font-awesome/regular';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-main-banner',
-  standalone: false,
-
   templateUrl: './main-banner.component.html',
-  styleUrl: './main-banner.component.scss'
+  styleUrls: ['./main-banner.component.scss'],
+  standalone:false
 })
-export class MainBannerComponent {
+export class MainBannerComponent implements OnInit {
 
-  protected readonly faEye = faEye;
+  secondTheme=false; // Default background color
+
+  constructor() { }
+
+  ngOnInit(): void {}
+
+  // Listen for the window scroll event
+  @HostListener('window:scroll', [])
+  onScroll(): void {
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+    // Log scroll position (for debugging purposes)
+    console.log('Scroll position:', scrollPosition);
+
+    // Change background color when scroll position is greater than 100px
+    if (scrollPosition > 100) {
+      this.secondTheme = true;
+    } else {
+      this.secondTheme = false;
+    }
+  }
 }
