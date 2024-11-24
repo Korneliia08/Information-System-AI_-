@@ -1,14 +1,12 @@
 (function() {
-  // Funkcja inicjalizująca particlesJS, tylko jeżeli element z id #particles-js istnieje
   function initParticlesJS() {
     const particlesElement = document.getElementById("particles-js");
 
     if (particlesElement && !particlesElement.hasAttribute("data-particles-initialized")) {
-      // Jeżeli element istnieje i nie był jeszcze inicjalizowany
       particlesJS("particles-js", {
         "particles": {
           "number": {
-            "value": 72,
+            "value": 122,
             "limit": 200,
             "density": {
               "enable": true,
@@ -117,26 +115,22 @@
         "retina_detect": true
       });
 
-      // Oznaczamy, że particlesJS został zainicjalizowany
       particlesElement.setAttribute("data-particles-initialized", "true");
     }
   }
 
-  // Sprawdzamy, czy element #particles-js już istnieje w DOM
   if (document.getElementById("particles-js")) {
-    initParticlesJS(); // Jeżeli element istnieje, inicjalizujemy particlesJS
+    initParticlesJS();
   }
 
-  // Używamy MutationObserver do wykrywania nowych elementów z id #particles-js w DOM
   const observer = new MutationObserver(() => {
     if (document.getElementById("particles-js")) {
-      initParticlesJS(); // Jeśli pojawi się nowy element #particles-js, inicjalizujemy particlesJS
+      initParticlesJS();
     }
   });
 
-  // Konfiguracja obserwatora
   observer.observe(document.body, {
-    childList: true,  // Obserwujemy dodawanie nowych dzieci
-    subtree: true     // Obserwujemy również dzieci wszystkich elementów
+    childList: true,
+    subtree: true
   });
 })();
