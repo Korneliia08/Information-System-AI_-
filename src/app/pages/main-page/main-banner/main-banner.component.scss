@@ -42,6 +42,7 @@
       position: relative;
       z-index: 10000;
 
+
       &:before {
         content: "";
         width: 6px;
@@ -145,9 +146,12 @@
       }
 
       span {
-        font-size: 1.25rem;
+        font-size: 1.27rem;
         margin-left: 10px;
         color: rgba(255, 255, 255, 0.71);
+        font-family: "Saira Semi Condensed", sans-serif;
+        font-weight: 300;
+        font-style: normal;
       }
     }
 
@@ -204,7 +208,7 @@
 
         a {
           color: rgba(255, 255, 255, 0.71);
-          font-size: 1.09rem;
+          font-size: 1.1rem;
           letter-spacing: 1px;
           text-decoration: none;
           transition: 450ms ease;

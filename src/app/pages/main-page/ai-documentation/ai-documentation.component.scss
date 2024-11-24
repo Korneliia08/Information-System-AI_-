@@ -265,11 +265,17 @@ text-align: center;
       }
     }
   }
-
 }
+
 .linesContainer{
   overflow: hidden;
   width: 100%;
   max-width: 100%;
   color:white;
+  .marquee1{
+    color:yellow;
+  }
+  .marquee2{
+
+  }
 }
