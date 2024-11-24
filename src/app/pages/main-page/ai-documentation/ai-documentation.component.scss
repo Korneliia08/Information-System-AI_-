@@ -272,10 +272,52 @@ text-align: center;
   width: 100%;
   max-width: 100%;
   color:white;
+
+  //height: 600px;
+  z-index: 1;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 30px;
+  justify-items: center;
+  justify-content: center;
+
   .marquee1{
-    color:yellow;
+    height: 80px;
+  // //position: relative;
+   // width: 100%;
+     letter-spacing: 3px;
+     color: white;
+    font-size: 80px;
+   // backdrop-filter: blur(200px);
+ //   text-transform: uppercase;
+ //   border-top: 1px solid rgba(255, 255, 255, .5);
+
+    //border-bottom: 1px solid rgba(255, 255, 255, .5);
+    //padding: 20px 0;
+    //font-weight: 800;
+    //font-family: "Plus Jakarta Sans", sans-serif;
   }
   .marquee2{
-
+   // position: relative;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    width: 100%;
+    font-size: 50px;
+    background-color: black;
+    padding: 10px 0;
+    .text {
+      padding-bottom: 5px;
+      color: white;
+      background: linear-gradient(to right, #4bd8ff, #d661ff, #0511cc, #d661ff, #4bd8ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
   }
 }

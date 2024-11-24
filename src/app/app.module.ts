@@ -23,15 +23,18 @@ import { SmoothScrollComponent } from './smooth-scroll/smooth-scroll.component';
 import { FooterComponent } from './pages/main-page/footer/footer.component';
 import { AccessibilityComponent } from './fetures/accessibility/accessibility.component';
 import {NgxMarqueeModule} from 'ngx-marquee';
+import {TranslatePipe, TrPipe} from './pipes/translate.pipe';
+import {TranslateService} from './pipes/translate.service';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChatPageComponent,MaxLengthPipe,
     ChatBoxComponent,
-    MainPageComponent,
+    MainPageComponent,TranslatePipe,
     MainBannerComponent,
-    OurPartnersComponent,
+    OurPartnersComponent, TrPipe,
     AiDocumentationComponent,
     SmoothScrollComponent,
     FooterComponent,
@@ -42,16 +45,17 @@ import {NgxMarqueeModule} from 'ngx-marquee';
     AppRoutingModule,
     MatIcon,
     MatIconButton,
-    MatRadioGroup,
+    MatRadioGroup,HttpClientModule,
     MatRadioButton,
-    MatPaginator,NgxMarqueeModule,
+    MatPaginator, NgxMarqueeModule,
     MatCheckbox,
     MatButton,
     FormsModule,
     NgIconsModule.withIcons({faEye})
   ],
   providers: [
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    TranslateService
   ],
   bootstrap: [AppComponent]
 })

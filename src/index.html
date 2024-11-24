@@ -30,10 +30,12 @@
 
     function initMarquee(element, speed) {
       if (!element.hasAttribute('data-marquee-initialized')) {
+    console.log(1);
         $(element).marquee({
           duration: speed,    // Prędkość przewijania
-          gap: 50,            // Odległość między powtarzającymi się elementami
-          delayBeforeStart: 0,
+          gap: 50,
+          startVisible :true,// Odległość między powtarzającymi się elementami
+        //  delayBeforeStart: 0,
           direction: "left",  // Kierunek przewijania
           duplicated: true    // Powtarzanie efektu
         });
@@ -45,13 +47,14 @@
       const marquee2 = document.querySelector('.marquee2');
       const marquee3 = document.querySelector('.marquee3');
       if (marquee1 ) {
-        initMarquee(marquee1, 5000);
+
+        initMarquee(marquee1, 7000);
       }
       if (marquee2) {
-        initMarquee(marquee2, 4000);
+        initMarquee(marquee2, 10000);
       }
       if (marquee3 ) {
-        initMarquee(marquee3, 7500);
+        initMarquee(marquee3,  10000);
       }
 
     }, 200);
