@@ -1,4 +1,4 @@
-<button class="chooseLanguageButton" (click)="openDialog()">
+<button class="chooseLanguageButton" (click)="openDialog()" [ngStyle]="{width:width}">
   <span class="fi" [class]="'fi-'+translation_.getCurrentLanguageFlagSymbol()"></span>
   {{ 'footer.chooseLanguage.name'|tr }}
 </button>
