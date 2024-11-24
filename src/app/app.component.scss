@@ -1,0 +1,56 @@
+
+body {
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.cursor-element {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+.line {
+  width: 2px;
+  height: 50px;
+  background-color: black;
+  position: absolute;
+  pointer-events: none;
+  animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+

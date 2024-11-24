@@ -1,8 +1,6 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
-import $ from 'jquery';
 import VanillaTilt from 'vanilla-tilt';
 import {TranslateService} from './pipes/translate.service';
-//import { fairyDustCursor } from "./test";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -15,7 +13,7 @@ export class AppComponent implements OnInit,AfterViewInit{
   }
   ngAfterViewInit() {
 
-   // new fairyDustCursor();
+
     setInterval(() => {
       const elements = document.querySelectorAll('[data-tilt]:not([data-tilt-initialized])');
       if (elements.length > 0) {
