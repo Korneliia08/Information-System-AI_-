@@ -240,9 +240,39 @@
 
 
   & > button {
-
     margin: auto;
-
   }
+}
 
+.animated-background {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background 4s ease-in-out;
+
+  .content {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeText 2s ease-in-out infinite;
+  }
+}
+
+@keyframes fadeText {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  10%, 90% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
 }

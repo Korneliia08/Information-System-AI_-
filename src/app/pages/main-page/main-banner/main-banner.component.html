@@ -1,50 +1,51 @@
 <div id="particles-js"></div>
 <section class="containerForWrapperBanner">
-<!--  <video autoplay loop muted class="videoBanner" aria-label="Video banner background" role="presentation">-->
-<!--    <source [src]="'assets/images/banner2.mp4'" type="video/mp4" />-->
-<!--  </video>-->
+  <!--  <video autoplay loop muted class="videoBanner" aria-label="Video banner background" role="presentation">-->
+  <!--    <source [src]="'assets/images/banner2.mp4'" type="video/mp4" />-->
+  <!--  </video>-->
 
   <div class="bannerContent">
-    <header class="divForLogoAndNav" [ngClass]="{secondTheme}">
+    <header [ngClass]="{secondTheme}" class="divForLogoAndNav">
       <div class="navWrapper">
         <div class="blockForLogo">
-          <a href="#" aria-label="Go to homepage">
+          <a aria-label="Go to homepage" href="#">
 
-            <img alt="Operating System Logo" src="assets/icons/logo.svg" />
+            <img alt="Operating System Logo" src="assets/icons/logo.svg"/>
             <span>Operating System</span>
           </a>
         </div>
 
-        <nav id="mobileMenu" aria-label="Main navigation">
+        <nav aria-label="Main navigation" id="mobileMenu">
           <div class="leftPartOfNav">
-            <a class="disabled" href="/features" [attr.aria-label]="'mainPage.header.nav.features.ariaLabel'|tr"
-               aria-disabled="true">{{ 'mainPage.header.nav.features.text'|tr }}</a>
+            <a [attr.aria-label]="'mainPage.header.nav.features.ariaLabel'|tr" aria-disabled="true" class="disabled"
+               href="/features">{{ 'mainPage.header.nav.features.text'|tr }}</a>
 
-            <a class="disabled" href="/pricing" [attr.aria-label]="'mainPage.header.nav.pricing.ariaLabel'|tr"
-               aria-disabled="true">{{ 'mainPage.header.nav.pricing.text'|tr }}</a>
+            <a [attr.aria-label]="'mainPage.header.nav.pricing.ariaLabel'|tr" aria-disabled="true" class="disabled"
+               href="/pricing">{{ 'mainPage.header.nav.pricing.text'|tr }}</a>
 
-            <a class="disabled" href="/resources" [attr.aria-label]="'mainPage.header.nav.resources.ariaLabel'|tr"
-               aria-disabled="true">{{ 'mainPage.header.nav.resources.text'|tr }}</a>
+            <a [attr.aria-label]="'mainPage.header.nav.resources.ariaLabel'|tr" aria-disabled="true" class="disabled"
+               href="/resources">{{ 'mainPage.header.nav.resources.text'|tr }}</a>
 
-            <a class="disabled" href="/customers" [attr.aria-label]="'mainPage.header.nav.customers.ariaLabel'|tr"
-               aria-disabled="true">{{ 'mainPage.header.nav.customers.text'|tr }}</a>
+            <a [attr.aria-label]="'mainPage.header.nav.customers.ariaLabel'|tr" aria-disabled="true" class="disabled"
+               href="/customers">{{ 'mainPage.header.nav.customers.text'|tr }}</a>
 
-            <a class="disabled" href="/gallery" [attr.aria-label]="'mainPage.header.nav.gallery.ariaLabel'|tr"
-               aria-disabled="true">{{ 'mainPage.header.nav.gallery.text'|tr }}</a>
+            <a [attr.aria-label]="'mainPage.header.nav.gallery.ariaLabel'|tr" aria-disabled="true" class="disabled"
+               href="/gallery">{{ 'mainPage.header.nav.gallery.text'|tr }}</a>
 
-            <a class="disabled" href="/agencies" [attr.aria-label]="'mainPage.header.nav.agencies.ariaLabel'|tr"
-               aria-disabled="true">{{ 'mainPage.header.nav.agencies.text'|tr }}</a>
+            <a [attr.aria-label]="'mainPage.header.nav.agencies.ariaLabel'|tr" aria-disabled="true" class="disabled"
+               href="/agencies">{{ 'mainPage.header.nav.agencies.text'|tr }}</a>
 
-            <a class="disabled" href="/contact-support" [attr.aria-label]="'mainPage.header.nav.contactSupport.ariaLabel'|tr"
-               aria-disabled="true">{{ 'mainPage.header.nav.contactSupport.text'|tr }}</a>
+            <a [attr.aria-label]="'mainPage.header.nav.contactSupport.ariaLabel'|tr" aria-disabled="true"
+               class="disabled"
+               href="/contact-support">{{ 'mainPage.header.nav.contactSupport.text'|tr }}</a>
 
-            <a class="signUpBtn disabled" href="/sign-up" [attr.aria-label]="'mainPage.header.nav.signUp.ariaLabel'|tr"
-               aria-disabled="true">{{ 'mainPage.header.nav.signUp.text'|tr }}</a>
+            <a [attr.aria-label]="'mainPage.header.nav.signUp.ariaLabel'|tr" aria-disabled="true" class="signUpBtn disabled"
+               href="/sign-up">{{ 'mainPage.header.nav.signUp.text'|tr }}</a>
 
 
             <button
-              id="accessibility-icon"
               aria-label="Open accessibility options"
+              id="accessibility-icon"
 
             >
               <ng-icon name="faEye"></ng-icon>
@@ -53,7 +54,7 @@
           </div>
         </nav>
       </div>
-      <button class="hamburger hamburger--collapse" id="navHamburger" type="button" aria-label="Toggle navigation menu">
+      <button aria-label="Toggle navigation menu" class="hamburger hamburger--collapse" id="navHamburger" type="button">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
@@ -61,10 +62,10 @@
     </header>
 
     <div class="bannerTitle">
-      <h2>AI Geo Bot  </h2>
+      <h2>AI Geo Bot </h2>
       <h1 [innerHTML]="'mainPage.banner.title'|tr"></h1>
-      <button id="idButtonOpenChat" (click)="openAibotChatModal()"
-              [attr.aria-label]="'mainPage.banner.bannerButton_aria'|tr">{{'mainPage.banner.bannerButton'|tr}}</button>
+      <button (click)="openAibotChatModal()" [attr.aria-label]="'mainPage.banner.bannerButton_aria'|tr" id="idButtonOpenChat"
+              tabindex="0">{{'mainPage.banner.bannerButton'|tr}}</button>
     </div>
   </div>
 
@@ -72,8 +73,8 @@
     <div class="contentWrapperWide"></div>
   </div>
 
-  <footer class="blockForStatus" aria-label="App status">
+  <footer aria-label="App status" class="blockForStatus">
     <span>{{'mainPage.banner.appStatus'|tr }}</span>
-    <div class="blockCircle" aria-hidden="true"></div>
+    <div aria-hidden="true" class="blockCircle"></div>
   </footer>
 </section>

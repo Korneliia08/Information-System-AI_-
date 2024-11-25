@@ -3,11 +3,12 @@
   height: 100vh;
   overflow: hidden;
   width: 100%;
-background-image: url("../../../../../public/assets/Designer3.jpeg");
+  background-image: url("../../../../../public/assets/Designer3.jpeg");
   background-position: right;
 
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
+
   .videoBanner {
     position: absolute;
     top: -5vh;
@@ -19,7 +20,7 @@ background-image: url("../../../../../public/assets/Designer3.jpeg");
 
   .bannerContent {
     position: absolute;
-    z-index:1600;
+    z-index: 1600;
     top: 0;
     left: 0;
     display: flex;
@@ -67,7 +68,8 @@ background-image: url("../../../../../public/assets/Designer3.jpeg");
       h1 {
         letter-spacing: 5px;
         font-family: "Orbitron", sans-serif;
-        text-transform: uppercase; font-size: 1.9625rem;
+        text-transform: uppercase;
+        font-size: 1.9625rem;
       }
 
       h2 {
@@ -93,6 +95,10 @@ background-image: url("../../../../../public/assets/Designer3.jpeg");
         max-width: 270px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         outline: none;
+
+        &:focus {
+          outline: 2px solid #dedede;
+        }
 
         &:hover {
           cursor: pointer;

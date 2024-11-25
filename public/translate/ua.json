@@ -65,7 +65,7 @@
     },
     "clearConversation": {
       "ariaLabel": "Видалити всі повідомлення з поточної розмови",
-      "label": "Чітка розмова"
+      "label": "Видалити розмову"
     }
   },
   "chatContainer": {

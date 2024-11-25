@@ -1,11 +1,17 @@
 <div [ngClass]="{isDisplayLogo:isDisplayLogo}" class="conversation">
   <ng-container *ngIf="isDisplayLogo">
+    <div [ngStyle]="{ background: currentGradient }" class="animated-background">
+      <div class="content">
+        <p>{{ currentMessage }}</p>
+      </div>
+    </div>
     <img [ngClass]="{isDisplayLogoHide:isDisplayLogoHide}" [src]="'logo2.png'" alt="" class="logo"/>
   </ng-container>
   <ng-container *ngFor="let message of conversation; let i = index">
     <div class="user-message">
     </div>
-    <div *ngIf="message.answer && message.answer.content.length > 0" [ngStyle]="{ 'background-color': hexToRgba(color, 0.1)}" class="bot-message">
+    <div *ngIf="message.answer && message.answer.content.length > 0"
+         [ngStyle]="{ 'background-color': hexToRgba(color, 0.1)}" class="bot-message">
       <div class="message-footer">
         <button (click)="toggleDetails(i)" class="details-button" mat-icon-button>
           <mat-icon *ngIf="detailsVisible[i]">expand_less</mat-icon>
