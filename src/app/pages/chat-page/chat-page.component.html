@@ -58,7 +58,7 @@
   </div>
 </div>
 
-<div [ngClass]="{'dark-theme': isDarkTheme, 'light-theme': !isDarkTheme}" class="chat-container">
+<div [ngClass]="{'dark-theme': isDarkTheme, 'light-theme': !isDarkTheme}"  [ngStyle]="{ background: currentGradient }"  class="chat-container">
   <app-chat-box [color]="'#6b6b6b'" [conversation]="conversation" [isLoading]="isLoading"></app-chat-box>
   <div class="input-container">
     <input

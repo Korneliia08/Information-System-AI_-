@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {questions} from './questions';
 import {Router} from '@angular/router';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-chat-page',
@@ -45,7 +46,42 @@ export class ChatPageComponent {
     return row;
   }
 
-  ngOnInit(): void {}
+
+
+    gradients = [
+      "linear-gradient(135deg, #212224, #2a2b2d)", // М'який перехід між темно-сірими відтінками
+      "linear-gradient(135deg, #212224, #1b1d1f)", // Темніший градієнт із майже чорним відтінком
+      "linear-gradient(135deg, #212224, #24313a)", // Ледь відчутний синьо-зелений відтінок
+    ];
+
+    currentGradient = this.gradients[0];
+  private index = 0;
+
+    ngOnInit() {
+      this.startAnimation();
+      setTimeout(() => {
+
+        this.currentGradient = ''
+      }, 6000); // Кожні 2 секунди
+
+    }
+
+
+    startAnimation(): void {
+      let counter = 1
+     let interval = setInterval(() => {
+        this.index = (this.index + 1) % this.gradients.length; // Зміна індексу
+        this.currentGradient = this.gradients[this.index];
+        if(counter++>=3){
+          clearInterval(interval)
+          this.currentGradient = ''
+        }
+      }, 2000); // Кожні 2 секунди
+    }
+
+
+
+
 
   sendMessage() {
     this.questionHistory.push({ question: this.question.trim() });

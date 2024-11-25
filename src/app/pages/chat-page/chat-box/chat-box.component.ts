@@ -27,25 +27,17 @@ export class ChatBoxComponent {
     "Обробляємо дані...",
     "Майже готово!",
   ];
-  gradients = [
-    "linear-gradient(135deg, #212224, #2a2b2d)", // М'який перехід між темно-сірими відтінками
-    "linear-gradient(135deg, #212224, #1b1d1f)", // Темніший градієнт із майже чорним відтінком
-    "linear-gradient(135deg, #212224, #24313a)", // Ледь відчутний синьо-зелений відтінок
-  ];
+
   currentMessage = this.messages[0];
-  currentGradient = this.gradients[0];
   private index = 0;
 
   constructor(private dialog: MatDialog) {
   }
 
   ngOnInit() {
-    // setTimeout(() => {
-    //   this.isDisplayLogoHide = true;
-    //   setTimeout(() => {
-    //     this.isDisplayLogo = false;
-    //   }, 1000);
-    // }, 4000);
+    setTimeout(() => {
+           this.isDisplayLogo = false;
+   }, 6000);
     this.startAnimation();
   }
 
@@ -53,7 +45,6 @@ export class ChatBoxComponent {
     setInterval(() => {
       this.index = (this.index + 1) % this.messages.length; // Зміна індексу
       this.currentMessage = this.messages[this.index];
-      this.currentGradient = this.gradients[this.index];
     }, 2000); // Кожні 2 секунди
   }
 

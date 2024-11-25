@@ -15,7 +15,8 @@
   background-color: #fff;
   box-sizing: border-box;
   justify-content: center;
-  width: 800px;
+  //width: 800px;
+  flex-grow: 10;
 }
 
 .input-container {
