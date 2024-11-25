@@ -1,0 +1,297 @@
+{
+  "accessibility": {
+    "accessibilityOptions": {
+      "ariaLabel": "Panneau d'accessibilité",
+      "value": "Options d'accessibilité"
+    },
+    "close": {
+      "ariaLabel": "Bouton Fermer",
+      "value": "X"
+    },
+    "closeAccessibilityPanel": {
+      "ariaLabel": "Fermer le panneau d'accessibilité",
+      "value": "Fermer le panneau d'accessibilité"
+    },
+    "decreaseFontSize": {
+      "ariaLabel": "Diminuer la taille de la police",
+      "value": "Diminuer la taille de la police"
+    },
+    "decreaseLineHeight": {
+      "ariaLabel": "Diminuer la hauteur de ligne du texte",
+      "value": "Diminuer la hauteur de la ligne"
+    },
+    "increaseFontSize": {
+      "ariaLabel": "Augmenter la taille de la police",
+      "value": "Augmenter la taille de la police"
+    },
+    "increaseLineHeight": {
+      "ariaLabel": "Augmenter la hauteur de ligne du texte",
+      "value": "Augmenter la hauteur de la ligne"
+    },
+    "resetOptions": {
+      "ariaLabel": "Réinitialiser tous les paramètres d'accessibilité",
+      "value": "Options de réinitialisation"
+    },
+    "title": "Options d'accessibilité",
+    "toggleGrayscale": {
+      "ariaLabel": "Activer ou désactiver les niveaux de gris",
+      "value": "Niveaux de gris"
+    },
+    "toggleHighSaturation": {
+      "ariaLabel": "Basculer en mode saturation élevée",
+      "value": "Haute saturation"
+    },
+    "toggleInvertColors": {
+      "ariaLabel": "Inverser les couleurs",
+      "value": "Inverser les couleurs"
+    },
+    "toggleLowSaturation": {
+      "ariaLabel": "Basculer en mode faible saturation",
+      "value": "Faible saturation"
+    },
+    "toggleUnderline": {
+      "ariaLabel": "Activer le soulignement pour les liens",
+      "value": "Souligner les liens"
+    }
+  },
+  "bottomActions": {
+    "back": {
+      "ariaLabel": "Revenir à la page précédente",
+      "label": "Dos"
+    },
+    "changeTheme": {
+      "ariaLabel": "Basculer entre le thème clair et sombre",
+      "label": "Changer de thème"
+    },
+    "clearConversation": {
+      "ariaLabel": "Supprimer tous les messages de la conversation en cours",
+      "label": "Conversation claire"
+    }
+  },
+  "chatContainer": {
+    "exportConversation": {
+      "ariaLabel": "Téléchargez la conversation en cours",
+      "label": "Exporter la conversation"
+    },
+    "input": {
+      "ariaLabel": "Champ de saisie des questions",
+      "placeholder": "Tapez votre question..."
+    },
+    "sendMessage": {
+      "ariaLabel": "Envoyez votre question",
+      "label": "Envoyer"
+    }
+  },
+  "footer": {
+    "chooseLanguage": {
+      "name": "Anglais",
+      "title": "Choisissez la langue :"
+    }
+  },
+  "history": {
+    "conversations": {
+      "ariaLabel": "Historique des conversations"
+    },
+    "newChat": {
+      "ariaLabel": "Démarrer une nouvelle discussion",
+      "label": "Nouvelle discussion"
+    },
+    "searchChat": {
+      "ariaLabel": "Rechercher une entrée dans le chat",
+      "placeholder": "Rechercher une conversation"
+    }
+  },
+  "mainPage": {
+    "banner": {
+      "AIdocumentation": {
+        "card": {
+          "card1": {
+            "content": "L'intelligence artificielle (IA) transforme notre façon de vivre, de travailler et d'interagir. ",
+            "title": "L'intelligence artificielle dans la vie quotidienne"
+          },
+          "card2": {
+            "content": "L’IA révolutionne les soins de santé en aidant au diagnostic, en prédisant les résultats pour les patients et même en recommandant des traitements. ",
+            "title": "L'IA dans la santé"
+          },
+          "card3": {
+            "content": "Le potentiel de l’IA est illimité. ",
+            "title": "L'avenir de l'IA"
+          }
+        },
+        "title": "Documentation sur l'IA"
+      },
+      "appStatus": "Statut de l'application",
+      "bannerButton": "Chat IA",
+      "bannerButton_aria": "Ouvrir le chat IA",
+      "title": "Soyez plus familier<br/>avec notre\n"
+    },
+    "cooperation": {
+      "cooperation": "Coopération",
+      "subTitle": "Nos partenaires"
+    },
+    "footer": {
+      "nav": {
+        "aboutUs": {
+          "links": {
+            "aboutProject": {
+              "ariaLabel": "En savoir plus sur notre projet",
+              "text": "À propos de notre projet"
+            },
+            "ourMission": {
+              "ariaLabel": "En savoir plus sur notre mission",
+              "text": "Notre Mission"
+            },
+            "ourPartners": {
+              "ariaLabel": "En savoir plus sur nos partenaires",
+              "text": "Nos partenaires"
+            },
+            "ourTeam": {
+              "ariaLabel": "En savoir plus sur notre équipe",
+              "text": "Notre équipe"
+            }
+          },
+          "title": "À PROPOS DE NOUS"
+        },
+        "contactUs": {
+          "links": {
+            "contactInfo": {
+              "ariaLabel": "Consultez nos coordonnées",
+              "text": "Coordonnées"
+            },
+            "feedback": {
+              "ariaLabel": "Partagez vos commentaires avec nous",
+              "text": "Laisser les commentaires"
+            },
+            "joinTeam": {
+              "ariaLabel": "Explorez les opportunités de carrière avec nous",
+              "text": "Rejoignez notre équipe"
+            },
+            "techSupport": {
+              "ariaLabel": "Obtenir une assistance technique",
+              "text": "Assistance technique"
+            }
+          },
+          "title": "CONTACTEZ-NOUS"
+        },
+        "socialMedia": {
+          "facebook": {
+            "ariaLabel": "Aimez-nous sur Facebook"
+          },
+          "instagram": {
+            "ariaLabel": "Visitez notre profil Instagram"
+          },
+          "twitter": {
+            "ariaLabel": "Suivez-nous sur Twitter"
+          }
+        },
+        "solutions": {
+          "links": {
+            "aiEthics": {
+              "ariaLabel": "Comprendre les considérations éthiques de l’IA",
+              "text": "Éthique de l'IA"
+            },
+            "aiForBusiness": {
+              "ariaLabel": "Découvrez les solutions d'IA pour les entreprises",
+              "text": "IA pour les entreprises"
+            },
+            "aiInEducation": {
+              "ariaLabel": "En savoir plus sur l'IA dans l'éducation",
+              "text": "L'IA dans l'éducation"
+            },
+            "aiInHealthcare": {
+              "ariaLabel": "Explorez l'IA dans les solutions de santé",
+              "text": "L'IA dans la santé"
+            }
+          },
+          "title": "SOLUTIONS"
+        },
+        "usefulInformation": {
+          "links": {
+            "blog": {
+              "ariaLabel": "Visitez notre blog pour obtenir des informations",
+              "text": "Blogue"
+            },
+            "faq": {
+              "ariaLabel": "Lire les questions fréquemment posées",
+              "text": "FAQ"
+            },
+            "news": {
+              "ariaLabel": "Lire les dernières nouvelles",
+              "text": "Nouvelles"
+            },
+            "resources": {
+              "ariaLabel": "Accédez à des ressources utiles",
+              "text": "Ressources"
+            }
+          },
+          "title": "INFORMATIONS UTILES"
+        }
+      }
+    },
+    "header": {
+      "nav": {
+        "agencies": {
+          "ariaLabel": "Lien vers la page Agences",
+          "text": "Agences"
+        },
+        "contactSupport": {
+          "ariaLabel": "Lien vers la page Contacter l'assistance",
+          "text": "Contacter l'assistance"
+        },
+        "customers": {
+          "ariaLabel": "Lien vers la page Clients",
+          "text": "Clients"
+        },
+        "eayIcon": {
+          "ariaLabel": "Options d'accessibilité ouvertes"
+        },
+        "features": {
+          "ariaLabel": "Lien vers la page des fonctionnalités",
+          "text": "Caractéristiques"
+        },
+        "gallery": {
+          "ariaLabel": "Lien vers la page Galerie",
+          "text": "Galerie"
+        },
+        "pricing": {
+          "ariaLabel": "Lien vers la page Tarifs",
+          "text": "Tarifs"
+        },
+        "resources": {
+          "ariaLabel": "Lien vers la page Ressources",
+          "text": "Ressources"
+        },
+        "signUp": {
+          "ariaLabel": "Lien vers la page d'inscription",
+          "text": "S'inscrire"
+        }
+      }
+    },
+    "marquee": {
+      "text1": "Les investissements dans l’IA en 2024 ouvrent de nouveaux horizons pour le progrès technologique.",
+      "text2": "aigeobot@gmail.com  ✦  aigeobot@gmail.com  ✦  aigeobot@gmail.com  ✦  aigeobot@gmail.com"
+    }
+  },
+  "rightBar": {
+    "dataSourceSelection": {
+      "ariaLabel": "Sélectionner ou désélectionner des sources de données"
+    }
+  },
+  "thirdPanel": {
+    "aiVersion": {
+      "ariaLabel": "Sélectionnez la version IA",
+      "title": "Version IA"
+    },
+    "dataSource": {
+      "ariaLabel": "Sélectionnez une source de données",
+      "title": "Source de données"
+    },
+    "questionHistory": {
+      "ariaLabel": "Liste des questions posées précédemment",
+      "paginator": {
+        "ariaLabel": "Pagination pour l'historique des questions"
+      },
+      "title": "Historique des questions"
+    }
+  }
+}

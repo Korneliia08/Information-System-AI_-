@@ -1,0 +1,297 @@
+{
+  "accessibility": {
+    "accessibilityOptions": {
+      "ariaLabel": "Accessibility panel",
+      "value": "Accessibility Options"
+    },
+    "close": {
+      "ariaLabel": "Close button",
+      "value": "X"
+    },
+    "closeAccessibilityPanel": {
+      "ariaLabel": "Close accessibility panel",
+      "value": "Close accessibility panel"
+    },
+    "decreaseFontSize": {
+      "ariaLabel": "Decrease font size",
+      "value": "Decrease Font Size"
+    },
+    "decreaseLineHeight": {
+      "ariaLabel": "Decrease line height for text",
+      "value": "Decrease Line Height"
+    },
+    "increaseFontSize": {
+      "ariaLabel": "Increase font size",
+      "value": "Increase Font Size"
+    },
+    "increaseLineHeight": {
+      "ariaLabel": "Increase line height for text",
+      "value": "Increase Line Height"
+    },
+    "resetOptions": {
+      "ariaLabel": "Reset all accessibility settings",
+      "value": "Reset Options"
+    },
+    "title": "Accessibility Options",
+    "toggleGrayscale": {
+      "ariaLabel": "Enable or disable grayscale",
+      "value": "Grayscale"
+    },
+    "toggleHighSaturation": {
+      "ariaLabel": "Toggle high saturation mode",
+      "value": "High Saturation"
+    },
+    "toggleInvertColors": {
+      "ariaLabel": "Invert colors",
+      "value": "Invert Colors"
+    },
+    "toggleLowSaturation": {
+      "ariaLabel": "Toggle low saturation mode",
+      "value": "Low Saturation"
+    },
+    "toggleUnderline": {
+      "ariaLabel": "Toggle underline for links",
+      "value": "Underline Links"
+    }
+  },
+  "bottomActions": {
+    "back": {
+      "ariaLabel": "Return to the previous page",
+      "label": "Back"
+    },
+    "changeTheme": {
+      "ariaLabel": "Switch between light and dark theme",
+      "label": "Change theme"
+    },
+    "clearConversation": {
+      "ariaLabel": "Delete all messages from the current conversation",
+      "label": "Clear conversation"
+    }
+  },
+  "chatContainer": {
+    "exportConversation": {
+      "ariaLabel": "Download the current conversation",
+      "label": "Export Conversation"
+    },
+    "input": {
+      "ariaLabel": "Question input field",
+      "placeholder": "Type your question..."
+    },
+    "sendMessage": {
+      "ariaLabel": "Send your question",
+      "label": "Send"
+    }
+  },
+  "footer": {
+    "chooseLanguage": {
+      "name": "English",
+      "title": "Choose language:"
+    }
+  },
+  "history": {
+    "conversations": {
+      "ariaLabel": "Conversation history"
+    },
+    "newChat": {
+      "ariaLabel": "Start a new chat",
+      "label": "New Chat"
+    },
+    "searchChat": {
+      "ariaLabel": "Search chat input",
+      "placeholder": "Search chat"
+    }
+  },
+  "mainPage": {
+    "banner": {
+      "AIdocumentation": {
+        "card": {
+          "card1": {
+            "content": "Artificial Intelligence (AI) is transforming the way we live, work, and interact. From personal assistants like Siri and Alexa to AI-driven recommendations on Netflix, it's becoming a part of our everyday experience. AI algorithms analyze our behaviors, making personalized suggestions and automating tasks to improve convenience and efficiency.",
+            "title": "Artificial Intelligence in Daily Life"
+          },
+          "card2": {
+            "content": "AI is revolutionizing healthcare by assisting in diagnostics, predicting patient outcomes, and even recommending treatments. Machine learning models can analyze vast amounts of data to detect patterns that may be missed by human practitioners, improving accuracy and saving lives.",
+            "title": "AI in Healthcare"
+          },
+          "card3": {
+            "content": "The potential of AI is limitless. With advancements in deep learning, neural networks, and natural language processing, AI is expected to drive innovation across all sectors. However, it also raises questions about ethics, job displacement, and the need for responsible use of technology.",
+            "title": "The Future of AI"
+          }
+        },
+        "title": "AI documentation"
+      },
+      "appStatus": "App status",
+      "bannerButton": "AI chat",
+      "bannerButton_aria": "Open AI chat",
+      "title": "Get more familiar<br/>with our\nAI Geo Bot"
+    },
+    "cooperation": {
+      "cooperation": "Cooperation",
+      "subTitle": "Our Partners"
+    },
+    "footer": {
+      "nav": {
+        "aboutUs": {
+          "links": {
+            "aboutProject": {
+              "ariaLabel": "Learn more about our project",
+              "text": "About Our Project"
+            },
+            "ourMission": {
+              "ariaLabel": "Learn more about our mission",
+              "text": "Our Mission"
+            },
+            "ourPartners": {
+              "ariaLabel": "Learn more about our partners",
+              "text": "Our Partners"
+            },
+            "ourTeam": {
+              "ariaLabel": "Learn more about our team",
+              "text": "Our Team"
+            }
+          },
+          "title": "ABOUT US"
+        },
+        "contactUs": {
+          "links": {
+            "contactInfo": {
+              "ariaLabel": "View our contact information",
+              "text": "Contact Information"
+            },
+            "feedback": {
+              "ariaLabel": "Share your feedback with us",
+              "text": "Leave Feedback"
+            },
+            "joinTeam": {
+              "ariaLabel": "Explore career opportunities with us",
+              "text": "Join Our Team"
+            },
+            "techSupport": {
+              "ariaLabel": "Get technical support",
+              "text": "Technical Support"
+            }
+          },
+          "title": "CONTACT US"
+        },
+        "socialMedia": {
+          "facebook": {
+            "ariaLabel": "Like us on Facebook"
+          },
+          "instagram": {
+            "ariaLabel": "Visit our Instagram profile"
+          },
+          "twitter": {
+            "ariaLabel": "Follow us on Twitter"
+          }
+        },
+        "solutions": {
+          "links": {
+            "aiEthics": {
+              "ariaLabel": "Understand ethical considerations of AI",
+              "text": "AI Ethics"
+            },
+            "aiForBusiness": {
+              "ariaLabel": "Discover AI solutions for business",
+              "text": "AI for Business"
+            },
+            "aiInEducation": {
+              "ariaLabel": "Learn about AI in education",
+              "text": "AI in Education"
+            },
+            "aiInHealthcare": {
+              "ariaLabel": "Explore AI in healthcare solutions",
+              "text": "AI in Healthcare"
+            }
+          },
+          "title": "SOLUTIONS"
+        },
+        "usefulInformation": {
+          "links": {
+            "blog": {
+              "ariaLabel": "Visit our blog for insights",
+              "text": "Blog"
+            },
+            "faq": {
+              "ariaLabel": "Read frequently asked questions",
+              "text": "FAQ"
+            },
+            "news": {
+              "ariaLabel": "Read the latest news",
+              "text": "News"
+            },
+            "resources": {
+              "ariaLabel": "Access useful resources",
+              "text": "Resources"
+            }
+          },
+          "title": "USEFUL INFORMATION"
+        }
+      }
+    },
+    "header": {
+      "nav": {
+        "agencies": {
+          "ariaLabel": "Link to Agencies page",
+          "text": "Agencies"
+        },
+        "contactSupport": {
+          "ariaLabel": "Link to Contact Support page",
+          "text": "Contact Support"
+        },
+        "customers": {
+          "ariaLabel": "Link to Customers page",
+          "text": "Customers"
+        },
+        "eayIcon": {
+          "ariaLabel": "Open accessibility options"
+        },
+        "features": {
+          "ariaLabel": "Link to Features page",
+          "text": "Features"
+        },
+        "gallery": {
+          "ariaLabel": "Link to Gallery page",
+          "text": "Gallery"
+        },
+        "pricing": {
+          "ariaLabel": "Link to Pricing page",
+          "text": "Pricing"
+        },
+        "resources": {
+          "ariaLabel": "Link to Resources page",
+          "text": "Resources"
+        },
+        "signUp": {
+          "ariaLabel": "Link to Sign Up page",
+          "text": "Sign Up"
+        }
+      }
+    },
+    "marquee": {
+      "text1": "Investments in AI in 2024 are opening new horizons for technological progress.",
+      "text2": "aigeobot&#64;gmail.com&nbsp;&nbsp;&#10022;&nbsp;&nbsp;aigeobot&#64;gmail.com&nbsp;&nbsp;&#10022;&nbsp;&nbsp;aigeobot&#64;gmail.com&nbsp;&nbsp;&#10022;&nbsp;&nbsp;aigeobot&#64;gmail.com"
+    }
+  },
+  "rightBar": {
+    "dataSourceSelection": {
+      "ariaLabel": "Select or deselect data sources"
+    }
+  },
+  "thirdPanel": {
+    "aiVersion": {
+      "ariaLabel": "Select AI version",
+      "title": "AI version"
+    },
+    "dataSource": {
+      "ariaLabel": "Select a data source",
+      "title": "Data source"
+    },
+    "questionHistory": {
+      "ariaLabel": "List of previously asked questions",
+      "paginator": {
+        "ariaLabel": "Pagination for questions history"
+      },
+      "title": "Questions history"
+    }
+  }
+}

@@ -1,0 +1,297 @@
+{
+  "accessibility": {
+    "accessibilityOptions": {
+      "ariaLabel": "Panel dostępności",
+      "value": "Opcje dostępności"
+    },
+    "close": {
+      "ariaLabel": "Przycisk Zamknij",
+      "value": "X"
+    },
+    "closeAccessibilityPanel": {
+      "ariaLabel": "Zamknij panel ułatwień dostępu",
+      "value": "Zamknij panel ułatwień dostępu"
+    },
+    "decreaseFontSize": {
+      "ariaLabel": "Zmniejsz rozmiar czcionki",
+      "value": "Zmniejsz rozmiar czcionki"
+    },
+    "decreaseLineHeight": {
+      "ariaLabel": "Zmniejsz wysokość linii tekstu",
+      "value": "Zmniejsz wysokość linii"
+    },
+    "increaseFontSize": {
+      "ariaLabel": "Zwiększ rozmiar czcionki",
+      "value": "Zwiększ rozmiar czcionki"
+    },
+    "increaseLineHeight": {
+      "ariaLabel": "Zwiększ wysokość linii tekstu",
+      "value": "Zwiększ wysokość linii"
+    },
+    "resetOptions": {
+      "ariaLabel": "Zresetuj wszystkie ustawienia dostępności",
+      "value": "Zresetuj opcje"
+    },
+    "title": "Opcje dostępności",
+    "toggleGrayscale": {
+      "ariaLabel": "Włącz lub wyłącz skalę szarości",
+      "value": "Skala szarości"
+    },
+    "toggleHighSaturation": {
+      "ariaLabel": "Przełącz tryb wysokiego nasycenia",
+      "value": "Wysokie nasycenie"
+    },
+    "toggleInvertColors": {
+      "ariaLabel": "Odwróć kolory",
+      "value": "Odwróć kolory"
+    },
+    "toggleLowSaturation": {
+      "ariaLabel": "Przełącz tryb niskiego nasycenia",
+      "value": "Niskie nasycenie"
+    },
+    "toggleUnderline": {
+      "ariaLabel": "Przełącz podkreślenie linków",
+      "value": "Podkreśl linki"
+    }
+  },
+  "bottomActions": {
+    "back": {
+      "ariaLabel": "Wróć do poprzedniej strony",
+      "label": "Z powrotem"
+    },
+    "changeTheme": {
+      "ariaLabel": "Przełączaj między jasnym i ciemnym motywem",
+      "label": "Zmień motyw"
+    },
+    "clearConversation": {
+      "ariaLabel": "Usuń wszystkie wiadomości z bieżącej rozmowy",
+      "label": "Wyczyść rozmowę"
+    }
+  },
+  "chatContainer": {
+    "exportConversation": {
+      "ariaLabel": "Pobierz bieżącą rozmowę",
+      "label": "Eksportuj rozmowę"
+    },
+    "input": {
+      "ariaLabel": "Pole wprowadzania pytania",
+      "placeholder": "Wpisz swoje pytanie..."
+    },
+    "sendMessage": {
+      "ariaLabel": "Wyślij swoje pytanie",
+      "label": "Wysłać"
+    }
+  },
+  "footer": {
+    "chooseLanguage": {
+      "name": "angielski",
+      "title": "Wybierz język:"
+    }
+  },
+  "history": {
+    "conversations": {
+      "ariaLabel": "Historia rozmów"
+    },
+    "newChat": {
+      "ariaLabel": "Rozpocznij nowy czat",
+      "label": "Nowy czat"
+    },
+    "searchChat": {
+      "ariaLabel": "Wyszukaj dane wejściowe na czacie",
+      "placeholder": "Wyszukaj czat"
+    }
+  },
+  "mainPage": {
+    "banner": {
+      "AIdocumentation": {
+        "card": {
+          "card1": {
+            "content": "Sztuczna inteligencja (AI) zmienia sposób, w jaki żyjemy, pracujemy i współdziałamy. ",
+            "title": "Sztuczna inteligencja w życiu codziennym"
+          },
+          "card2": {
+            "content": "Sztuczna inteligencja rewolucjonizuje opiekę zdrowotną, pomagając w diagnostyce, przewidywaniu wyników leczenia pacjentów, a nawet zalecając leczenie. ",
+            "title": "AI w służbie zdrowia"
+          },
+          "card3": {
+            "content": "Potencjał sztucznej inteligencji jest nieograniczony. ",
+            "title": "Przyszłość sztucznej inteligencji"
+          }
+        },
+        "title": "Dokumentacja AI"
+      },
+      "appStatus": "Stan aplikacji",
+      "bannerButton": "Czat AI",
+      "bannerButton_aria": "Otwórz czat AI",
+      "title": "Zaznajom się bardziej<br/>z naszymi\n"
+    },
+    "cooperation": {
+      "cooperation": "Współpraca",
+      "subTitle": "Nasi partnerzy"
+    },
+    "footer": {
+      "nav": {
+        "aboutUs": {
+          "links": {
+            "aboutProject": {
+              "ariaLabel": "Dowiedz się więcej o naszym projekcie",
+              "text": "O naszym projekcie"
+            },
+            "ourMission": {
+              "ariaLabel": "Dowiedz się więcej o naszej misji",
+              "text": "Nasza misja"
+            },
+            "ourPartners": {
+              "ariaLabel": "Dowiedz się więcej o naszych partnerach",
+              "text": "Nasi partnerzy"
+            },
+            "ourTeam": {
+              "ariaLabel": "Dowiedz się więcej o naszym zespole",
+              "text": "Nasz zespół"
+            }
+          },
+          "title": "O NAS"
+        },
+        "contactUs": {
+          "links": {
+            "contactInfo": {
+              "ariaLabel": "Zobacz nasze dane kontaktowe",
+              "text": "Informacje kontaktowe"
+            },
+            "feedback": {
+              "ariaLabel": "Podziel się z nami swoją opinią",
+              "text": "Zostaw opinię"
+            },
+            "joinTeam": {
+              "ariaLabel": "Odkryj z nami możliwości kariery",
+              "text": "Dołącz do naszego zespołu"
+            },
+            "techSupport": {
+              "ariaLabel": "Uzyskaj wsparcie techniczne",
+              "text": "Wsparcie techniczne"
+            }
+          },
+          "title": "SKONTAKTUJ SIĘ Z NAMI"
+        },
+        "socialMedia": {
+          "facebook": {
+            "ariaLabel": "Polub nas na Facebooku"
+          },
+          "instagram": {
+            "ariaLabel": "Odwiedź nasz profil na Instagramie"
+          },
+          "twitter": {
+            "ariaLabel": "Śledź nas na Twitterze"
+          }
+        },
+        "solutions": {
+          "links": {
+            "aiEthics": {
+              "ariaLabel": "Zrozum względy etyczne związane ze sztuczną inteligencją",
+              "text": "Etyka AI"
+            },
+            "aiForBusiness": {
+              "ariaLabel": "Odkryj rozwiązania AI dla biznesu",
+              "text": "Sztuczna inteligencja dla biznesu"
+            },
+            "aiInEducation": {
+              "ariaLabel": "Dowiedz się o sztucznej inteligencji w edukacji",
+              "text": "AI w edukacji"
+            },
+            "aiInHealthcare": {
+              "ariaLabel": "Poznaj sztuczną inteligencję w rozwiązaniach dla opieki zdrowotnej",
+              "text": "AI w służbie zdrowia"
+            }
+          },
+          "title": "ROZWIĄZANIA"
+        },
+        "usefulInformation": {
+          "links": {
+            "blog": {
+              "ariaLabel": "Odwiedź nasz blog, aby uzyskać szczegółowe informacje",
+              "text": "Bloga"
+            },
+            "faq": {
+              "ariaLabel": "Przeczytaj często zadawane pytania",
+              "text": "Często zadawane pytania"
+            },
+            "news": {
+              "ariaLabel": "Przeczytaj najnowsze wiadomości",
+              "text": "Aktualności"
+            },
+            "resources": {
+              "ariaLabel": "Uzyskaj dostęp do przydatnych zasobów",
+              "text": "Zasoby"
+            }
+          },
+          "title": "PRZYDATNE INFORMACJE"
+        }
+      }
+    },
+    "header": {
+      "nav": {
+        "agencies": {
+          "ariaLabel": "Link do strony agencji",
+          "text": "Agencje"
+        },
+        "contactSupport": {
+          "ariaLabel": "Link do strony Kontakt z pomocą techniczną",
+          "text": "Skontaktuj się z pomocą techniczną"
+        },
+        "customers": {
+          "ariaLabel": "Link do strony Klienci",
+          "text": "Klienci"
+        },
+        "eayIcon": {
+          "ariaLabel": "Otwórz opcje ułatwień dostępu"
+        },
+        "features": {
+          "ariaLabel": "Link do strony Funkcje",
+          "text": "Cechy"
+        },
+        "gallery": {
+          "ariaLabel": "Link do strony Galerii",
+          "text": "Galeria"
+        },
+        "pricing": {
+          "ariaLabel": "Link do strony z cenami",
+          "text": "Wycena"
+        },
+        "resources": {
+          "ariaLabel": "Link do strony Zasoby",
+          "text": "Zasoby"
+        },
+        "signUp": {
+          "ariaLabel": "Link do strony rejestracji",
+          "text": "Zapisać się"
+        }
+      }
+    },
+    "marquee": {
+      "text1": "Inwestycje w sztuczną inteligencję w 2024 roku otwierają nowe horyzonty dla postępu technologicznego.",
+      "text2": "aigeobot@gmail.com  ✦  aigeobot@gmail.com  ✦  aigeobot@gmail.com  ✦  aigeobot@gmail.com"
+    }
+  },
+  "rightBar": {
+    "dataSourceSelection": {
+      "ariaLabel": "Zaznacz lub odznacz źródła danych"
+    }
+  },
+  "thirdPanel": {
+    "aiVersion": {
+      "ariaLabel": "Wybierz wersję AI",
+      "title": "Wersja AI"
+    },
+    "dataSource": {
+      "ariaLabel": "Wybierz źródło danych",
+      "title": "Źródło danych"
+    },
+    "questionHistory": {
+      "ariaLabel": "Lista wcześniej zadanych pytań",
+      "paginator": {
+        "ariaLabel": "Paginacja historii pytań"
+      },
+      "title": "Historia pytań"
+    }
+  }
+}
