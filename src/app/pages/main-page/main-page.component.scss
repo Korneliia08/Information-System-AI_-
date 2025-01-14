@@ -24,8 +24,9 @@ video {
 
 .addGif {
   position: fixed;
-  right: 10%;
+  left: 50%;
   bottom: 10%;
   width: 20vw;
+  transform: translateX(-50%);
   z-index: -1;
 }
