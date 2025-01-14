@@ -7,63 +7,56 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
   standalone: false
 })
 export class SmoothScrollComponent implements OnInit, OnDestroy {
-  isScrolling = false; // Flaga do kontrolowania przewijania
+  isScrolling = false;
 
-  private targetScroll = 0; // Cel przewijania
-  private startTime: number = 0; // Czas rozpoczęcia animacji
-  private scrollDuration = 500; // Czas trwania animacji (w milisekundach)
-  private startScroll = 0; // Początkowa pozycja scrolla
+  private targetScroll = 0;
+  private startTime: number = 0;
+  private scrollDuration = 500;
+  private startScroll = 0;
 
   ngOnInit(): void {
-    // Dodanie nasłuchiwania na zdarzenie 'wheel' po inicjalizacji komponentu
     //document.addEventListener('wheel', this.onWheel.bind(this), { passive: false });
   }
 
   ngOnDestroy(): void {
-    // Usuwanie nasłuchiwania na zdarzenie 'wheel' po zniszczeniu komponentu
     //  document.removeEventListener('wheel', this.onWheel.bind(this));
   }
 
-  // Funkcja zaokrąglająca scrollY do najbliższego pełnego 100vh
   private roundToFullHeight(scrollY: number): number {
     return Math.round(scrollY / window.innerHeight) * window.innerHeight;
   }
 
   private onWheel(event: WheelEvent): void {
-    // Jeśli przewijanie jest już w toku, zapobiegamy dalszemu przewijaniu
+
     if (this.isScrolling) {
-      event.preventDefault(); // Zapobiegamy domyślnemu przewijaniu
+      event.preventDefault();
       return;
     }
 
-    let currentScroll = window.scrollY; // Aktualna pozycja przewinięcia
+    let currentScroll = window.scrollY;
 
-    // Sprawdzamy, czy ekran jest poniżej 300vh
     if (event.deltaY > 0) {
       if (currentScroll >= window.innerHeight * 2) {
-        // Jeśli jesteśmy poniżej 300vh, scroll działa normalnie
         return;
       }
     } else {
       if (currentScroll > window.innerHeight * 2) {
-        // Jeśli jesteśmy poniżej 300vh, scroll działa normalnie
         return;
       }
     }
 
-    // Zablokowanie dalszego przewijania
-    event.preventDefault(); // Zapobiegamy domyślnemu przewijaniu
-    this.isScrolling = true; // Zablokowanie przewijania
 
-    // Zaokrąglamy pozycję przewinięcia do pełnego 100vh
+    event.preventDefault();
+    this.isScrolling = true;
+
     currentScroll = this.roundToFullHeight(currentScroll);
 
-    // Obliczamy cel przewijania w zależności od kierunku scrolla
-    this.targetScroll = event.deltaY > 0
-      ? currentScroll + window.innerHeight // Przewijanie w dół o 100vh
-      : currentScroll - window.innerHeight; // Przewijanie w górę o 100vh
 
-    // Inicjujemy animację przewijania
+    this.targetScroll = event.deltaY > 0
+      ? currentScroll + window.innerHeight
+      : currentScroll - window.innerHeight;
+
+
     this.startScroll = currentScroll;
     this.startTime = performance.now();
     this.animateScroll();
@@ -79,16 +72,15 @@ export class SmoothScrollComponent implements OnInit, OnDestroy {
     window.scrollTo(0, currentScroll);
 
     if (progress < 1) {
-      // Kontynuujemy animację, dopóki nie osiągniemy celu
+
       requestAnimationFrame(this.animateScroll.bind(this));
     } else {
-      // Po zakończeniu animacji odblokowujemy przewijanie
+
       this.isScrolling = false;
-      document.body.style.overflow = 'auto'; // Przywracamy możliwość przewijania
+      document.body.style.overflow = 'auto';
     }
   }
 
-  // Funkcja easing (łagodne przyspieszanie i spowalnianie)
   private easeInOutQuad(t: number): number {
     return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
   }
