@@ -9,14 +9,16 @@ body {
   flex-direction: column;
   height: 100%;
   overflow: hidden;
+  background: black;
 }
 
 body {
   margin: 0;
   overflow: hidden;
   height: 100vh;
-  background-image: url("../public/assets/univers.jpg");
+  //background-image: url("../public/assets/univers.jpg");
   background-size: cover;
+  background-color: black;
   background-position: 100% 100%;
 }
 
@@ -107,4 +109,6 @@ body {
   z-index: 1500;
   overflow: hidden;
 }
+
+
 

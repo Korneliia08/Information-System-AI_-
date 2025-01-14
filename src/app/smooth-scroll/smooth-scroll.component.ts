@@ -3,8 +3,8 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 @Component({
   selector: 'app-smooth-scroll',
   templateUrl: './smooth-scroll.component.html',
-  styleUrls: ['./smooth-scroll.component.scss'],
-  standalone: false
+  standalone: false,
+  styleUrls: ['./smooth-scroll.component.scss']
 })
 export class SmoothScrollComponent implements OnInit, OnDestroy {
   isScrolling = false;
@@ -13,49 +13,58 @@ export class SmoothScrollComponent implements OnInit, OnDestroy {
   private startTime: number = 0;
   private scrollDuration = 500;
   private startScroll = 0;
+  private scrollContainer: HTMLElement | null = null;
+  private wheelHandler: (event: WheelEvent) => void;
+
+  constructor() {
+    this.wheelHandler = this.onWheel.bind(this);
+  }
 
   ngOnInit(): void {
-    // document.addEventListener('wheel', this.onWheel.bind(this), {passive: false});
+    this.scrollContainer = document.getElementById('contentManager');
+    if (this.scrollContainer) {
+      this.scrollContainer.addEventListener('wheel', this.wheelHandler, {passive: false});
+    }
   }
 
   ngOnDestroy(): void {
-    // document.removeEventListener('wheel', this.onWheel.bind(this));
+    if (this.scrollContainer) {
+      this.scrollContainer.removeEventListener('wheel', this.wheelHandler);
+    }
   }
 
   private roundToFullHeight(scrollY: number): number {
-    return Math.round(scrollY / window.innerHeight) * window.innerHeight;
+    if (!this.scrollContainer) return 0;
+    const elementHeight = this.scrollContainer.offsetHeight;
+    return Math.round(scrollY / elementHeight) * elementHeight;
   }
 
   private onWheel(event: WheelEvent): void {
+    if (!this.scrollContainer) return;
 
     if (this.isScrolling) {
       event.preventDefault();
       return;
     }
 
-    let currentScroll = window.scrollY;
+    const currentScroll = this.scrollContainer.scrollTop;
+    const elementHeight = this.scrollContainer.offsetHeight;
 
-    if (event.deltaY > 0) {
-      if (currentScroll >= window.innerHeight * 2) {
-        return;
-      }
-    } else {
-      if (currentScroll > window.innerHeight * 2) {
-        return;
-      }
+    if (event.deltaY > 0 && currentScroll >= this.scrollContainer.scrollHeight - elementHeight) {
+      return;
     }
-
+    if (event.deltaY < 0 && currentScroll <= 0) {
+      return;
+    }
 
     event.preventDefault();
     this.isScrolling = true;
 
-    currentScroll = this.roundToFullHeight(currentScroll);
-
+    const roundedScroll = this.roundToFullHeight(currentScroll);
 
     this.targetScroll = event.deltaY > 0
-      ? currentScroll + window.innerHeight
-      : currentScroll - window.innerHeight;
-
+      ? roundedScroll + elementHeight
+      : roundedScroll - elementHeight;
 
     this.startScroll = currentScroll;
     this.startTime = performance.now();
@@ -63,21 +72,19 @@ export class SmoothScrollComponent implements OnInit, OnDestroy {
   }
 
   private animateScroll(): void {
+    if (!this.scrollContainer) return;
+
     const currentTime = performance.now();
     const elapsedTime = currentTime - this.startTime;
     const progress = Math.min(elapsedTime / this.scrollDuration, 1);
 
     const currentScroll = this.easeInOutQuad(progress) * (this.targetScroll - this.startScroll) + this.startScroll;
-
-    window.scrollTo(0, currentScroll);
+    this.scrollContainer.scrollTo(0, currentScroll);
 
     if (progress < 1) {
-
       requestAnimationFrame(this.animateScroll.bind(this));
     } else {
-
       this.isScrolling = false;
-      document.body.style.overflow = 'auto';
     }
   }
 

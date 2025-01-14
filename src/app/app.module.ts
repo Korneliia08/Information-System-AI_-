@@ -42,9 +42,9 @@ import {GridPanelCustomerComponent} from './pages/main-page/grid-panel-customer/
 import {RowInformationsComponent} from './pages/main-page/row-informations/row-informations.component';
 import {RowInformationComponent} from './pages/main-page/row-informations/row-information/row-information.component';
 import {WheAreWeComponent} from './pages/main-page/whe-are-we/whe-are-we.component';
-import {SlickCarouselModule} from 'ngx-slick-carousel';
 import {PanelTextWithImageComponent} from './pages/main-page/panel-text-with-image/panel-text-with-image.component';
 import {HorizontalPersonComponent} from './pages/main-page/horizontal-person/horizontal-person.component';
+import {SlickCarouselModule} from 'ngx-slick-carousel';
 
 @NgModule({
   bootstrap: [AppComponent],

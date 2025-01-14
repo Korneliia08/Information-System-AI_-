@@ -3,6 +3,7 @@ video {
   position: fixed;
   top: 0;
   left: 0;
+  opacity: 0.5;
   width: 100vw; /* Zawsze wypełnia całą szerokość widoku */
   height: 100vh; /* Zawsze wypełnia całą wysokość widoku */
   object-fit: cover; /* Przycięcie i wypełnienie bez deformacji */
