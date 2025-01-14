@@ -15,11 +15,11 @@ export class SmoothScrollComponent implements OnInit, OnDestroy {
   private startScroll = 0;
 
   ngOnInit(): void {
-    //document.addEventListener('wheel', this.onWheel.bind(this), { passive: false });
+    // document.addEventListener('wheel', this.onWheel.bind(this), {passive: false});
   }
 
   ngOnDestroy(): void {
-    //  document.removeEventListener('wheel', this.onWheel.bind(this));
+    // document.removeEventListener('wheel', this.onWheel.bind(this));
   }
 
   private roundToFullHeight(scrollY: number): number {
