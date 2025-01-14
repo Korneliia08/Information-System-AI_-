@@ -18,4 +18,14 @@ video {
   width: 100%;
   height: 100%;
   overflow-y: scroll;
+
+
+}
+
+.addGif {
+  position: fixed;
+  right: 10%;
+  bottom: 10%;
+  width: 20vw;
+  z-index: -1;
 }
