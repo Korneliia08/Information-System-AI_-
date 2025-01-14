@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-smooth-scroll',
@@ -14,19 +14,19 @@ export class SmoothScrollComponent implements OnInit, OnDestroy {
   private scrollDuration = 500; // Czas trwania animacji (w milisekundach)
   private startScroll = 0; // Początkowa pozycja scrolla
 
-  // Funkcja zaokrąglająca scrollY do najbliższego pełnego 100vh
-  private roundToFullHeight(scrollY: number): number {
-    return Math.round(scrollY / window.innerHeight) * window.innerHeight;
-  }
-
   ngOnInit(): void {
     // Dodanie nasłuchiwania na zdarzenie 'wheel' po inicjalizacji komponentu
-  //  document.addEventListener('wheel', this.onWheel.bind(this), { passive: false });
+    //document.addEventListener('wheel', this.onWheel.bind(this), { passive: false });
   }
 
   ngOnDestroy(): void {
     // Usuwanie nasłuchiwania na zdarzenie 'wheel' po zniszczeniu komponentu
-    document.removeEventListener('wheel', this.onWheel.bind(this));
+    //  document.removeEventListener('wheel', this.onWheel.bind(this));
+  }
+
+  // Funkcja zaokrąglająca scrollY do najbliższego pełnego 100vh
+  private roundToFullHeight(scrollY: number): number {
+    return Math.round(scrollY / window.innerHeight) * window.innerHeight;
   }
 
   private onWheel(event: WheelEvent): void {

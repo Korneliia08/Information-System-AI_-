@@ -1,0 +1,20 @@
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Zawsze wypełnia całą szerokość widoku */
+  height: 100vh; /* Zawsze wypełnia całą wysokość widoku */
+  object-fit: cover; /* Przycięcie i wypełnienie bez deformacji */
+  z-index: -1; /* Wideo w tle */
+  overflow: hidden;
+}
+
+.content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
