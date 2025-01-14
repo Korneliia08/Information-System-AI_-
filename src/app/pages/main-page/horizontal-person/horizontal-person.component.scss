@@ -1,8 +1,27 @@
+.wrapper {
+  padding: 20px 30px;
+  background: black;
+  position: relative;
+  padding-top: 100px;
+
+  &:after {
+    content: "";
+    background: url('../../../../../public/assets/points.svg');
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    background-size: cover;
+    position: absolute;
+    z-index: 5;
+  }
+}
 
 .back {
   display: flex;
   flex-direction: column;
-  background: black;
+  height: 500px;
   overflow: hidden;
   gap: 30px;
 
@@ -14,33 +33,64 @@
       font-style: normal;
       font-weight: 800;
       line-height: normal;
-      margin-bottom: 2rem;
+
+      margin: 0;
     }
   }
 
   .bottom {
     display: flex;
-    height: 300px;
+    height: 350px;
     padding: 20px;
     gap: 30px;
 
     .panel {
       position: relative;
+      display: flex;
+      justify-content: flex-end;
 
       .back {
         height: 100%;
+        object-fit: contain;
         position: relative;
         z-index: 9;
       }
 
       .man {
         position: absolute;
-        left: 40px;
-        right: 40px;
+        left: 120px;
+
         width: auto;
         height: 100%;
-        top: -7px;
+        top: -10px;
         z-index: 10;
+      }
+
+      .text {
+        position: absolute;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: white;
+        z-index: 20;
+        font-family: "Orbitron", sans-serif;
+        padding: 30px;
+
+        h3 {
+          margin: 0;
+          font-size: 38px;
+        }
+
+        h4 {
+          margin: 0;
+          font-size: 30px;
+        }
+
+        p {
+          line-height: 1.3;
+          font-size: 17px;
+        }
       }
     }
   }
