@@ -1,3 +1,11 @@
+.headerLine {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  z-index: 1404;
+}
 
 .testingDiv {
   position: fixed;

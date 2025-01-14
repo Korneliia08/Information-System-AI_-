@@ -26,7 +26,15 @@ import {NgxMarqueeModule} from 'ngx-marquee';
 import {TranslatePipe, TrPipe} from './pipes/translate.pipe';
 import {TranslateService} from './pipes/translate.service';
 import {HttpClientModule} from '@angular/common/http';
-import {faBrandDiscord, faBrandFacebook, faBrandInstagram, faBrandMedium, faBrandTwitter, faBrandXTwitter} from '@ng-icons/font-awesome/brands';
+import {
+  faBrandDiscord,
+  faBrandFacebook,
+  faBrandInstagram,
+  faBrandMedium,
+  faBrandTwitter,
+  faBrandXTwitter,
+  faBrandYoutube
+} from '@ng-icons/font-awesome/brands';
 import {ChooseLanguageComponent} from './ui/choose-language/choose-language.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {ChooseLanguageModalComponent} from './ui/choose-language/choose-language-modal/choose-language-modal.component';
@@ -68,9 +76,8 @@ import {HorizontalPersonComponent} from './pages/main-page/horizontal-person/hor
       faBrandInstagram,
       faBrandTwitter,
       faBrandFacebook,
-      faBrandXTwitter,
-      faBrandDiscord,
-      faBrandMedium
+      faBrandXTwitter, faBrandDiscord, faBrandMedium, faBrandYoutube,
+
     }), SlickCarouselModule
   ],
   providers: [

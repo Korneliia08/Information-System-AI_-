@@ -1,22 +1,24 @@
 <div id="particles-js"></div>
 <section class="containerForWrapperBanner">
-    <video autoplay loop muted class="videoBanner" aria-label="Video banner background" role="presentation">
-      <source src="/assets/BannerHolo.mp4" type="video/mp4" />
-    </video>
-<!--  <div class="testingDiv">-->
-<!--    <div>-->
+  <img class="headerLine" src="/assets/headerLine.svg">
 
-<!--    123 afdsf sdf lorem-->
-<!--    123 afdsf sdf lorem-->
-<!--    123 afdsf sdf lorem-->
-<!--    123 afdsf sdf lorem-->
-<!--    123 afdsf sdf lorem-->
-<!--    123 afdsf sdf lorem-->
-<!--    123 afdsf sdf lorem-->
-<!--    123 afdsf sdf lorem-->
-<!--    123 afdsf sdf lorem-->
-<!--    </div>-->
-<!--  </div>-->
+  <video aria-label="Video banner background" autoplay class="videoBanner" loop muted role="presentation">
+    <source src="/assets/BannerHolo.mp4" type="video/mp4"/>
+  </video>
+  <!--  <div class="testingDiv">-->
+  <!--    <div>-->
+
+  <!--    123 afdsf sdf lorem-->
+  <!--    123 afdsf sdf lorem-->
+  <!--    123 afdsf sdf lorem-->
+  <!--    123 afdsf sdf lorem-->
+  <!--    123 afdsf sdf lorem-->
+  <!--    123 afdsf sdf lorem-->
+  <!--    123 afdsf sdf lorem-->
+  <!--    123 afdsf sdf lorem-->
+  <!--    123 afdsf sdf lorem-->
+  <!--    </div>-->
+  <!--  </div>-->
   <div class="bannerContent">
     <header [ngClass]="{secondTheme}" class="divForLogoAndNav">
       <div class="navWrapper">
@@ -79,7 +81,8 @@
       <h2>AI Geo Bot </h2>
       <h1 [innerHTML]="'mainPage.banner.title'|tr"></h1>
       <button (click)="openAibotChatModal()" [attr.aria-label]="'mainPage.banner.bannerButton_aria'|tr" id="idButtonOpenChat"
-              tabindex="0">{{'mainPage.banner.bannerButton'|tr}}</button>
+              tabindex="0">{{ 'mainPage.banner.bannerButton'|tr }}
+      </button>
     </div>
   </div>
 
@@ -88,7 +91,7 @@
   </div>
 
   <footer aria-label="App status" class="blockForStatus">
-    <span>{{'mainPage.banner.appStatus'|tr }}</span>
+    <span>{{ 'mainPage.banner.appStatus'|tr }}</span>
     <div aria-hidden="true" class="blockCircle"></div>
   </footer>
 </section>
