@@ -53,7 +53,7 @@
     .divForLogoAndNav {
       position: fixed;
       top: 0;
-      width: 100vw;
+      width: calc(100vw - 18px);
       padding: 0 20px;
       z-index: 19000;
     }
