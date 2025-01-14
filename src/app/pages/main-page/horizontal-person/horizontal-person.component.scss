@@ -1,6 +1,8 @@
+
 .back {
   display: flex;
   flex-direction: column;
+  background: black;
 
   .top {
     h3 {
@@ -16,5 +18,12 @@
 
   .bottom {
     display: flex;
+    height: 300px;
+    padding: 20px;
+
+    img {
+      height: 100%;
+    }
   }
+
 }
