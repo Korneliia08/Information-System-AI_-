@@ -21,7 +21,7 @@ export class SmoothScrollComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     // Dodanie nasłuchiwania na zdarzenie 'wheel' po inicjalizacji komponentu
-    document.addEventListener('wheel', this.onWheel.bind(this), { passive: false });
+  //  document.addEventListener('wheel', this.onWheel.bind(this), { passive: false });
   }
 
   ngOnDestroy(): void {

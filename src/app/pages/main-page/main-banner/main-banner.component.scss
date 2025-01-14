@@ -1,13 +1,33 @@
+
+.testingDiv{
+  position: fixed;
+  right:150px;
+background-color: #00bbff;
+  top:150px;
+  height: 300px;
+  width: 300px;
+  z-index: 8000;
+  display: block;
+  transition: 4s;
+  &:hover{
+    top: 10vw;
+    right: 10vw;
+    width: 80vw;
+    height: 80vh;
+  }
+
+}
+
 .containerForWrapperBanner {
   position: relative;
   height: 100vh;
   overflow: hidden;
   width: 100%;
-  background-image: url("../../../../../public/assets/Designer3.jpeg");
-  background-position: right;
-
-  background-repeat: no-repeat;
-  background-size: cover;
+  //background-image: url("../../../../../public/assets/");
+  //background-position: right;
+  //
+  //background-repeat: no-repeat;
+  //background-size: cover;
 
   .videoBanner {
     position: absolute;

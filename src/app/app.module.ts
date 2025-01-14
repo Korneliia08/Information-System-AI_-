@@ -30,6 +30,13 @@ import {faBrandFacebook, faBrandInstagram, faBrandTwitter} from '@ng-icons/font-
 import {ChooseLanguageComponent} from './ui/choose-language/choose-language.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {ChooseLanguageModalComponent} from './ui/choose-language/choose-language-modal/choose-language-modal.component';
+import {GridPanelCustomerComponent} from './pages/main-page/grid-panel-customer/grid-panel-customer.component';
+import {RowInformationsComponent} from './pages/main-page/row-informations/row-informations.component';
+import {RowInformationComponent} from './pages/main-page/row-informations/row-information/row-information.component';
+import {WheAreWeComponent} from './pages/main-page/whe-are-we/whe-are-we.component';
+import {SlickCarouselModule} from 'ngx-slick-carousel';
+import { PanelTextWithImageComponent } from './pages/main-page/panel-text-with-image/panel-text-with-image.component';
+import { HorizontalPersonComponent } from './pages/main-page/horizontal-person/horizontal-person.component';
 
 @NgModule({
   bootstrap: [AppComponent],
@@ -43,7 +50,7 @@ import {ChooseLanguageModalComponent} from './ui/choose-language/choose-language
     AiDocumentationComponent,
     SmoothScrollComponent,
     FooterComponent, ChooseLanguageModalComponent,
-    AccessibilityComponent, ChooseLanguageComponent,
+    AccessibilityComponent, ChooseLanguageComponent, GridPanelCustomerComponent, RowInformationsComponent, RowInformationComponent, WheAreWeComponent, PanelTextWithImageComponent, HorizontalPersonComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,7 +63,7 @@ import {ChooseLanguageModalComponent} from './ui/choose-language/choose-language
     MatCheckbox,
     MatButton,
     FormsModule, MatDialogModule,
-    NgIconsModule.withIcons({faEye, faBrandInstagram, faBrandTwitter, faBrandFacebook})
+    NgIconsModule.withIcons({faEye, faBrandInstagram, faBrandTwitter, faBrandFacebook}), SlickCarouselModule
   ],
   providers: [
     provideAnimationsAsync(),

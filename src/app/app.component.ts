@@ -1,16 +1,19 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
 import VanillaTilt from 'vanilla-tilt';
 import {TranslateService} from './pipes/translate.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   standalone: false,
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit,AfterViewInit{
+export class AppComponent implements OnInit, AfterViewInit {
   title = 'angular';
-  constructor(private translate:TranslateService) {
+
+  constructor(private translate: TranslateService) {
   }
+
   ngAfterViewInit() {
 
 
@@ -21,7 +24,7 @@ export class AppComponent implements OnInit,AfterViewInit{
         VanillaTilt.init(elements, {
           max: 15,
           speed: 400,
-          glare: true,
+          glare: false,
           'max-glare': 0.2,
         });
         elements.forEach((element) => {
@@ -34,7 +37,8 @@ export class AppComponent implements OnInit,AfterViewInit{
 
 
   }
-  ngOnInit(){
+
+  ngOnInit() {
     this.translate.getLanguageFile("en")
     // // @ts-ignore
     // $(".marquee").marquee({

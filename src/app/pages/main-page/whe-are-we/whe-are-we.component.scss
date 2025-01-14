@@ -1,0 +1,143 @@
+.users {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  padding: 170px 0 100px 0;
+  position: relative;
+  background: black;
+  width: 100%;
+  height: 100%;
+
+  .sectionTitle {
+    text-transform: uppercase;
+    font-size: 6vw;
+    color: rgba(136, 80, 198, 0.28);
+    position: absolute;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    width: 100%;
+    top: 5px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1vw;
+    word-spacing: 3vw;
+
+  }
+
+  &:after {
+    content: "";
+    background: url('../../../../../public/assets/points.svg');
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    background-size: cover;
+    position: absolute;
+    z-index: 5;
+  }
+
+  .user {
+    position: relative;
+    width: 582px;
+    height: 658px;
+    //outline: 2px solid red;
+    &:nth-child(2) {
+      top: -70px;
+    }
+
+    &:nth-child(3) {
+      top: +20px;
+    }
+
+    .man {
+      position: absolute;
+      width: auto;
+      height: 75%;
+      left: 7px;
+      z-index: 8;
+      object-fit: contain;
+    }
+
+    .personTitle {
+      color: white;
+
+      font-family: "Orbitron", sans-serif;
+      font-size: 23px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+      position: absolute;
+      top: 500px;
+      width: 100%;
+      text-align: center;
+      left: 0;
+      z-index: 8;
+    }
+
+    .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 7;
+      object-fit: contain;
+    }
+
+    .text {
+      font-family: "Orbitron", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+      color: white;
+      position: absolute;
+      top: 200px;
+      z-index: 10;
+      right: 24px;
+      width: 250px;
+    }
+
+    .circleLink {
+      position: absolute;
+
+      z-index: 10;
+      border: 2px solid white;
+      border-radius: 100%;
+      padding: 4px;
+      color: White;
+      font-size: 20px;
+      width: 40px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      height: 40px;
+      cursor: pointer;
+      top: 40px;
+
+      &:nth-of-type(1) {
+        right: 30px;
+      }
+
+      &:nth-of-type(2) {
+        right: 80px;
+      }
+    }
+
+    h4 {
+      position: relative;
+      z-index: 10;
+      color: white;
+      text-align: center;
+      font-family: "Orbitron", sans-serif;
+      font-size: 46px;
+      font-style: normal;
+      font-weight: 800;
+      position: absolute;
+      top: 20px;
+      margin: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
