@@ -29,11 +29,13 @@
 
 .containerForWrapperBanner {
   background-color: black;
+  background: linear-gradient(135deg, #000000, #1a1a1d, #4a4a4d, #8a8a8d);
 
   .man {
     position: absolute;
     right: 100px;
-    top: 10%;
+    bottom: 10%;
+    width: 400px;
   }
 
   position: relative;
