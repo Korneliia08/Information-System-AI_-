@@ -26,7 +26,7 @@ import {NgxMarqueeModule} from 'ngx-marquee';
 import {TranslatePipe, TrPipe} from './pipes/translate.pipe';
 import {TranslateService} from './pipes/translate.service';
 import {HttpClientModule} from '@angular/common/http';
-import {faBrandFacebook, faBrandInstagram, faBrandTwitter} from '@ng-icons/font-awesome/brands';
+import {faBrandDiscord, faBrandFacebook, faBrandInstagram, faBrandMedium, faBrandTwitter, faBrandXTwitter} from '@ng-icons/font-awesome/brands';
 import {ChooseLanguageComponent} from './ui/choose-language/choose-language.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {ChooseLanguageModalComponent} from './ui/choose-language/choose-language-modal/choose-language-modal.component';
@@ -35,8 +35,8 @@ import {RowInformationsComponent} from './pages/main-page/row-informations/row-i
 import {RowInformationComponent} from './pages/main-page/row-informations/row-information/row-information.component';
 import {WheAreWeComponent} from './pages/main-page/whe-are-we/whe-are-we.component';
 import {SlickCarouselModule} from 'ngx-slick-carousel';
-import { PanelTextWithImageComponent } from './pages/main-page/panel-text-with-image/panel-text-with-image.component';
-import { HorizontalPersonComponent } from './pages/main-page/horizontal-person/horizontal-person.component';
+import {PanelTextWithImageComponent} from './pages/main-page/panel-text-with-image/panel-text-with-image.component';
+import {HorizontalPersonComponent} from './pages/main-page/horizontal-person/horizontal-person.component';
 
 @NgModule({
   bootstrap: [AppComponent],
@@ -63,7 +63,15 @@ import { HorizontalPersonComponent } from './pages/main-page/horizontal-person/h
     MatCheckbox,
     MatButton,
     FormsModule, MatDialogModule,
-    NgIconsModule.withIcons({faEye, faBrandInstagram, faBrandTwitter, faBrandFacebook}), SlickCarouselModule
+    NgIconsModule.withIcons({
+      faEye,
+      faBrandInstagram,
+      faBrandTwitter,
+      faBrandFacebook,
+      faBrandXTwitter,
+      faBrandDiscord,
+      faBrandMedium
+    }), SlickCarouselModule
   ],
   providers: [
     provideAnimationsAsync(),
