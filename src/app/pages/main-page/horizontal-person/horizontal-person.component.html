@@ -5,43 +5,32 @@
       <h3>WHO WE ARE ?</h3>
     </div>
     <div class="bottom">
+      <ngx-slick-carousel #slickModal="slick-carousel"
+                          [config]="slideConfig"
+                          class="carousel">
 
-      <div class="panel">
-        <img class="back" src="assets/horizontalPanel.svg"/>
+        <div *ngFor="let slide of [1,2,3,4,5,6]" class="slide" ngxSlickItem>
 
-        <img class="man" src="assets/man.png">
-        <div class="text">
+          <div class="panel">
+            <img class="back" src="assets/horizontalPanel.svg"/>
 
-          <h3>
-            Jevgen
-          </h3>
-          <h4>CEO & founder</h4>
-          <p>
-            I enjoy AI because it allows me to work more efficiently and tackle challenges I once thought were too complex. The way it learns and
-            adapts
-            feels almost magical, making technology more intuitive and accessible.
-          </p>
+            <img class="man" src="assets/man.png">
+            <div class="text">
+
+              <h3>
+                Jevgen
+              </h3>
+              <h4>CEO & founder</h4>
+              <p>
+                I enjoy AI because it allows me to work more efficiently and tackle challenges I once thought were too complex. The way it learns and
+                adapts
+                feels almost magical, making technology more intuitive and accessible.
+              </p>
+            </div>
+
+          </div>
         </div>
-
-      </div>
-      <div class="panel">
-        <img class="back" src="assets/horizontalPanel.svg"/>
-
-        <img class="man" src="assets/man.png">
-        <div class="text">
-
-          <h3>
-            Jevgen
-          </h3>
-          <h4>CEO & founder</h4>
-          <p>
-            I enjoy AI because it allows me to work more efficiently and tackle challenges I once thought were too complex. The way it learns and
-            adapts
-            feels almost magical, making technology more intuitive and accessible.
-          </p>
-        </div>
-
-      </div>
+      </ngx-slick-carousel>
 
 
     </div>

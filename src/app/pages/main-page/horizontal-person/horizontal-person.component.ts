@@ -8,5 +8,5 @@ import {Component} from '@angular/core';
   styleUrl: './horizontal-person.component.scss'
 })
 export class HorizontalPersonComponent {
-  slideConfig = {"slidesToShow": 4, "slidesToScroll": 4};
+  slideConfig = {"arrows": false, "slidesToShow": 2, "slidesToScroll": 1};
 }

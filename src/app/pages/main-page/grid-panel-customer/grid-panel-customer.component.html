@@ -4,22 +4,24 @@
 
 
     <div class="panel1">
+      <img class='brain' src="assets/brain.gif"/>
+      <img class='coin' src="assets/coin.gif"/>
       <img src="assets/panel1.svg"/>
       <div class="centerPanel">
 
-        @for (slide of [1, 2, 3]; track slide) {
+        @for (slide of [['assets/av1.jpg', 'Artem'], ['assets/av2.png', "Arsen "], ['assets/av3.png', 'Bohdan'],]; track slide) {
 
           <div class="element">
             <div class="left">
               <div class="top">
-                Lorem impsum
+                {{ slide[1] }}
 
               </div>
               <div class="bottom">
                 $12 1212 21
               </div>
             </div>
-            <img src="./assets/images/icon.png"/>
+            <img [src]="slide[0]"/>
           </div>
 
         }
