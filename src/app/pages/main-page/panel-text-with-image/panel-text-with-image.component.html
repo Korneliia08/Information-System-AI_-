@@ -1,7 +1,7 @@
 <section class="panel ">
   <div class="content">
     <img src="assets/image.png"/>
-    <h2>WORLD<br/> OF <span>BLUAI</span></h2>
-    <p>OUR GLOBAL NETWORK OF ENTERPRISES AND <span>PARTNERS</span> CONNECTED THROUGH THE <span>WEB3 ECOSYSTEM</span></p>
+    <h2 [innerHTML]="'part2.NEWAI'|tr|sanitizeHtml"></h2>
+    <p [innerHTML]="'part2.text'|tr|sanitizeHtml"></p>
   </div>
 </section>

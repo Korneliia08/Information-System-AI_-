@@ -272,6 +272,30 @@
       "text2": "aigeobot@gmail.com  ✦  aigeobot@gmail.com  ✦  aigeobot@gmail.com  ✦  aigeobot@gmail.com"
     }
   },
+  "part2": {
+    "inf1": {
+      "text": "VOUS POSSÉDEZ VOS DONNÉES ET LES ÉCHANGEZ CONTRE DE LA VALEUR, PAS POUR LES ENTREPRISES.",
+      "title": "OBJECTIF"
+    },
+    "inf2": {
+      "text": "CRÉER LE SYSTÈME FINANCIER LE PLUS INTELLIGENT QUI RÉCOMPENSE LES GENS POUR LEUR IDENTITÉ NUMÉRIQUE ET LEURS PRÉFÉRENCES.",
+      "title": "MISSION"
+    },
+    "inf3": {
+      "text": "UN MONDE OÙ L'IA CONNECTE ET SERT LES GENS MIEUX CHAQUE JOUR.",
+      "title": "VISION"
+    },
+    "whoWeAre": {
+      "title": "QUI SOMMES-NOUS ?",
+      "name": "Jevgen",
+      "text": "J'apprécie l'intelligence artificielle car elle me permet de travailler plus efficacement et de relever des défis que je pensais autrefois trop complexes. La façon dont elle apprend et s'adapte semble presque magique, rendant la technologie plus intuitive et accessible."
+    },
+    "partners": "Nos partenaires",
+    "nividia": "NVIDIA EST UN LEADER MONDIAL DANS LES TECHNOLOGIES DE TRAITEMENT GRAPHIQUE, RÉVOLUTIONNANT LE JEU VIDÉO ET L'INTELLIGENCE ARTIFICIELLE.",
+    "openAI": "OPENAI EST À LA POINTE DE L'INNOVATION EN INTELLIGENCE ARTIFICIELLE, CRÉANT DES MODÈLES PUISSANTS COMME GPT POUR FAÇONNER L'AVENIR.",
+    "NEWAI": "MONDE<br/> DE LA <span style='color:White'>NOUVELLE IA</span>",
+    "text": "NOTRE RÉSEAU MONDIAL D'ENTREPRISES ET DE <span>PARTENAIRES</span> CONNECTÉS PAR L'ÉCOSYSTÈME <span>WEB3</span>"
+  },
   "rightBar": {
     "dataSourceSelection": {
       "ariaLabel": "Sélectionner ou désélectionner des sources de données"

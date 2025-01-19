@@ -84,7 +84,7 @@
   },
   "footer": {
     "chooseLanguage": {
-      "name": "angielski",
+      "name": "Polski",
       "title": "Wybierz język:"
     }
   },
@@ -271,6 +271,30 @@
       "text1": "Inwestycje w sztuczną inteligencję w 2024 roku otwierają nowe horyzonty dla postępu technologicznego.",
       "text2": "aigeobot@gmail.com  ✦  aigeobot@gmail.com  ✦  aigeobot@gmail.com  ✦  aigeobot@gmail.com"
     }
+  },
+  "part2": {
+    "inf1": {
+      "text": "JESTEŚ WŁAŚCICIELEM SWOICH DANYCH I WYMIENIASZ JE NA WARTOŚĆ, A NIE NA RZECZ KORPORACJI.",
+      "title": "CEL"
+    },
+    "inf2": {
+      "text": "STWORZENIE NAJMĄDRZEJSZEGO SYSTEMU FINANSOWEGO, KTÓRY NAGRADZA LUDZI ZA ICH CYFROWĄ TOŻSAMOŚĆ I PREFERENCJE.",
+      "title": "MISJA"
+    },
+    "inf3": {
+      "text": "ŚWIAT, W KTÓRYM SZTUCZNA INTELIGENCJA ŁĄCZY I SŁUŻY LUDZIOM KAŻDEGO DNIA.",
+      "title": "WIZJA"
+    },
+    "whoWeAre": {
+      "title": "KIM JESTEŚMY?",
+      "name": "Jevgen",
+      "text": "Uwielbiam sztuczną inteligencję, ponieważ pozwala mi pracować wydajniej i rozwiązywać problemy, które kiedyś wydawały się zbyt skomplikowane. Sposób, w jaki się uczy i adaptuje, wydaje się niemal magiczny, sprawiając, że technologia staje się bardziej intuicyjna i dostępna."
+    },
+    "partners": "Nasi partnerzy",
+    "nividia": "NVIDIA JEST ŚWIATOWYM LIDEREM W DZIEDZINIE TECHNOLOGII PRZETWARZANIA GRAFIKI, REWOLUCJONUJĄC BRANŻĘ GIER I SZTUCZNEJ INTELIGENCJI.",
+    "openAI": "OPENAI JEST NA CZELE INNOWACJI W DZIEDZINIE SZTUCZNEJ INTELIGENCJI, TWORZĄC POTĘŻNE MODELE, TAKIE JAK GPT, KSZTAŁTUJĄCE PRZYSZŁOŚĆ.",
+    "NEWAI": "ŚWIAT<br/> NOWEJ <span style='color:White'>SZTUCZNEJ INTELIGENCJI</span>",
+    "text": "NASZA GLOBALNA SIEĆ PRZEDSIĘBIORSTW I <span>PARTNERÓW</span> POŁĄCZONYCH POPRZEZ <span>EKOSYSTEM WEB3</span>"
   },
   "rightBar": {
     "dataSourceSelection": {

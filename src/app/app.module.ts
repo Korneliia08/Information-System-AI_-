@@ -45,13 +45,14 @@ import {WheAreWeComponent} from './pages/main-page/whe-are-we/whe-are-we.compone
 import {PanelTextWithImageComponent} from './pages/main-page/panel-text-with-image/panel-text-with-image.component';
 import {HorizontalPersonComponent} from './pages/main-page/horizontal-person/horizontal-person.component';
 import {SlickCarouselModule} from 'ngx-slick-carousel';
+import {SanitizeHtmlPipe} from './pipes/sanitizer.pipe';
 
 @NgModule({
   bootstrap: [AppComponent],
   declarations: [
     AppComponent,
     ChatPageComponent, MaxLengthPipe,
-    ChatBoxComponent,
+    ChatBoxComponent, SanitizeHtmlPipe,
     MainPageComponent, TranslatePipe,
     MainBannerComponent,
     OurPartnersComponent, TrPipe,

@@ -272,6 +272,30 @@
       "text2": "aigeobot&#64;gmail.com&nbsp;&nbsp;&#10022;&nbsp;&nbsp;aigeobot&#64;gmail.com&nbsp;&nbsp;&#10022;&nbsp;&nbsp;aigeobot&#64;gmail.com&nbsp;&nbsp;&#10022;&nbsp;&nbsp;aigeobot&#64;gmail.com"
     }
   },
+  "part2": {
+    "inf1": {
+      "text": "YOU OWN YOUR DATA AND EXCHANGE IT FOR VALUE, NOT CORPORATIONS.",
+      "title": "PURPOSE"
+    },
+    "inf2": {
+      "text": "TO CREATE THE SMARTEST FINANCIAL SYSTEM REWARDING PEOPLE FOR THEIR DIGITAL IDENTITY AND PREFERENCES.",
+      "title": "MISSION"
+    },
+    "inf3": {
+      "text": "A WORLD WHERE AI CONNECTS AND SERVES PEOPLE BETTER EVERYDAY.",
+      "title": "VISION"
+    },
+    "whoWeAre": {
+      "title": "WHO WE ARE ?",
+      "name": "Jevgen",
+      "text": " I enjoy AI because it allows me to work more efficiently and tackle challenges I once thought were too complex. The way it learns and\n                adapts\n                feels almost magical, making technology more intuitive and accessible."
+    },
+    "partners": "Our partners",
+    "nividia": "NVIDIA IS A GLOBAL LEADER IN GRAPHICS PROCESSING TECHNOLOGIES, REVOLUTIONIZING\n      GAMING, ARTIFICIAL INTELLIGENCE.",
+    "openAI": "OPENAI IS AT THE FOREFRONT OF ARTIFICIAL INTELLIGENCE INNOVATION, CREATING\n      POWERFUL MODELS SUCH AS GPT TO SHAPE THE FUTURE.",
+    "NEWAI": "WORLD<br/> OF <span style='color:White'>NEWAI</span>",
+    "text": "OUR GLOBAL NETWORK OF ENTERPRISES AND <span>PARTNERS</span> CONNECTED THROUGH THE <span>WEB3 ECOSYSTEM</span>"
+  },
   "rightBar": {
     "dataSourceSelection": {
       "ariaLabel": "Select or deselect data sources"

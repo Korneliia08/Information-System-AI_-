@@ -1,5 +1,5 @@
 <section class="users">
-  <h2 class="sectionTitle">Our partners</h2>
+  <h2 class="sectionTitle"><h3>{{ 'part2.partners'|tr }}</h3></h2>
   <div class="user">
     <h4>
       NIVIDIA
@@ -14,9 +14,8 @@
     <div class="personTitle">
       Graphic technology
     </div>
-    <div class="text">
-      NVIDIA IS A GLOBAL LEADER IN GRAPHICS PROCESSING TECHNOLOGIES, REVOLUTIONIZING
-      GAMING, ARTIFICIAL INTELLIGENCE.
+    <div [innerHTML]="'part2.nividia'|tr" class="text">
+
     </div>
   </div>
   <div class="user">
@@ -33,9 +32,8 @@
     <div class="personTitle">
       Artificial intelligence
     </div>
-    <div class="text">
-      OPENAI IS AT THE FOREFRONT OF ARTIFICIAL INTELLIGENCE INNOVATION, CREATING
-      POWERFUL MODELS SUCH AS GPT TO SHAPE THE FUTURE.
+    <div [innerHTML]="'part2.openAI'|tr" class="text">
+
     </div>
   </div>
 </section>
