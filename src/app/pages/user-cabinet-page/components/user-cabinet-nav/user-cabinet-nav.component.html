@@ -1,19 +1,18 @@
 <div class="navContainer">
 
-  <a>
+  <a [routerLinkActive]="'active'" [routerLink]="['./dashboard']" class="menuLink">
     <div class="icon">
       <ng-lottie
+        [options]="options"
         containerClass="moving-box another-class"
-        datasrc="assets/lottie/dashLottie.json"
-        height="500px"
-        width="600px"
+        height="50px"
+        width="60px"
       />
-      test
     </div>
     <div class="label">
-
       Dashboard
     </div>
   </a>
   <a> Reports</a>
+  <app-user-cabinet-nav-group [elements]="[1,2,3,4]"/>
 </div>

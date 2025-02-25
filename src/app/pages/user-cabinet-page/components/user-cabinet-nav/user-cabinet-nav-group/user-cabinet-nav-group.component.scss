@@ -1,0 +1,39 @@
+.menu {
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+
+  .menu-header {
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .menu-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+      border-top: 1px solid #ddd;
+      background: #f9f9f9;
+
+      &:hover {
+        background: #e0e0e0;
+      }
+    }
+  }
+
+  .open {
+    max-height: 500px;
+  }
+}

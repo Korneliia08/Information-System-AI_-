@@ -47,11 +47,11 @@ import {HorizontalPersonComponent} from './pages/main-page/horizontal-person/hor
 import {SlickCarouselModule} from 'ngx-slick-carousel';
 import {SanitizeHtmlPipe} from './pipes/sanitizer.pipe';
 import {UserCabinetPageComponent} from './pages/user-cabinet-page/user-cabinet-page.component';
-import {UserCabinetNavComponent} from './pages/user-cabinet-page/components/user-cabinet-nav/user-cabinet-nav.component';
 import {UserCabinetDashboardPageComponent} from './pages/user-cabinet-page/panels/user-cabinet-dashboard-page/user-cabinet-dashboard-page.component';
-import {UserCabinetNavGroupComponent} from './pages/user-cabinet-page/components/user-cabinet-nav/user-cabinet-nav-group/user-cabinet-nav-group.component';
 import {provideLottieOptions} from 'ngx-lottie';
 import player from 'lottie-web';
+import {UserCabinetTopBeltComponent} from './pages/user-cabinet-page/components/user-cabinet-top-belt/user-cabinet-top-belt.component';
+import {UserCabinetNavComponent} from './pages/user-cabinet-page/components/user-cabinet-nav/user-cabinet-nav.component';
 
 @NgModule({
   bootstrap: [AppComponent],
@@ -65,7 +65,7 @@ import player from 'lottie-web';
     AiDocumentationComponent,
     SmoothScrollComponent,
     FooterComponent, ChooseLanguageModalComponent,
-    AccessibilityComponent, ChooseLanguageComponent, GridPanelCustomerComponent, RowInformationsComponent, RowInformationComponent, WheAreWeComponent, PanelTextWithImageComponent, HorizontalPersonComponent, UserCabinetPageComponent, UserCabinetDashboardPageComponent, UserCabinetNavGroupComponent,
+    AccessibilityComponent, ChooseLanguageComponent, GridPanelCustomerComponent, RowInformationsComponent, RowInformationComponent, WheAreWeComponent, PanelTextWithImageComponent, HorizontalPersonComponent, UserCabinetPageComponent, UserCabinetDashboardPageComponent, UserCabinetTopBeltComponent,
   ],
   imports: [
     BrowserModule,
@@ -87,6 +87,7 @@ import player from 'lottie-web';
 
     }), SlickCarouselModule, UserCabinetNavComponent
   ],
+
   providers: [
     provideAnimationsAsync(),
     TranslateService,

@@ -1,5 +1,7 @@
 import {Component} from '@angular/core';
-import {LottieComponent} from 'ngx-lottie';
+import {AnimationOptions, LottieComponent} from 'ngx-lottie';
+import {RouterLink, RouterLinkActive} from '@angular/router';
+import {AppModule} from '../../../../app.module';
 
 @Component({
   selector: 'app-user-cabinet-nav',
@@ -8,9 +10,14 @@ import {LottieComponent} from 'ngx-lottie';
   templateUrl: './user-cabinet-nav.component.html',
   styleUrl: './user-cabinet-nav.component.scss',
   imports: [
-    LottieComponent
+    LottieComponent,
+    RouterLinkActive,
+    RouterLink,
+    AppModule
   ],
 })
 export class UserCabinetNavComponent {
-
+  options: AnimationOptions = {
+    path: '/assets/lottie/dashLottie.json',
+  };
 }

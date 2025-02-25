@@ -1,1 +1,12 @@
-<p>user-cabinet-nav-group works!</p>
+<div>
+  <div (click)="toggle()" class="toggle-button">
+    Open me
+  </div>
+  <div [@expandCollapse]="isOpen ? 'open' : 'closed'" class="movable">
+    @for (item of elements; track item) {
+      <a>
+        Element {{ item }}
+      </a>
+    }
+  </div>
+</div>

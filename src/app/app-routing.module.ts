@@ -17,8 +17,12 @@ const routes: Routes = [
     component: UserCabinetPageComponent,
     children: [
       {
-        path: '',
+        path: 'dashboard',
         component: UserCabinetDashboardPageComponent
+      },
+      {
+        path: "**",
+        redirectTo: 'dashboard',
       }
 
     ]
