@@ -1,6 +1,6 @@
 <div id="particles-js"></div>
 <section class="containerForWrapperBanner">
-  <img class="headerLine" src="/assets/headerLine.svg">
+  <img class="headerLine" src="assets/headerLine.svg">
   <img class="man" src="assets/man2.gif"/>
   <video aria-label="Video banner background" autoplay class="videoBanner" loop muted role="presentation">
     <source src="assets/man.gif" type="video/mp4"/>
@@ -55,8 +55,8 @@
                class="disabled"
                href="/contact-support">{{ 'mainPage.header.nav.contactSupport.text'|tr }}</a>
 
-            <a [attr.aria-label]="'mainPage.header.nav.signUp.ariaLabel'|tr" aria-disabled="true" class="signUpBtn disabled"
-               href="/sign-up">{{ 'mainPage.header.nav.signUp.text'|tr }}</a>
+            <a [attr.aria-label]="'mainPage.header.nav.signUp.ariaLabel'|tr" [routerLink]="['/userCabinet']"
+               class="signUpBtn">{{ 'mainPage.header.nav.signUp.text'|tr }}</a>
 
 
             <button

@@ -1,7 +1,7 @@
-import { inject, Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject } from 'rxjs';
-import { CookieService } from 'ngx-cookie-service';
+import {inject, Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {BehaviorSubject} from 'rxjs';
+import {CookieService} from 'ngx-cookie-service';
 import ms from 'ms';
 
 @Injectable({
@@ -14,7 +14,8 @@ export class TranslateService {
   private random = new Date().getTime();
   private currentLanguage = ''
 
-  constructor() {}
+  constructor() {
+  }
 
   setLanguageFile(language: string) {
     const expire = new Date(new Date().getTime() + ms('90d'));
@@ -25,14 +26,15 @@ export class TranslateService {
   getLanguageFile(language: string = 'pl') {
 
     try {
-      this.http
+      this.http///Guru
         .get(`/translate/${language}.json?random=${this.random}`)
         .subscribe({
           next: (data) => {
             this.languageFile.next(data);
             this.currentLanguage = language
           },
-          error: (err) => {},
+          error: (err) => {
+          },
         });
     } catch (error) {
       console.warn('select language error');
@@ -47,16 +49,19 @@ export class TranslateService {
     }
     return value;
   }
-  getCurrentLanguage(){
+
+  getCurrentLanguage() {
     return this.currentLanguage
   }
-  getCurrentLanguageFlagSymbol(){
+
+  getCurrentLanguageFlagSymbol() {
     switch (this.currentLanguage) {
-      case'en': return 'us'
-      default: return this.currentLanguage
+      case'en':
+        return 'us'
+      default:
+        return this.currentLanguage
     }
   }
-
 
 
   changeVariable(variables: { [key: string]: any }, value: string) {

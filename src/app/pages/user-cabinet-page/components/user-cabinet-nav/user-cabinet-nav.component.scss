@@ -1,0 +1,28 @@
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  position: 5px;
+
+  a {
+    display: flex;
+    color: white;
+    gap: 30px;
+    border-bottom: 1px solid rgba(94, 94, 94, 0.06);
+
+    .icon {
+      ng-icon {
+        color: white;
+      }
+
+    }
+
+    .label {
+      font-size: 25px;
+
+    }
+
+    &.active {
+      background-color: rgba(255, 106, 0, 0.7);
+    }
+  }
+}

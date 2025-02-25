@@ -46,6 +46,12 @@ import {PanelTextWithImageComponent} from './pages/main-page/panel-text-with-ima
 import {HorizontalPersonComponent} from './pages/main-page/horizontal-person/horizontal-person.component';
 import {SlickCarouselModule} from 'ngx-slick-carousel';
 import {SanitizeHtmlPipe} from './pipes/sanitizer.pipe';
+import {UserCabinetPageComponent} from './pages/user-cabinet-page/user-cabinet-page.component';
+import {UserCabinetNavComponent} from './pages/user-cabinet-page/components/user-cabinet-nav/user-cabinet-nav.component';
+import {UserCabinetDashboardPageComponent} from './pages/user-cabinet-page/panels/user-cabinet-dashboard-page/user-cabinet-dashboard-page.component';
+import {UserCabinetNavGroupComponent} from './pages/user-cabinet-page/components/user-cabinet-nav/user-cabinet-nav-group/user-cabinet-nav-group.component';
+import {provideLottieOptions} from 'ngx-lottie';
+import player from 'lottie-web';
 
 @NgModule({
   bootstrap: [AppComponent],
@@ -59,7 +65,7 @@ import {SanitizeHtmlPipe} from './pipes/sanitizer.pipe';
     AiDocumentationComponent,
     SmoothScrollComponent,
     FooterComponent, ChooseLanguageModalComponent,
-    AccessibilityComponent, ChooseLanguageComponent, GridPanelCustomerComponent, RowInformationsComponent, RowInformationComponent, WheAreWeComponent, PanelTextWithImageComponent, HorizontalPersonComponent,
+    AccessibilityComponent, ChooseLanguageComponent, GridPanelCustomerComponent, RowInformationsComponent, RowInformationComponent, WheAreWeComponent, PanelTextWithImageComponent, HorizontalPersonComponent, UserCabinetPageComponent, UserCabinetDashboardPageComponent, UserCabinetNavGroupComponent,
   ],
   imports: [
     BrowserModule,
@@ -79,11 +85,14 @@ import {SanitizeHtmlPipe} from './pipes/sanitizer.pipe';
       faBrandFacebook,
       faBrandXTwitter, faBrandDiscord, faBrandMedium, faBrandYoutube,
 
-    }), SlickCarouselModule
+    }), SlickCarouselModule, UserCabinetNavComponent
   ],
   providers: [
     provideAnimationsAsync(),
-    TranslateService
+    TranslateService,
+    provideLottieOptions({
+      player: () => player,
+    }),
   ]
 })
 export class AppModule {
