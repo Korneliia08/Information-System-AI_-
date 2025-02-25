@@ -8,8 +8,8 @@ describe('GridPanelCustomerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [GridPanelCustomerComponent]
-    })
+    imports: [GridPanelCustomerComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(GridPanelCustomerComponent);

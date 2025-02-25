@@ -1,9 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-@Pipe({
-  name: 'maxLength' ,
-  standalone: false,
-})
+@Pipe({ name: 'maxLength', })
 export class MaxLengthPipe implements PipeTransform {
   transform(value: string, length: number, chars: string = '...'): string {
     if (!value || typeof value !== 'string') return value;

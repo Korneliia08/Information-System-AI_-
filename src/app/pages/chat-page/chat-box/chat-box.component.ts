@@ -1,11 +1,14 @@
 import {Component, Input, SimpleChanges} from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
+import { NgClass, NgIf, NgFor, NgStyle, JsonPipe } from '@angular/common';
+import { MatIconButton } from '@angular/material/button';
+import { MatIcon } from '@angular/material/icon';
 
 @Component({
-  selector: 'app-chat-box',
-  standalone: false,
-  templateUrl: './chat-box.component.html',
-  styleUrl: './chat-box.component.scss'
+    selector: 'app-chat-box',
+    templateUrl: './chat-box.component.html',
+    styleUrl: './chat-box.component.scss',
+    imports: [NgClass, NgIf, NgFor, NgStyle, MatIconButton, MatIcon, JsonPipe]
 })
 export class ChatBoxComponent {
   @Input()

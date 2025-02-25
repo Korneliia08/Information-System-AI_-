@@ -8,8 +8,8 @@ describe('HorizontalPersonComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [HorizontalPersonComponent]
-    })
+    imports: [HorizontalPersonComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(HorizontalPersonComponent);

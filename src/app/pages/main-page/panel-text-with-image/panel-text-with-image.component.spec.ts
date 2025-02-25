@@ -8,8 +8,8 @@ describe('PanelTextWithImageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [PanelTextWithImageComponent]
-    })
+    imports: [PanelTextWithImageComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(PanelTextWithImageComponent);

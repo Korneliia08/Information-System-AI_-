@@ -1,13 +1,17 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 import {ChatPageComponent} from '../../chat-page/chat-page.component';
-import {Router} from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
+import { NgClass } from '@angular/common';
+import { NgIcon } from '@ng-icons/core';
+import { AccessibilityComponent } from '../../../fetures/accessibility/accessibility.component';
+import { TrPipe } from '../../../pipes/translate.pipe';
 
 @Component({
-  selector: 'app-main-banner',
-  templateUrl: './main-banner.component.html',
-  styleUrls: ['./main-banner.component.scss'],
-  standalone:false
+    selector: 'app-main-banner',
+    templateUrl: './main-banner.component.html',
+    styleUrls: ['./main-banner.component.scss'],
+    imports: [NgClass, RouterLink, NgIcon, AccessibilityComponent, TrPipe]
 })
 export class MainBannerComponent implements OnInit {
 

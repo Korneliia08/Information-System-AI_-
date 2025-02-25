@@ -8,8 +8,8 @@ describe('RowInformationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [RowInformationComponent]
-    })
+    imports: [RowInformationComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(RowInformationComponent);

@@ -3,9 +3,8 @@ import { TranslateService } from './translate.service';
 import { take } from 'rxjs';
 
 @Pipe({
-  name: 'translate',
-  standalone: false,
-  pure: false,
+    name: 'translate',
+    pure: false,
 })
 export class TranslatePipe implements PipeTransform {
   value: string = '';
@@ -43,9 +42,8 @@ export class TranslatePipe implements PipeTransform {
 }
 
 @Pipe({
-  name: 'tr',
-  standalone: false,
-  pure: false,
+    name: 'tr',
+    pure: false,
 })
 export class TrPipe implements PipeTransform {
   constructor(

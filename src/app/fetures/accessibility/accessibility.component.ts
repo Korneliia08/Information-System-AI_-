@@ -1,11 +1,12 @@
 import {Component, HostListener, OnInit} from '@angular/core';
+import { NgClass } from '@angular/common';
+import { TrPipe } from '../../pipes/translate.pipe';
 
 @Component({
-  selector: 'app-accessibility',
-  standalone: false,
-
-  templateUrl: './accessibility.component.html',
-  styleUrl: './accessibility.component.scss'
+    selector: 'app-accessibility',
+    templateUrl: './accessibility.component.html',
+    styleUrl: './accessibility.component.scss',
+    imports: [NgClass, TrPipe]
 })
 export class AccessibilityComponent implements  OnInit{
   open = false;

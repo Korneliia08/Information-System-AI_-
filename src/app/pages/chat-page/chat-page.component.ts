@@ -2,13 +2,22 @@ import { Component } from '@angular/core';
 import {questions} from './questions';
 import {Router} from '@angular/router';
 import {MatDialog} from '@angular/material/dialog';
+import { NgClass, NgFor, NgStyle, DatePipe } from '@angular/common';
+import { MatIcon } from '@angular/material/icon';
+import { MatButton } from '@angular/material/button';
+import { ChatBoxComponent } from './chat-box/chat-box.component';
+import { FormsModule } from '@angular/forms';
+import { MatCheckbox } from '@angular/material/checkbox';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatRadioGroup, MatRadioButton } from '@angular/material/radio';
+import { MaxLengthPipe } from '../../pipes/max-length.pipe';
+import { TrPipe } from '../../pipes/translate.pipe';
 
 @Component({
-  selector: 'app-chat-page',
-  standalone: false,
-
-  templateUrl: './chat-page.component.html',
-  styleUrl: './chat-page.component.scss'
+    selector: 'app-chat-page',
+    templateUrl: './chat-page.component.html',
+    styleUrl: './chat-page.component.scss',
+    imports: [NgClass, MatIcon, NgFor, MatButton, NgStyle, ChatBoxComponent, FormsModule, MatCheckbox, MatPaginator, MatRadioGroup, MatRadioButton, DatePipe, MaxLengthPipe, TrPipe]
 })
 export class ChatPageComponent {
   public pageSize = 5;

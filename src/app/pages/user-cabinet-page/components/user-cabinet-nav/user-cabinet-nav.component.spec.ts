@@ -8,8 +8,8 @@ describe('UserCabinetNavComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [UserCabinetNavComponent]
-    })
+    imports: [UserCabinetNavComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(UserCabinetNavComponent);

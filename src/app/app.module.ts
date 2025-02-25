@@ -54,47 +54,43 @@ import {UserCabinetTopBeltComponent} from './pages/user-cabinet-page/components/
 import {UserCabinetNavComponent} from './pages/user-cabinet-page/components/user-cabinet-nav/user-cabinet-nav.component';
 
 @NgModule({
-  bootstrap: [AppComponent],
-  declarations: [
-    AppComponent,
-    ChatPageComponent, MaxLengthPipe,
-    ChatBoxComponent, SanitizeHtmlPipe,
-    MainPageComponent, TranslatePipe,
-    MainBannerComponent,
-    OurPartnersComponent, TrPipe,
-    AiDocumentationComponent,
-    SmoothScrollComponent,
-    FooterComponent, ChooseLanguageModalComponent,
-    AccessibilityComponent, ChooseLanguageComponent, GridPanelCustomerComponent, RowInformationsComponent, RowInformationComponent, WheAreWeComponent, PanelTextWithImageComponent, HorizontalPersonComponent, UserCabinetPageComponent, UserCabinetDashboardPageComponent, UserCabinetTopBeltComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MatIcon,
-    MatIconButton,
-    MatRadioGroup, HttpClientModule,
-    MatRadioButton,
-    MatPaginator, NgxMarqueeModule,
-    MatCheckbox,
-    MatButton,
-    FormsModule, MatDialogModule,
-    NgIconsModule.withIcons({
-      faEye,
-      faBrandInstagram,
-      faBrandTwitter,
-      faBrandFacebook,
-      faBrandXTwitter, faBrandDiscord, faBrandMedium, faBrandYoutube,
-
-    }), SlickCarouselModule, UserCabinetNavComponent
-  ],
-
-  providers: [
-    provideAnimationsAsync(),
-    TranslateService,
-    provideLottieOptions({
-      player: () => player,
-    }),
-  ]
+    bootstrap: [AppComponent],
+    declarations: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        MatIcon,
+        MatIconButton,
+        MatRadioGroup, HttpClientModule,
+        MatRadioButton,
+        MatPaginator, NgxMarqueeModule,
+        MatCheckbox,
+        MatButton,
+        FormsModule, MatDialogModule,
+        NgIconsModule.withIcons({
+            faEye,
+            faBrandInstagram,
+            faBrandTwitter,
+            faBrandFacebook,
+            faBrandXTwitter, faBrandDiscord, faBrandMedium, faBrandYoutube,
+        }), SlickCarouselModule, UserCabinetNavComponent,
+        ChatPageComponent, MaxLengthPipe,
+        ChatBoxComponent, SanitizeHtmlPipe,
+        MainPageComponent, TranslatePipe,
+        MainBannerComponent,
+        OurPartnersComponent, TrPipe,
+        AiDocumentationComponent,
+        SmoothScrollComponent,
+        FooterComponent, ChooseLanguageModalComponent,
+        AccessibilityComponent, ChooseLanguageComponent, GridPanelCustomerComponent, RowInformationsComponent, RowInformationComponent, WheAreWeComponent, PanelTextWithImageComponent, HorizontalPersonComponent, UserCabinetPageComponent, UserCabinetDashboardPageComponent, UserCabinetTopBeltComponent
+    ],
+    providers: [
+        provideAnimationsAsync(),
+        TranslateService,
+        provideLottieOptions({
+            player: () => player,
+        }),
+    ]
 })
 export class AppModule {
 }

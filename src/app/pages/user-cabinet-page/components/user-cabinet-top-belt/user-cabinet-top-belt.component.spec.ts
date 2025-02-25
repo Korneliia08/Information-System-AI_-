@@ -8,8 +8,8 @@ describe('UserCabinetTopBeltComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [UserCabinetTopBeltComponent]
-    })
+    imports: [UserCabinetTopBeltComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(UserCabinetTopBeltComponent);

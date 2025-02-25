@@ -8,8 +8,8 @@ describe('WheAreWeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [WheAreWeComponent]
-    })
+    imports: [WheAreWeComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(WheAreWeComponent);

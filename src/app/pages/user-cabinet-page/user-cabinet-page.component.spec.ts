@@ -8,8 +8,8 @@ describe('UserCabinetPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [UserCabinetPageComponent]
-    })
+    imports: [UserCabinetPageComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(UserCabinetPageComponent);
