@@ -15,7 +15,7 @@ import {NgIcon} from '@ng-icons/core';
   standalone: true
 })
 export class UserCabinetNavGroupComponent {
-  @Input() elements!: number[];
+  @Input() elements!: string[];
   isOpen = false;
   options: AnimationOptions = {
     path: '/assets/lottie/dashLottie.json',
