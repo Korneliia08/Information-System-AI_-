@@ -18,8 +18,7 @@
         <ng-icon [svg]="remixFilterLine"/>
       </div>
       <div class="inputWithIcon">
-
-        <input placeholder="search"/>
+        <input placeholder="Search"/>
         <ng-icon [svg]="faSolidMagnifyingGlass" class="glass"/>
       </div>
       <div class="saveButton">
@@ -29,7 +28,7 @@
         <mat-form-field>
           <mat-label>Favorite animal</mat-label>
           <mat-select>
-      
+
             @for (animal of [1, 2, 3, 4]; track animal) {
               <mat-option [value]="animal">{{ animal }}</mat-option>
             }

@@ -44,11 +44,11 @@
     .filter {
       height: 37px;
       width: 37px;
-      background-color: #ff5900;
+      background:linear-gradient(135deg, #ff9800, #e65100);
       display: flex;
       justify-content: center;
       align-items: center;
-
+      border-radius: 2px;
       ng-icon {
         color: #000000 !important;
 
@@ -68,6 +68,10 @@
         padding-right: 30px;
         border: none;
         padding-left: 12px;
+        background:linear-gradient(135deg, #2c2c2c, #1a1a1a);
+        color: white;
+        font-size: 18px;
+        letter-spacing: 1px;
 
         &:focus-within {
           outline: none;
@@ -80,7 +84,7 @@
         right: 20px;
         transition: 300ms;
         font-size: 18px;
-
+        color: white;
 
         &:hover {
           cursor: pointer;
@@ -93,8 +97,9 @@
       padding-left: 10px;
       height: 38px;
 
-      &::ng-deep {
 
+
+      &::ng-deep {
         .mdc-text-field .mdc-floating-label {
           top: 50%;
           transform: translateY(-93%);
@@ -128,10 +133,11 @@
             padding: 0;
           }
 
-          background-color: #8c8c8c;
+          background:linear-gradient(135deg, #2c2c2c, #1a1a1a);
           color: white;
           height: 38px;
           border-radius: 0;
+          border: 1px solid rgba(70, 70, 70, 0.22);
 
           .mat-mdc-form-field-flex {
             height: 100%;
@@ -143,14 +149,14 @@
     .saveButton {
       width: 37px;
       height: 37px;
-      background-color: silver;
+      background-color: #2d2d2d;
       display: flex;
       justify-content: center;
       align-items: center;
 
       &:hover {
         cursor: pointer;
-        background-color: #a6a6a6;
+        background-color: #4d4d4d;
       }
 
       ng-icon {
