@@ -1,13 +1,26 @@
 <div class="block">
   <div class="innerTopBlock">
-    <!--    <ng-lottie-->
-    <!--      [options]="{-->
-    <!--      path:'/assets/lottie/barChart.json'-->
-    <!--      }"-->
-    <!--      containerClass="moving-box another-class"-->
-    <!--      height="100%"-->
-    <!--      width="100%"-->
-    <!--    />-->
+    <div class="left">
+      <div>
+
+      </div>
+    </div>
+    <div class="right">
+      @for (line of lines; track line) {
+        <div class="lineBlock">
+          <div class="circle" [ngStyle]="{backgroundColor:line.color}">
+            <ng-icon [svg]="line.icon"/>
+          </div>
+          <div class="line"></div>
+          <div class="numberBlock">
+            0
+          </div>
+          <div class="spanBlock">
+            {{ Math.round(line.value) }}%
+          </div>
+        </div>
+      }
+    </div>
   </div>
   <div class="horizontalBar">
     <div class="topPart">

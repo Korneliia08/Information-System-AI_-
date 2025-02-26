@@ -3,6 +3,15 @@
 html, body {
   height: 100%;
   --borderColor: rgba(220, 220, 220, 0.09);
+  --mat-select-enabled-trigger-text-color: white;
+}
+
+.mat-mdc-select-panel {
+  background: linear-gradient(135deg, #2c2c2c, #1a1a1a) !important;
+
+  span {
+    color: White !important;
+  }
 }
 
 body {
