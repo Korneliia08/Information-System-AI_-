@@ -6,52 +6,47 @@ import {NgIcon} from '@ng-icons/core';
 @Component({
   selector: 'app-user-cabinet-stat-block1',
   standalone: true,
-
   templateUrl: './user-cabinet-stat-block1.component.html',
-  imports: [
-    NgStyle,
-    NgIcon
-  ],
+  imports: [NgStyle, NgIcon],
   styleUrl: './user-cabinet-stat-block1.component.scss'
 })
 export class UserCabinetStatBlock1Component {
-  public lines = [
-    {color: 'red', icon: faSolidExclamation, value: 0, direction: 0},
-    {color: 'red', icon: faSolidExclamation, value: 0, direction: 0},
-    {color: 'red', icon: faSolidExclamation, value: 0, direction: 0},
-    {color: 'red', icon: faSolidExclamation, value: 0, direction: 0},
-    {color: 'red', icon: faSolidExclamation, value: 0, direction: 0},
-    {color: 'red', icon: faSolidExclamation, value: 0, direction: 0},
-    {color: 'red', icon: faSolidExclamation, value: 0, direction: 0}
-  ];
+  public lines = Array(7).fill(null).map(() => ({
+    color: 'red',
+    icon: faSolidExclamation,
+    value: Math.random() * 100, // Startowa wartość losowa
+    direction: Math.random() > 0.5 ? 1 : -1 // Losowy kierunek początkowy
+  }));
+
   protected readonly faSolidExclamation = faSolidExclamation;
+  protected readonly Math = Math;
 
   constructor() {
     this.startRandomUpdates();
   }
 
   private startRandomUpdates() {
-    this.lines.forEach((line, index) => {
-      this.updateValueSmoothly(line, index);
+    this.lines.forEach((line) => {
+      this.updateValueSmoothly(line);
     });
   }
 
-  private updateValueSmoothly(line: { value: number, direction: number }, index: number) {
-
-    let currentValue = 0;
-
+  private updateValueSmoothly(line: { value: number, direction: number }) {
     const update = () => {
-      currentValue += line.direction * Math.random() + index * 0.1; // Zmiana wartości co 100ms
-      if (currentValue >= 100 || currentValue <= 0) {
-        line.direction *= -1; // Odwrócenie kierunku przy osiągnięciu 0 lub 100
+      const speed = Math.random() * 2 + 0.2; // Losowa prędkość od 0.2 do 2
+      line.value += line.direction * speed;
+
+      if (line.value >= 100) {
+        line.value = 100;
+        line.direction = -1;
+      } else if (line.value <= 0) {
+        line.value = 0;
+        line.direction = 1;
       }
 
-      line.value = Math.round(currentValue); // Zaokrąglamy do pełnej liczby
-
-      setTimeout(update, 100); // Aktualizacja co 100ms
+      setTimeout(update, 100); // Płynna aktualizacja co 100ms
     };
 
     update();
   }
-
 }
