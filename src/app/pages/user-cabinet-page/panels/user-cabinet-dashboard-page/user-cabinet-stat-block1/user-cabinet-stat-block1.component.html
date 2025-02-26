@@ -11,6 +11,11 @@
   </div>
   <div class="horizontalBar">
     <div class="topPart">
+      @for (text of ["Poor", "Bellow Average", "Average", 'About Average', 'Genius']; track text; ) {
+        <div class="section">
+          {{ text }}
+        </div>
+      }
 
     </div>
     <div class="bar">
@@ -22,8 +27,11 @@
       }
     </div>
     <div class="bottomPart">
-      <div class="section">
-      </div>
+      @for (text of ["60", "80", "100", '120', '140']; track text; ) {
+        <div class="section">
+          {{ text }}
+        </div>
+      }
     </div>
   </div>
 </div>
