@@ -20,6 +20,7 @@ export class UserCabinetNavGroupComponent {
   options: AnimationOptions = {
     path: '/assets/lottie/dashLottie.json',
   };
+  @Input() icons!: string[];
 
   toggle() {
     this.isOpen = !this.isOpen;

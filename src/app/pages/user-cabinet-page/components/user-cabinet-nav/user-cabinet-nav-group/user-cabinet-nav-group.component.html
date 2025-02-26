@@ -19,7 +19,7 @@
 
   </div>
   <div [ngClass]="{open:isOpen }" class="menu-content">
-    @for (item of elements; track item) {
+    @for (item of elements; track item; let i = $index) {
       <a>
         <div class="left">
         </div>
@@ -30,12 +30,7 @@
         </div>
 
         <div class="right">
-          <ng-lottie
-            [options]="options"
-            containerClass="moving-box another-class"
-            height="50px"
-            width="60px"
-          />
+          <img [src]="icons[i]"/>
         </div>
       </a>
     }

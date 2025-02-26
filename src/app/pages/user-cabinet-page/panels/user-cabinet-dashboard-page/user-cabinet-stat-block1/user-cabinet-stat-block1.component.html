@@ -1,9 +1,16 @@
 <div class="block">
   <div class="innerTopBlock">
     <div class="left">
-      <div>
 
-      </div>
+      <ng-lottie
+        [options]="{
+          path:'/assets/lottie/chars4.json'
+          }"
+        containerClass="moving-box another-class"
+        height="100%"
+        width="100%"
+      />
+
     </div>
     <div class="right">
       @for (line of lines; track line) {
@@ -12,7 +19,7 @@
             <ng-icon [svg]="line.icon"/>
           </div>
           <div class="line">
-            <div class="innerLine" [ngStyle]="{backgroundColor:line.color,width:line.value+'%'}">
+            <div class="innerLine" [ngStyle]="{backgroundColor:line.color,width:Math.round(line.value)+'%'}">
 
             </div>
           </div>
