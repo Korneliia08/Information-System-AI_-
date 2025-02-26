@@ -20,4 +20,8 @@ export class CabinetBlockComponent {
 
   protected readonly faSolidCircleQuestion = faSolidCircleQuestion;
   protected readonly faCircleQuestion = faCircleQuestion;
+
+  animationCreated($event: import("lottie-web").AnimationItem) {
+    $event.setSpeed(0.7)
+  }
 }

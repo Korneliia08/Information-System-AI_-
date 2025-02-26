@@ -3,7 +3,7 @@
 }
 
 .block {
-  width: 45%;
+  width: 48%;
   min-height: 200px;
   display: flex;
   flex-direction: column;
@@ -20,3 +20,62 @@
 
   }
 }
+
+.horizontalBar {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  padding: 0 10px;
+
+  .section {
+    width: 20%;
+    height: 20px;
+  }
+
+  .topPart {
+    margin-bottom: -7px;
+  }
+
+  .topPart, .bottomPart {
+    display: flex;
+    font-size: 14px;
+    color: White;
+  }
+
+  .bar {
+    display: flex;
+
+    position: relative;
+
+    .dark {
+      width: 10px;
+      position: absolute;
+      top: 0;
+      display: block;
+      right: 0;
+      height: 20px;
+      z-index: 300;
+      background-color: rgb(0, 0, 0);
+      animation: expandAndShrink 10s infinite ease-in-out;
+
+    }
+  }
+}
+
+@keyframes expandAndShrink {
+  0% {
+    width: 98%;
+  }
+  30% {
+    width: 0px;
+  }
+  60% {
+    width: 0px;
+  }
+  100% {
+    width: 98%;
+  }
+}
+
+

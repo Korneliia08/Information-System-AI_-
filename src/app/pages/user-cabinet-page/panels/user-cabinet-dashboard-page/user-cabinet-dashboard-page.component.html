@@ -26,10 +26,10 @@
       </div>
       <div class="select">
         <mat-form-field>
-          <mat-label>Favorite animal</mat-label>
+          <mat-label>All devices</mat-label>
           <mat-select>
 
-            @for (animal of [1, 2, 3, 4]; track animal) {
+            @for (animal of ["Device 1", "Device 1", "Device 1", "Device 1", "Device 1"]; track animal) {
               <mat-option [value]="animal">{{ animal }}</mat-option>
             }
           </mat-select>

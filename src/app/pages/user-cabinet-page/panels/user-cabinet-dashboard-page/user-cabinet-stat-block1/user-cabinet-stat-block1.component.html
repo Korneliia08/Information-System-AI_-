@@ -1,24 +1,37 @@
 <div class="block">
   <div class="innerTopBlock">
-    <ng-lottie
-      [options]="{
-      path:'/assets/lottie/barChart.json'
-      }"
-      containerClass="moving-box another-class"
-      height="100%"
-      width="100%"
-    />
+    <!--    <ng-lottie-->
+    <!--      [options]="{-->
+    <!--      path:'/assets/lottie/barChart.json'-->
+    <!--      }"-->
+    <!--      containerClass="moving-box another-class"-->
+    <!--      height="100%"-->
+    <!--      width="100%"-->
+    <!--    />-->
   </div>
-  <ng-lottie
-    [options]="{
+  <div class="horizontalBar">
+    <div class="topPart">
+      @for (text of ["Poor", "Bellow Average", "Average", 'About Average', 'Genius']; track text; ) {
+        <div class="section">
+          {{ text }}
+        </div>
+      }
 
- loop:false,
-      path:'/assets/lottie/horizontalBar.json'
-      }"
-    containerClass="moving-box another-class"
-    height="100%"
+    </div>
+    <div class="bar">
 
-    style='margin-top: -50px;margin-bottom: -50px'
-    width="100%"
-  />
+      <div class="dark"></div>
+      @for (color of ["#fd4644", "#ffa04a", "#ffe260", '#63c0ff', '#00cb55']; track color; ) {
+        <div class="section" [ngStyle]="{backgroundColor:color}">
+        </div>
+      }
+    </div>
+    <div class="bottomPart">
+      @for (text of ["60", "80", "100", '120', '140']; track text; ) {
+        <div class="section">
+          {{ text }}
+        </div>
+      }
+    </div>
+  </div>
 </div>
