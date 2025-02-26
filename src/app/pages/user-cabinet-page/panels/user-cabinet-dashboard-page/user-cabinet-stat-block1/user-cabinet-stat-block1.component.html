@@ -1,24 +1,29 @@
 <div class="block">
   <div class="innerTopBlock">
-    <ng-lottie
-      [options]="{
-      path:'/assets/lottie/barChart.json'
-      }"
-      containerClass="moving-box another-class"
-      height="100%"
-      width="100%"
-    />
+    <!--    <ng-lottie-->
+    <!--      [options]="{-->
+    <!--      path:'/assets/lottie/barChart.json'-->
+    <!--      }"-->
+    <!--      containerClass="moving-box another-class"-->
+    <!--      height="100%"-->
+    <!--      width="100%"-->
+    <!--    />-->
   </div>
-  <ng-lottie
-    [options]="{
+  <div class="horizontalBar">
+    <div class="topPart">
 
- loop:false,
-      path:'/assets/lottie/horizontalBar.json'
-      }"
-    containerClass="moving-box another-class"
-    height="100%"
+    </div>
+    <div class="bar">
 
-    style='margin-top: -50px;margin-bottom: -50px'
-    width="100%"
-  />
+      <div class="dark"></div>
+      @for (color of ["#fd4644", "#ffa04a", "#ffe260", '#63c0ff', '#00cb55']; track color; ) {
+        <div class="section" [ngStyle]="{backgroundColor:color}">
+        </div>
+      }
+    </div>
+    <div class="bottomPart">
+      <div class="section">
+      </div>
+    </div>
+  </div>
 </div>

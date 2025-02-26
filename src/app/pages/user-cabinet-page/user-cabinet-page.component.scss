@@ -9,6 +9,7 @@
     width: 300px;
     height: 100%;
     border-right: 3px solid rgba(220, 220, 220, 0.09);
+    flex-shrink: 0;
   }
 
   .contentPart {

@@ -9,7 +9,7 @@
     </div>
   </div>
   <ng-lottie
-    [options]="{
+    (animationCreated)="animationCreated($event)" [options]="{
       path:path
       }"
     containerClass="moving-box lottie"

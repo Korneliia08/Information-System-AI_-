@@ -20,4 +20,6 @@ export class UserCabinetNavComponent {
   options: AnimationOptions = {
     path: '/assets/lottie/dashLottie.json',
   };
+
+
 }
