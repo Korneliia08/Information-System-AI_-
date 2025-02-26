@@ -11,7 +11,11 @@
           <div class="circle" [ngStyle]="{backgroundColor:line.color}">
             <ng-icon [svg]="line.icon"/>
           </div>
-          <div class="line"></div>
+          <div class="line">
+            <div class="innerLine" [ngStyle]="{backgroundColor:line.color,width:line.value+'%'}">
+
+            </div>
+          </div>
           <div class="numberBlock">
             0
           </div>

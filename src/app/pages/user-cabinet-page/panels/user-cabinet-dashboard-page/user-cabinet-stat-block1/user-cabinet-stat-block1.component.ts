@@ -33,7 +33,7 @@ export class UserCabinetStatBlock1Component {
 
   private updateValueSmoothly(line: { value: number, direction: number }) {
     const update = () => {
-      const speed = Math.random() * 2 + 0.2; // Losowa prędkość od 0.2 do 2
+      const speed = Math.random() * 0.15 + 0.08; // Losowa prędkość od 0.2 do 2
       line.value += line.direction * speed;
 
       if (line.value >= 100) {
@@ -44,7 +44,7 @@ export class UserCabinetStatBlock1Component {
         line.direction = 1;
       }
 
-      setTimeout(update, 100); // Płynna aktualizacja co 100ms
+      setTimeout(update, 0); // Płynna aktualizacja co 100ms
     };
 
     update();
