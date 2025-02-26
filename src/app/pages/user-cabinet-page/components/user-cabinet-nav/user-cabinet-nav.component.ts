@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {AnimationOptions, LottieComponent} from 'ngx-lottie';
 import {RouterLink, RouterLinkActive} from '@angular/router';
+import {UserCabinetNavGroupComponent} from './user-cabinet-nav-group/user-cabinet-nav-group.component';
 
 @Component({
   selector: 'app-user-cabinet-nav',
@@ -12,6 +13,7 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
     LottieComponent,
     RouterLinkActive,
     RouterLink,
+    UserCabinetNavGroupComponent,
   ],
 })
 export class UserCabinetNavComponent {

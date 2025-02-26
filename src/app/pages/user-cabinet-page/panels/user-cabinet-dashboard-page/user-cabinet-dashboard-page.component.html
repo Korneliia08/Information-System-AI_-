@@ -1,1 +1,52 @@
-<app-user-cabinet-top-belt>test estset se test se t t</app-user-cabinet-top-belt>
+<app-user-cabinet-top-belt>
+  <div class="topBelt">
+    <div class="nameBlock">
+
+      <div class="icon">
+        <ng-lottie
+          [options]="options"
+          containerClass="moving-box another-class"
+          height="40px"
+          width="50px"
+        />
+      </div>
+      <h2>Dashboard</h2>
+    </div>
+
+    <div class="filterBlock">
+      <div class="filter">
+        <ng-icon [svg]="remixFilterLine"/>
+      </div>
+      <div class="inputWithIcon">
+
+        <input placeholder="search"/>
+        <ng-icon [svg]="faSolidMagnifyingGlass" class="glass"/>
+      </div>
+      <div class="saveButton">
+        <ng-icon [svg]="faBookmark"/>
+      </div>
+      <div class="select">
+        <mat-form-field>
+          <mat-label>Favorite animal</mat-label>
+          <mat-select>
+      
+            @for (animal of [1, 2, 3, 4]; track animal) {
+              <mat-option [value]="animal">{{ animal }}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+    </div>
+  </div>
+
+</app-user-cabinet-top-belt>
+
+<div class="content">
+  <app-user-cabinet-dashboard-page-top-part/>
+  <div class="blocks">
+    <app-user-cabinet-stat-block1/>
+    <app-user-cabinet-stat-block2/>
+  </div>
+
+</div>

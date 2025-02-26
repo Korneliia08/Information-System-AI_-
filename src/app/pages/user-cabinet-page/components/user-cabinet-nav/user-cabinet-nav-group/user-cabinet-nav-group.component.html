@@ -1,11 +1,42 @@
-<div>
-  <div (click)="toggle()" class="toggle-button">
-    Open me
+<div class="menu">
+  <div (click)="toggle()" class="menu-header">
+    <div class="left">
+      <ng-lottie
+        [options]="options"
+        containerClass="moving-box another-class"
+        height="40px"
+        width="50px"
+      />
+    </div>
+    <div class="center">
+        <span>
+      Open me
+    </span>
+    </div>
+    <div class="right">
+      <ng-icon></ng-icon>
+    </div>
+
   </div>
-  <div [@expandCollapse]="isOpen ? 'open' : 'closed'" class="movable">
+  <div [ngClass]="{open:isOpen }" class="menu-content">
     @for (item of elements; track item) {
       <a>
+        <div class="left">
+        </div>
+        <div class="center">
+        <span>
         Element {{ item }}
+        </span>
+        </div>
+
+        <div class="right">
+          <ng-lottie
+            [options]="options"
+            containerClass="moving-box another-class"
+            height="50px"
+            width="60px"
+          />
+        </div>
       </a>
     }
   </div>

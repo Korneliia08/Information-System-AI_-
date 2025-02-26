@@ -1,18 +1,22 @@
 <div class="navContainer">
+  @for (link of [{name: 'Dashboard', link: "./dashboard"}, {name: 'Reports', link: './reports'}]; track link) {
 
-  <a [routerLinkActive]="'active'" [routerLink]="['./dashboard']" class="menuLink">
-    <div class="icon">
-      <ng-lottie
-        [options]="options"
-        containerClass="moving-box another-class"
-        height="50px"
-        width="60px"
-      />
-    </div>
-    <div class="label">
-      Dashboard
-    </div>
-  </a>
-  <a> Reports</a>
+    <a [routerLinkActive]="'active'" [routerLink]="[link.link]" class="menuLink">
+      <div class="left">
+        <ng-lottie
+          [options]="options"
+          containerClass="moving-box another-class"
+          height="40px"
+          width="50px"
+        />
+      </div>
+      <div class="center">
+        {{ link.name }}
+      </div>
+      <div class="right">
+
+      </div>
+    </a>
+  }
   <app-user-cabinet-nav-group [elements]="[1,2,3,4]"/>
 </div>
