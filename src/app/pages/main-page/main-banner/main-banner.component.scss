@@ -218,7 +218,7 @@
       position: relative;
       z-index: 999;
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
       width: 100%;
       max-width: 1400px;
     }
@@ -379,4 +379,13 @@
   &:hover {
     scale: 1.1;
   }
+}
+
+.man {
+  position: absolute;
+  top: calc(50% - 15vw);
+  opacity: 0.3;
+  right: 10vw;
+  width: 30vw;
+  aspect-ratio: 1/1;
 }

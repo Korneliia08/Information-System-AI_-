@@ -1,6 +1,7 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
 import VanillaTilt from 'vanilla-tilt';
 import {TranslateService} from './pipes/translate.service';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,6 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-
 
     setInterval(() => {
       const elements = document.querySelectorAll('[data-tilt]:not([data-tilt-initialized])');
@@ -39,6 +39,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
+    AOS.init({})
     this.translate.getLanguageFile("en")
     // // @ts-ignore
     // $(".marquee").marquee({
