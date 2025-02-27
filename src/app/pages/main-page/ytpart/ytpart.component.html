@@ -2,16 +2,16 @@
   <h2><span class="blueWord">Education</span> video:</h2>
   <div class="containerForSlider">
     <div #videoContainer *ngFor="let video of videos" [attr.data-src]="video" class="videoPlaceholder">
-      <iframe *ngIf="visibleVideos.has(video)"
-              [attr.src]="video"
-              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-              class="videoFrame"
-              frameborder="0"
-              height="315"
-              referrerpolicy="strict-origin-when-cross-origin"
-              title="YouTube video player"
-              width="560">
+      <iframe
+        [attr.src]="video"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        class="videoFrame"
+        frameborder="0"
+        height="315"
+        referrerpolicy="strict-origin-when-cross-origin"
+        title="YouTube video player"
+        width="560">
       </iframe>
     </div>
   </div>
