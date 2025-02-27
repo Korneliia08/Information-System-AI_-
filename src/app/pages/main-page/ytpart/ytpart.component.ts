@@ -12,9 +12,9 @@ import {NgForOf} from '@angular/common';
 })
 export class YTpartComponent implements AfterViewInit {
   videos = [
-    "https://www.youtube.com/embed/VaA9Fw2sUB4?si=2fKOiaGtCU7Hv78b",
-    "https://www.youtube.com/embed/VaA9Fw2sUB4?si=2fKOiaGtCU7Hv78b",
-    "https://www.youtube.com/embed/VaA9Fw2sUB4?si=2fKOiaGtCU7Hv78b"
+    "https://www.youtube.com/watch?v=b67g7WxnUJk",
+    "https://www.youtube.com/watch?v=b67g7WxnUJk",
+    "https://www.youtube.com/watch?v=b67g7WxnUJk"
   ];
 
   visibleVideos = new Set<string>();
