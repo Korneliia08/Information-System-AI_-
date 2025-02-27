@@ -1,10 +1,9 @@
 <footer class="footer">
-  <video aria-label="Video banner background" autoplay class="videoBanner" loop muted role="presentation">
-    <source src=" assets/footer.mp4">
-  </video>
+  <ng-lottie (animationCreated)="animationCreated($event)" [options]="options" class="man" height="100%" width=""></ng-lottie>
+
   <div class="topPart">
     <div class="blockForLogoAndLanguage">
-      <img alt="Ai image logo" class="logoImg" src="assets/images/logo4.svg">
+      <img alt="Ai image logo" class="logoImg" src="assets/blue.png">
       <app-choose-language></app-choose-language>
     </div>
     <div class="containerForBlocksOfLinks">
@@ -98,45 +97,45 @@
   <div class="contactPart">
     <a>
       <div class="circle">
-        <mat-icon>telegram</mat-icon>
+        <ng-icon [svg]="faBrandViber"/>
       </div>
-      <span>Telegram</span>
+      <span>VIBER</span>
     </a>
     <a>
       <div class="circle">
-        <mat-icon>linkedin</mat-icon>
+        <ng-icon [svg]="faBrandGithub"/>
       </div>
-      Linkedin
+      GITHUB
     </a>
     <a>
       <div class="circle">
-        <ng-icon name="faBrandXTwitter"/>
+        <ng-icon [svg]="faBrandFacebook"/>
       </div>
-      TWITTER
+      FACEBOOK
     </a>
     <a>
       <div class="circle">
-        <ng-icon name="faBrandDiscord"/>
+        <ng-icon [svg]="faBrandInstagram"/>
 
 
       </div>
-      DISCORD
+      INSTAGRAM
     </a>
     <a>
       <div class="circle">
-        <ng-icon name="faBrandMedium"/>
+        <ng-icon [svg]="faBrandTiktok"/>
       </div>
-      MEDIUM
+      TIK TOK
     </a>
     <a>
       <div class="circle">
-        <ng-icon name="faBrandYoutube"/>
+        <ng-icon [svg]="faBrandThreads"/>
       </div>
-      YOUTUBE
+      Threads
     </a>
   </div>
   <div class="bottomPart">
-    <span class="spanInBottomPart">© 2024 AI Vision</span>
+    <span class="spanInBottomPart">© 2025 Data</span>
   </div>
 </footer>
 
