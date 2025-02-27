@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {AnimationOptions, LottieComponent} from 'ngx-lottie';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 import {UserCabinetNavGroupComponent} from './user-cabinet-nav-group/user-cabinet-nav-group.component';
-import {faSolidPerson} from '@ng-icons/font-awesome/solid';
+import {faSolidDesktop, faSolidLock, faSolidNetworkWired, faSolidPerson, faSolidShield} from '@ng-icons/font-awesome/solid';
 
 @Component({
   selector: 'app-user-cabinet-nav',
@@ -24,4 +24,9 @@ export class UserCabinetNavComponent {
 
 
   protected readonly faSolidPerson = faSolidPerson;
+  protected readonly faSolidDesktop = faSolidDesktop;
+
+  protected readonly faSolidNetworkWired = faSolidNetworkWired;
+  protected readonly faSolidLock = faSolidLock;
+  protected readonly faSolidShield = faSolidShield;
 }

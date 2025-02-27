@@ -1,9 +1,18 @@
-<section class="  back"
->
+<section class="back">
   <div class="container">
-    <app-row-information [row]="1" [text]="'part2.inf1.text'|tr" [title]="'part2.inf1.title'|tr"/>
-    <app-row-information [row]="2" [text]="'part2.inf2.text'|tr" [title]="'part2.inf2.title'|tr"/>
-    <app-row-information [row]="3" [text]="'part2.inf3.text'|tr" [title]="'part2.inf3.title'|tr"/>
+    <app-row-information
+      [row]="1"
+      [text]="'Understanding data through analysis helps uncover patterns and insights that drive business decisions.'"
+      [title]="'Data Analysis'"/>
 
+    <app-row-information
+      [row]="2"
+      [text]="'Big data refers to vast datasets that traditional data processing software can\'t handle efficiently.'"
+      [title]="'Big Data'"/>
+
+    <app-row-information
+      [row]="3"
+      [text]="'Artificial intelligence enables automated analysis and interpretation of large data sets, boosting accuracy.'"
+      [title]="'AI in Data'"/>
   </div>
 </section>

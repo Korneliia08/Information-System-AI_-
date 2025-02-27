@@ -1,6 +1,6 @@
 <div class="navContainer">
   <h1>
-    AI PANEL
+    DATA PANEL
   </h1>
   @for (link of [{name: 'Dashboard', link: "./dashboard"}, {name: 'Reports', link: './reports'}]; track link) {
 
@@ -22,8 +22,9 @@
       </div>
     </a>
   }
-  <app-user-cabinet-nav-group [elements]="['Devices','Software','Vulnerabilities','Networks']"
-                              [icons]="[faSolidPerson,faSolidPerson,faSolidPerson,faSolidPerson,]"/>
+  <app-user-cabinet-nav-group
+    [elements]="['Devices', 'Software', 'Vulnerabilities', 'Networks']"
+    [icons]="[faSolidDesktop, faSolidLock   , faSolidShield  , faSolidNetworkWired]"/>
 
 
 </div>
