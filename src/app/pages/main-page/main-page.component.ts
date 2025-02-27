@@ -5,12 +5,13 @@ import {PanelTextWithImageComponent} from './panel-text-with-image/panel-text-wi
 import {FooterComponent} from './footer/footer.component';
 import {HorizontalBlocksComponent} from './horizontal-blocks/horizontal-blocks.component';
 import {YTpartComponent} from './ytpart/ytpart.component';
+import {LottieComponent} from 'ngx-lottie';
 
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss',
-  imports: [MainBannerComponent, RowInformationsComponent, PanelTextWithImageComponent, FooterComponent, HorizontalBlocksComponent, YTpartComponent]
+  imports: [MainBannerComponent, RowInformationsComponent, PanelTextWithImageComponent, FooterComponent, HorizontalBlocksComponent, YTpartComponent, LottieComponent]
 })
 export class MainPageComponent {
 
