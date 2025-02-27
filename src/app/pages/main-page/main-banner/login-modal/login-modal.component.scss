@@ -2,7 +2,8 @@
   width: 400px;
   display: flex;
   flex-direction: column;
-  background: #707070;
+  background: radial-gradient(circle at 30% 30%, rgba(0, 191, 255, 0.3) 10%, transparent 60%),
+  radial-gradient(circle at 70% 70%, rgba(138, 43, 226, 0.3) 15%, transparent 70%);
   gap: 10px;
   padding: 10px 10px 30px 10px;
 
