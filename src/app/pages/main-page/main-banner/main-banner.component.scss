@@ -114,7 +114,7 @@
         top: 0;
         left: 0;
         bottom: 0;
-        background-color: blueviolet;
+        background-color: white;
         border-radius: 41px;
         filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.55));
       }
@@ -383,9 +383,9 @@
 
 .man {
   position: absolute;
-  top: calc(50% - 15vw);
-  opacity: 0.3;
+  top: calc(50% - 25vw);
+  opacity: 1;
   right: 10vw;
-  width: 30vw;
+  width: 50vw;
   aspect-ratio: 1/1;
 }

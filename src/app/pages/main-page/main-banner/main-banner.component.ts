@@ -6,12 +6,13 @@ import {AccessibilityComponent} from '../../../fetures/accessibility/accessibili
 import {TrPipe} from '../../../pipes/translate.pipe';
 import {MatDialog} from '@angular/material/dialog';
 import {LoginModalComponent} from './login-modal/login-modal.component';
+import {LottieComponent} from 'ngx-lottie';
 
 @Component({
   selector: 'app-main-banner',
   templateUrl: './main-banner.component.html',
   styleUrls: ['./main-banner.component.scss'],
-  imports: [NgClass, NgIcon, AccessibilityComponent, TrPipe]
+  imports: [NgClass, NgIcon, AccessibilityComponent, TrPipe, LottieComponent]
 })
 export class MainBannerComponent implements OnInit {
   secondTheme = false; // Default background color
