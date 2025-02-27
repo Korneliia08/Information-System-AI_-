@@ -1,39 +1,39 @@
-import {Component, ViewChild} from '@angular/core';
-import {SlickCarouselComponent, SlickCarouselModule} from 'ngx-slick-carousel';
-import {NgForOf} from '@angular/common';
-import {NgIcon} from '@ng-icons/core';
-import {faSolidAngleLeft, faSolidAngleRight} from '@ng-icons/font-awesome/solid';
+import {AfterViewInit, Component, ElementRef, QueryList, ViewChildren} from '@angular/core';
+import {NgForOf, NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-ytpart',
   standalone: true,
-  imports: [
-    SlickCarouselModule,
-    NgForOf,
-    NgIcon
-  ],
   templateUrl: './ytpart.component.html',
+  imports: [
+    NgIf,
+    NgForOf
+  ],
   styleUrl: './ytpart.component.scss'
 })
-export class YTpartComponent {
-  @ViewChild('slickModal') slickModal!: SlickCarouselComponent;
+export class YTpartComponent implements AfterViewInit {
+  videos = [
+    "https://www.youtube.com/embed/VaA9Fw2sUB4?si=2fKOiaGtCU7Hv78b",
+    "https://www.youtube.com/embed/VaA9Fw2sUB4?si=2fKOiaGtCU7Hv78b",
+    "https://www.youtube.com/embed/VaA9Fw2sUB4?si=2fKOiaGtCU7Hv78b"
+  ];
 
-  slideConfig = {
-    infinite: true,
-    draggable: false,
-    arrows: false,
-    slidesToShow: 2,
-    slidesToScroll: 1
-  };
+  visibleVideos = new Set<string>();
 
-  protected readonly faSolidAngleLeft = faSolidAngleLeft;
-  protected readonly faSolidAngleRight = faSolidAngleRight;
+  @ViewChildren('videoContainer') videoContainers!: QueryList<ElementRef>;
 
-  prevSlide() {
-    this.slickModal.slickPrev();
-  }
+  ngAfterViewInit() {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        console.log(1);
+        const videoSrc = entry.target.getAttribute('data-src');
+        if (entry.isIntersecting && videoSrc) {
 
-  nextSlide() {
-    this.slickModal.slickNext();
+          this.visibleVideos.add(videoSrc);
+        }
+      });
+    }, {threshold: 0.3});
+
+    this.videoContainers.forEach(video => observer.observe(video.nativeElement));
   }
 }

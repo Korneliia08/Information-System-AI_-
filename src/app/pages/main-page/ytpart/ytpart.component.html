@@ -1,25 +1,18 @@
 <div class="verticalContainer">
   <h2>Education video:</h2>
   <div class="containerForSlider">
-    <div>
-
-      <iframe allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen frameborder="0"
-              height="315" referrerpolicy="strict-origin-when-cross-origin"
-              src="https://www.youtube.com/embed/VaA9Fw2sUB4?si=2fKOiaGtCU7Hv78b"
-              title="YouTube video player" width="560"></iframe>
-
-      <iframe allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen frameborder="0"
-              height="315" referrerpolicy="strict-origin-when-cross-origin"
-              src="https://www.youtube.com/embed/VaA9Fw2sUB4?si=2fKOiaGtCU7Hv78b"
-              title="YouTube video player" width="560"></iframe>
-
+    <div #videoContainer *ngFor="let video of videos" [attr.data-src]="video" class="videoPlaceholder">
+      <iframe *ngIf="visibleVideos.has(video)"
+              [attr.src]="video"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="videoFrame"
+              frameborder="0"
+              height="315"
+              referrerpolicy="strict-origin-when-cross-origin"
+              title="YouTube video player"
+              width="560">
+      </iframe>
     </div>
-    <iframe allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0"
-            height="315" referrerpolicy="strict-origin-when-cross-origin"
-            src="https://www.youtube.com/embed/VaA9Fw2sUB4?si=2fKOiaGtCU7Hv78b"
-            title="YouTube video player" width="560"></iframe>
   </div>
-
 </div>
