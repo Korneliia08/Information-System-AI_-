@@ -1,9 +1,11 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {Component, HostListener, inject, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {NgClass} from '@angular/common';
 import {NgIcon} from '@ng-icons/core';
 import {AccessibilityComponent} from '../../../fetures/accessibility/accessibility.component';
 import {TrPipe} from '../../../pipes/translate.pipe';
+import {MatDialog} from '@angular/material/dialog';
+import {LoginModalComponent} from './login-modal/login-modal.component';
 
 @Component({
   selector: 'app-main-banner',
@@ -12,9 +14,9 @@ import {TrPipe} from '../../../pipes/translate.pipe';
   imports: [NgClass, NgIcon, AccessibilityComponent, TrPipe]
 })
 export class MainBannerComponent implements OnInit {
-
   secondTheme = false; // Default background color
   protected readonly navigator = navigator;
+  private ngbModal = inject(MatDialog)
 
   constructor(private router_: Router) {
   }
@@ -39,7 +41,6 @@ export class MainBannerComponent implements OnInit {
   }
 
   openAibotChatModal() {
-
-    this.router_.navigate(['/userCabinet/dashboard'])
+    this.ngbModal.open(LoginModalComponent)
   }
 }

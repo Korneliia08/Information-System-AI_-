@@ -1,0 +1,13 @@
+.loginBlock {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  background: #707070;
+
+  input {
+    width: 80%;
+    border: none;
+
+  }
+}
