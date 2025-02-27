@@ -1,0 +1,70 @@
+.verticalContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  background-color: black;
+
+  &:after {
+    content: "";
+    pointer-events: none;
+    background: url('../../../../../public/assets/points.svg');
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    background-size: cover;
+    position: absolute;
+    z-index: 5;
+  }
+
+  h2 {
+    padding-top: 40px;
+    font-size: 40px;
+    color: white;
+    width: 100%;
+  }
+}
+
+.containerForSlider {
+  max-width: 1500px;
+  width: 100%;
+  background: black;
+  padding-top: 20px;
+  padding-bottom: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+
+  .sliderContainer {
+    width: 90%;
+  }
+
+
+}
+
+.slide {
+
+  padding-left: 50px;
+  padding-right: 50px;
+  aspect-ratio: 16/9;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.arrow {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 50px;
+
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}

@@ -1,0 +1,22 @@
+<div class="verticalContainer">
+  <h2>Education video:</h2>
+  <div class="containerForSlider">
+    <ng-icon (click)="prevSlide()" [svg]="faSolidAngleLeft" class="arrow"/>
+
+    <div class="sliderContainer">
+      <ngx-slick-carousel #slickModal="slick-carousel"
+                          [config]="slideConfig"
+                          class="carousel">
+        <div *ngFor="let slide of [1,2,3]" class="slide" ngxSlickItem>
+          <iframe allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen frameborder="0"
+                  height="315" referrerpolicy="strict-origin-when-cross-origin"
+                  src="https://www.youtube.com/embed/VaA9Fw2sUB4?si=2fKOiaGtCU7Hv78b"
+                  title="YouTube video player" width="560"></iframe>
+        </div>
+      </ngx-slick-carousel>
+    </div>
+
+    <ng-icon (click)="nextSlide()" [svg]="faSolidAngleRight" class="arrow"/>
+  </div>
+</div>
