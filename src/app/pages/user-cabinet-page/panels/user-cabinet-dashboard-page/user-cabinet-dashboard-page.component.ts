@@ -23,6 +23,9 @@ import {MatSelect} from '@angular/material/select';
 export class UserCabinetDashboardPageComponent {
   options: AnimationOptions = {
     path: 'assets/lottie/dashLottie.json',
+    autoplay: false,
+    initialSegment: [50, 100]
+
   };
   protected readonly faSolidFilter = faSolidFilter;
   protected readonly faSolidMagnifyingGlass = faSolidMagnifyingGlass;

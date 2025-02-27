@@ -29,7 +29,7 @@ export class TranslatePipe implements PipeTransform {
         this._ref.markForCheck();
       });
     }
-    if (!this.value) return `---${name}---`;
+    if (!this.value) return ``;
 
 
     if (variables) {

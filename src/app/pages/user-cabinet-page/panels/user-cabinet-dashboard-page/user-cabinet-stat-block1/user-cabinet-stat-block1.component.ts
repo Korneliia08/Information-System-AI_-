@@ -66,7 +66,7 @@ export class UserCabinetStatBlock1Component {
         line.direction = 1;
       }
 
-      setTimeout(update, 0); // Płynna aktualizacja co 100ms
+      setTimeout(update, 90); // Płynna aktualizacja co 100ms
     };
 
     update();

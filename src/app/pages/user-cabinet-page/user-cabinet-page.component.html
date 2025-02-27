@@ -1,6 +1,10 @@
 <div class="container">
   <div class="menuPart">
     <app-user-cabinet-nav/>
+    <a [routerLink]="['/']" class="logout">
+      <ng-icon [svg]="faSolidArrowRightFromBracket"/>
+      Logout
+    </a>
   </div>
   <div class="contentPart">
     <div class="content">

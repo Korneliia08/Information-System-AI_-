@@ -1,7 +1,7 @@
 <div id="particles-js"></div>
 <section class="containerForWrapperBanner">
   <img class="headerLine" src="assets/headerLine.svg">
-  <img class="man" src="assets/man2.gif"/>
+  <!--  <img class="man" src="assets/man2.gif"/>-->
   <video aria-label="Video banner background" autoplay class="videoBanner" loop muted role="presentation">
     <source src="assets/man.gif" type="video/mp4"/>
   </video>
@@ -55,9 +55,6 @@
                class="disabled"
                href="/contact-support">{{ 'mainPage.header.nav.contactSupport.text'|tr }}</a>
 
-            <a [attr.aria-label]="'mainPage.header.nav.signUp.ariaLabel'|tr" [routerLink]="['/userCabinet']"
-               class="signUpBtn">{{ 'mainPage.header.nav.signUp.text'|tr }}</a>
-
 
             <button
               aria-label="Open accessibility options"
@@ -81,7 +78,7 @@
       <h2>AI Geo Bot </h2>
       <h1 [innerHTML]="'mainPage.banner.title'|tr"></h1>
       <button (click)="openAibotChatModal()" [attr.aria-label]="'mainPage.banner.bannerButton_aria'|tr" id="idButtonOpenChat"
-              tabindex="0">{{ 'mainPage.banner.bannerButton'|tr }}
+              tabindex="0">{{ 'mainPage.header.nav.signUp.text'|tr }}
       </button>
     </div>
   </div>
