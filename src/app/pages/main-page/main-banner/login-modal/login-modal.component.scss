@@ -2,12 +2,18 @@
   width: 400px;
   display: flex;
   flex-direction: column;
-  height: 200px;
   background: #707070;
+  gap: 10px;
+  padding: 10px 10px 30px 10px;
 
   input {
     width: 80%;
     border: none;
+    height: 50px;
+  }
 
+  button {
+    height: 50px;
+    width: 100px;
   }
 }
