@@ -1,0 +1,36 @@
+.containerForBlocks {
+  display: flex;
+  gap: 100px;
+  padding: 100px 20px;
+  justify-content: space-between;
+
+  .block1 {
+    width: 48%;
+    height: 700px;
+
+
+    top: -50px;
+    position: relative;
+
+    img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: fill;
+      transform: rotateX(180deg);
+    }
+  }
+
+  .block2 {
+    width: 48%;
+    height: 700px;
+    top: 50px;
+    position: relative;
+
+    img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
