@@ -9,7 +9,7 @@
   flex-direction: column;
   background-color: rgb(30, 30, 30);
   align-items: center;
-  background:linear-gradient(135deg,
+  background: linear-gradient(135deg,
     rgba(52, 49, 49, 0.1),
     rgba(58, 56, 56, 0.2),
     rgba(65, 63, 63, 0.25),
@@ -25,7 +25,7 @@
     min-height: 200px;
     position: relative;
     top: -20px;
-    background:linear-gradient(135deg,
+    background: linear-gradient(135deg,
       rgba(52, 49, 49, 0.1),
       rgba(58, 56, 56, 0.2),
       rgba(65, 63, 63, 0.25),
@@ -39,5 +39,53 @@
     inset 0 -2px 6px rgba(0, 0, 0, 0.3),
     0 4px 12px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.06); /* Легка рамка */
+  }
+}
+
+.bottom {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+
+  span {
+    color: white;
+    font-size: 30px;
+    width: 370px;
+  }
+
+  button {
+    border-radius: 10px;
+    width: 170px;
+    height: 34px;
+    text-align: left;
+    padding-left: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    border: none;
+    font-weight: bold;
+    background: linear-gradient(135deg, #ff9800, #e65100);
+    transition: 1s;
+
+    &:hover {
+      cursor: pointer;
+      background: linear-gradient(135deg, #ef8d00, #d84315); /* Jaśniejszy i ciemniejszy odcień */
+    }
+
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+
+}
+
+@keyframes pulse {
+  0% {
+    color: red;
+  }
+  50% {
+    color: #8e0000;
+  }
+  100% {
+    color: Red;
   }
 }

@@ -22,7 +22,7 @@ import {MatSelect} from '@angular/material/select';
 })
 export class UserCabinetDashboardPageComponent {
   options: AnimationOptions = {
-    path: '/assets/lottie/dashLottie.json',
+    path: 'assets/lottie/dashLottie.json',
   };
   protected readonly faSolidFilter = faSolidFilter;
   protected readonly faSolidMagnifyingGlass = faSolidMagnifyingGlass;

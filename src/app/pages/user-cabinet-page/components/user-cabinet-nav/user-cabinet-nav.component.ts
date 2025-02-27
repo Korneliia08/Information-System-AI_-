@@ -18,7 +18,7 @@ import {UserCabinetNavGroupComponent} from './user-cabinet-nav-group/user-cabine
 })
 export class UserCabinetNavComponent {
   options: AnimationOptions = {
-    path: '/assets/lottie/dashLottie.json',
+    path: 'assets/lottie/dashLottie.json',
   };
 
 

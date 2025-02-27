@@ -1,4 +1,7 @@
 <div class="navContainer">
+  <h1>
+    AI PANEL
+  </h1>
   @for (link of [{name: 'Dashboard', link: "./dashboard"}, {name: 'Reports', link: './reports'}]; track link) {
 
     <a [routerLinkActive]="'active'" [routerLink]="[link.link]" class="menuLink">
@@ -20,5 +23,5 @@
     </a>
   }
   <app-user-cabinet-nav-group [elements]="['Devices','Software','Vulnerabilities','Networks']"
-                              [icons]="['/assets/icons/beetle.gif','/assets/icons/install.gif','/assets/icons/beetle.gif','/assets/icons/install.gif',]"/>
+                              [icons]="['assets/icons/beetle.gif','assets/icons/install.gif','assets/icons/beetle.gif','assets/icons/install.gif',]"/>
 </div>

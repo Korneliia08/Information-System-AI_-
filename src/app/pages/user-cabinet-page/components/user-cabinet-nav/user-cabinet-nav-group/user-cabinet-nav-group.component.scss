@@ -82,6 +82,14 @@
   align-items: center;
   justify-content: center;
 
+  .icon {
+    transition: 700ms;
+
+    &.open {
+      transform: rotate(180deg);
+    }
+  }
+
   img {
     height: 30px;
     width: 30px;
