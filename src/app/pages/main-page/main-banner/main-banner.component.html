@@ -35,26 +35,16 @@
         <nav aria-label="Main navigation" id="mobileMenu">
           <div class="leftPartOfNav">
             <a [attr.aria-label]="'mainPage.header.nav.features.ariaLabel'|tr" aria-disabled="true" class="disabled"
-               href="/features">{{ 'mainPage.header.nav.features.text'|tr }}</a>
+               href="/features">What We Offer</a>
 
             <a [attr.aria-label]="'mainPage.header.nav.pricing.ariaLabel'|tr" aria-disabled="true" class="disabled"
-               href="/pricing">{{ 'mainPage.header.nav.pricing.text'|tr }}</a>
+               href="/pricing">Get Started</a>
 
             <a [attr.aria-label]="'mainPage.header.nav.resources.ariaLabel'|tr" aria-disabled="true" class="disabled"
-               href="/resources">{{ 'mainPage.header.nav.resources.text'|tr }}</a>
+               href="/resources">Knowledge Base</a>
 
             <a [attr.aria-label]="'mainPage.header.nav.customers.ariaLabel'|tr" aria-disabled="true" class="disabled"
-               href="/customers">{{ 'mainPage.header.nav.customers.text'|tr }}</a>
-
-            <a [attr.aria-label]="'mainPage.header.nav.gallery.ariaLabel'|tr" aria-disabled="true" class="disabled"
-               href="/gallery">{{ 'mainPage.header.nav.gallery.text'|tr }}</a>
-
-            <a [attr.aria-label]="'mainPage.header.nav.agencies.ariaLabel'|tr" aria-disabled="true" class="disabled"
-               href="/agencies">{{ 'mainPage.header.nav.agencies.text'|tr }}</a>
-
-            <a [attr.aria-label]="'mainPage.header.nav.contactSupport.ariaLabel'|tr" aria-disabled="true"
-               class="disabled"
-               href="/contact-support">{{ 'mainPage.header.nav.contactSupport.text'|tr }}</a>
+               href="/customers">Help & Support </a>
 
 
             <button
@@ -76,8 +66,7 @@
     </header>
 
     <div class="bannerTitle">
-      <h2>AI Geo Bot </h2>
-      <h1 [innerHTML]="'mainPage.banner.title'|tr"></h1>
+      <h1> Get Support</h1>
       <button (click)="openAibotChatModal()" [attr.aria-label]="'mainPage.banner.bannerButton_aria'|tr" id="idButtonOpenChat"
               tabindex="0">{{ 'mainPage.header.nav.signUp.text'|tr }}
       </button>

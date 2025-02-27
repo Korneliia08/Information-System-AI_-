@@ -6,15 +6,29 @@
   radial-gradient(circle at 70% 70%, rgba(138, 43, 226, 0.3) 15%, transparent 70%);
   gap: 10px;
   padding: 10px 10px 30px 10px;
+align-items: center;
 
   input {
     width: 80%;
     border: none;
-    height: 50px;
+    padding:10px 10px;
+    border-radius: 10px;
+    color: #1e1e1e;
   }
 
   button {
-    height: 50px;
-    width: 100px;
+    height: 40px;
+    width: 200px;
+    background: linear-gradient(135deg, #103cab, #1a50e0);
+    margin-top: 10px;
+    color: white;
+    border: 2px inset #374fde;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 125ms ease;
+    &:hover{
+      cursor: pointer;
+      background: linear-gradient(135deg, #103cab, #113aa9);
+    }
   }
 }
