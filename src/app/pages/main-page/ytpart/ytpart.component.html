@@ -1,5 +1,5 @@
 <div class="verticalContainer">
-  <h2>Education video:</h2>
+  <h2><span class="blueWord">Education</span> video:</h2>
   <div class="containerForSlider">
     <div #videoContainer *ngFor="let video of videos" [attr.data-src]="video" class="videoPlaceholder">
       <iframe *ngIf="visibleVideos.has(video)"
