@@ -4,11 +4,11 @@
   background-size: cover;
   max-width: 1200px;
   left: 2px;
-  color: black;
+  color: white;
   position: sticky;
   height: 290px;
   width: calc(100% - 4px);
-  background: #0b2f4c;
+  background: #000000;
   z-index: 4;
   min-width: 200px;
 
@@ -19,7 +19,7 @@
 
   &:before {
     content: '';
-    background: linear-gradient(274deg, #1736D9 0%, #ECE0F7 100%);
+    background: linear-gradient(274deg, #661045 0%, #374F8B 100%);
     background-size: auto;
     background-size: cover;
     position: absolute;
@@ -42,7 +42,7 @@
       font-style: normal;
       font-weight: 500;
       line-height: 120%;
-      color: #7D5BA8;
+      color: #75d8ff;
       font-family: "Orbitron", sans-serif;
       margin-bottom: 2rem;
     }
@@ -79,7 +79,7 @@
       font-style: normal;
       font-weight: 400;
       line-height: 120%;
-      color: black;
+      color: white;
       max-width: 75%;
     }
 

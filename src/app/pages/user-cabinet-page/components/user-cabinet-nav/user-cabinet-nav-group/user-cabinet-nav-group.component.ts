@@ -1,8 +1,9 @@
 import {Component, Input} from '@angular/core';
 import {NgClass} from '@angular/common';
-import {AnimationOptions, LottieComponent} from 'ngx-lottie';
+import {AnimationOptions} from 'ngx-lottie';
 import {NgIcon} from '@ng-icons/core';
-import {faSolidArrowDown} from '@ng-icons/font-awesome/solid';
+import {faSolidArrowDown, faSolidBox} from '@ng-icons/font-awesome/solid';
+import {faAddressBook} from '@ng-icons/font-awesome/regular';
 
 @Component({
   selector: 'app-user-cabinet-nav-group',
@@ -10,7 +11,6 @@ import {faSolidArrowDown} from '@ng-icons/font-awesome/solid';
   styleUrl: './user-cabinet-nav-group.component.scss',
   imports: [
     NgClass,
-    LottieComponent,
     NgIcon
   ],
   standalone: true
@@ -23,6 +23,8 @@ export class UserCabinetNavGroupComponent {
   };
   @Input() icons!: string[];
   protected readonly faSolidArrowDown = faSolidArrowDown;
+  protected readonly faSolidBox = faSolidBox;
+  protected readonly faAddressBook = faAddressBook;
 
   toggle() {
     this.isOpen = !this.isOpen;

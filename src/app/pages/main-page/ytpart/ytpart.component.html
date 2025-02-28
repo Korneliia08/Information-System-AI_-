@@ -1,18 +1,26 @@
 <div class="verticalContainer">
-  <h2><span class="blueWord">Education</span> video:</h2>
+  <h2>Education video:</h2>
   <div class="containerForSlider">
-    <div #videoContainer *ngFor="let video of videos" [attr.data-src]="video" class="videoPlaceholder">
-      <iframe
-        [attr.src]="video"
-        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-        class="videoFrame"
-        frameborder="0"
-        height="315"
-        referrerpolicy="strict-origin-when-cross-origin"
-        title="YouTube video player"
-        width="560">
-      </iframe>
+    <div>
+
+      <iframe allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen frameborder="0"
+              height="315" referrerpolicy="strict-origin-when-cross-origin"
+              src="https://www.youtube.com/embed/b67g7WxnUJk?si=5clXO9aaTPQgSBHv"
+              title="YouTube video player" width="560"></iframe>
+
+      <iframe allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen frameborder="0"
+              height="315" referrerpolicy="strict-origin-when-cross-origin"
+              src="https://www.youtube.com/embed/hVIpcN6mHh4?si=LmNarWI0peGYqWUc"
+              title="YouTube video player" width="560"></iframe>
+
     </div>
+    <iframe allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-aos="fade-up"
+            data-aos-once="true" frameborder="0"
+            height="315" referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.youtube.com/embed/25ailVP9EjU?si=d4Q0x6REgwdRewOK"
+            title="YouTube video player" width="560"></iframe>
   </div>
+
 </div>

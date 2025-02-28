@@ -2,17 +2,11 @@
   <h1>
     Data panel
   </h1>
-  @for (link of [{name: 'Dashboard', link: "./dashboard"}, {name: 'Reports', link: './reports'}]; track link) {
+  @for (link of [{name: 'Dashboard', link: "./dashboard", icon: faSolidGauge}, {name: 'Reports', link: './reports', icon: faNoteSticky}]; track link) {
 
     <a [routerLinkActive]="'active'" [routerLink]="[link.link]" class="menuLink">
       <div class="left">
-        <ng-lottie
-          [options]="options"
-          containerClass="moving-box another-class"
-          height="40px"
-
-          width="50px"
-        />
+        <ng-icon [svg]="link.icon"/>
       </div>
       <div class="center">
         {{ link.name }}
